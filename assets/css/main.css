@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme {
+    --color-sand-50: #fbf6f5;
+    --color-sand-100: #FFDBD0;
+    --color-sand-200: #FAC3B1;
+    --color-sand-300: #E4AE9D;
+    --color-sand-400: #cc9685;
+    --color-sand-500: #c08573;
+    --color-sand-600: #aa6c58;
+    --color-sand-700: #8e5847;
+    --color-sand-800: #774b3d;
+    --color-sand-900: #644338;
+    --color-sand-950: #35201a;
+}
+
+:root{
+    --ui-primary: var(--color-sand-500);
+    --ui-secondary: var(--color-slate-700)
+}
