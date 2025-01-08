@@ -16,6 +16,13 @@
 }
 
 :root{
-    --ui-primary: var(--color-sand-500);
-    --ui-secondary: var(--color-slate-700)
+    --ui-primary: var(--color-sand-800);
+    --ui-secondary: var(--color-slate-700);
+    --ui-info: var(--color-sand-500);
+}
+
+.dark{
+    --ui-primary: var(--color-sand-100);
+    --ui-secondary: var(--color-slate-400);
+    --ui-info: var(--color-sand-400);
 }

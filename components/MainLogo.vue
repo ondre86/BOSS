@@ -1,23 +1,35 @@
 <template>
     <div class="flex gap-2 w-fit">
-        <LogoIcon :svg-size="'70px'" :animated="false"></LogoIcon>
+        <LogoIcon :svg-size="svgSize" :animated="false"></LogoIcon>
         <div class="flex flex-col items-start justify-end">
-            <span>BOSS</span>
-            <span>Business Operations Services and Solutions</span>
+            <span class="title">BOSS</span>
+            <span v-if="width > 500 || width < 500 && footer" class="subtitle">Business Operations Services and Solutions</span>
         </div>
     </div>
 </template>
 
 <script setup lang="ts">
-const props = defineProps({
-    svgSize: String,
-    animated: Boolean
+defineProps({
+    footer: Boolean
+})
+
+const { height, width } = useWindowSize()
+
+const svgSize = ref(width.value < 500 ? '35px' : '70px')
+
+watch(width, (cur)=>{
+    if (cur < 500){
+        svgSize.value = '35px'
+    }
+    else {
+        svgSize.value = '70px'
+    }
 })
 </script>
 
 <style scoped lang="sass">
 span
-    &:first-of-type
+    &.title
         height: fit-content
         font-family: 'Grillmaster'
         font-size: 36px
@@ -25,7 +37,7 @@ span
         color: var(--color-sand-800)
         margin-right: 8px
 
-    &:last-of-type
+    &.subtitle
         height: fit-content
         font-size: 14px
         line-height: 14px
@@ -34,6 +46,6 @@ span
 
 @media (prefers-color-scheme:dark)
     span
-        &:first-of-type, &:last-of-type
+        &.title, &.subtitle
             color: var(--color-sand-300)
 </style>
