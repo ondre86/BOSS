@@ -1,6 +1,6 @@
 <template>
     <div>
-        fax-scan
+        documents
     </div>
 </template>
 

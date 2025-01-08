@@ -22,7 +22,7 @@
 }
 
 .dark{
-    --ui-primary: var(--color-sand-100);
+    --ui-primary: var(--color-sand-300);
     --ui-secondary: var(--color-slate-400);
     --ui-info: var(--color-sand-400);
 }

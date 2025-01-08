@@ -15,16 +15,6 @@
 main
 	h1
 		font-family: 'Grillmaster'
-		font-size: 5rem
-		line-height: 5rem
-		color: var(--color-sand-800)
-
-main
-	color: var(--color-sand-950)
-
-@media (prefers-color-scheme:dark)
-	main
-		color: white
 
 .fade-move,
 .fade-enter-active,

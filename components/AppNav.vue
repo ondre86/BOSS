@@ -1,6 +1,6 @@
 <template>
-    <header class="flex border-b py-4 px-8 justify-between">
-        <nav class="flex w-full items-center justify-between">
+    <header class="flex border-b py-4 px-8 justify-center w-full fixed top-0 left-0 z-50 bg-white dark:bg-slate-900">
+        <nav class="flex w-full items-center justify-between max-w-7xl">
             <NuxtLink to="/">
                 <MainLogo :footer="false" />
             </NuxtLink>
@@ -14,7 +14,7 @@
                     </UDropdownMenu>
                 </li>
                 <li>
-                    <UButton to="/contact" color="info" size="lg">Contact Us</UButton>
+                    <UButton to="/contact" size="lg">Contact Us</UButton>
                 </li>
             </ul>
             <USlideover
@@ -38,7 +38,10 @@
                     />
                 </template>
                 <template #footer>
-                    <UButton block to="/contact" @click="open = false">Contact Us</UButton>
+                    <div class="flex flex-col gap-4 w-full">
+                        <UButton block to="/contact" @click="open = false">Contact Us</UButton>
+                        <UButton block variant="outline" target="_blank" to="https://www.google.com/maps/place/5790+Crowder+Blvd+Ste+E,+New+Orleans,+LA+70127/@30.0281244,-89.9967336,17z/data=!3m1!4b1!4m6!3m5!1s0x889e027bb876935b:0x97ca628b597ff069!8m2!3d30.0281244!4d-89.9941587!16s%2Fg%2F11scv0fd7b?entry=ttu&g_ep=EgoyMDI1MDEwMi4wIKXMDSoASAFQAw%3D%3D">Get Directions</UButton>
+                    </div>
                 </template>
             </USlideover>
         </nav>
@@ -87,9 +90,9 @@ const items = ref(
             type: 'separator' as const,
         },
         {
-            label: 'Fax & Scan',
+            label: 'Document Services',
             icon: 'i-solar-object-scan-linear',
-            to: '/services/fax-scan',
+            to: '/services/documents',
             color: 'primary' as const
         },
         {
@@ -148,9 +151,9 @@ const mobileItems = ref(
             onSelect: ()=>{open.value = false}
         },
         {
-            label: 'Fax & Scan',
+            label: 'Document Services',
             icon: 'i-solar-object-scan-linear',
-            to: '/services/fax-scan',
+            to: '/services/documents',
             color: 'primary' as const,
             onSelect: ()=>{open.value = false}
         },
