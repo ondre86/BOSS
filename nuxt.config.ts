@@ -1,15 +1,14 @@
 export default defineNuxtConfig({
 	compatibilityDate: '2024-11-01',
-	devtools: { enabled: true },
+	devtools: { enabled: false },
 	modules: [
 		'@nuxt/image',
 		'nuxt-security',
 		'@nuxt/fonts',
 		'@vueuse/nuxt',
 		'@nuxtjs/seo',
-		'@nuxtjs/turnstile',
 		'@hypernym/nuxt-gsap',
-		'@nuxt/ui'
+		'@nuxt/ui',
 	],
 	typescript: {
 		typeCheck: true
@@ -43,6 +42,24 @@ export default defineNuxtConfig({
 		extraPlugins: {
 			scrollTrigger: true,
 			text: true
+		}
+	},
+	runtimeConfig: {
+		public: {
+			turnstileSiteKey: process.env.NUXT_PUBLIC_TURNSTILE_SITE_KEY
+		},
+		turnstileSecretKey: process.env.NUXT_TURNSTILE_SECRET_KEY,
+		email: {
+			user: process.env.NUXT_EMAIL_USER,
+			pass: process.env.NUXT_EMAIL_PASS
+		}
+	},
+	security: {
+		headers: {
+			contentSecurityPolicy: {
+				"script-src": ["'self'", "'nonce-{{nonce}}'", 'https://*.cloudflare.com/', 'https://*.cloudflareinsights.com/', 'https://challenges.cloudflare.com/', 'https://static.cloudflareinsights.com/'],
+				"connect-src": ["'self'", 'https://*.cloudflare.com/', 'https://*.cloudflareinsights.com/', 'https://challenges.cloudflare.com/', 'https://static.cloudflareinsights.com/']
+			}
 		}
 	}
 })

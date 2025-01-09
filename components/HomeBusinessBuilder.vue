@@ -10,7 +10,7 @@
                     </p>
                 </div>
                 <div class="flex flex-col gap-2">
-                    <h3 class="text-2xl font-semibold">What’s in the Small Business Package?</h3>
+                    <h3 class="text-2xl font-semibold">Our "Small Business Package" includes:</h3>
                     <ul class="list-disc list-inside">
                         <li>Secretary of State filing</li>
                         <li>BOIR filing</li>

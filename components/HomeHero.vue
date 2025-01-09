@@ -27,7 +27,7 @@
             </div>
             
         </div>
-            <TwoByTwoImgBlock></TwoByTwoImgBlock>
+        <TwoByTwoImgBlock></TwoByTwoImgBlock>
     </section>
 </template>
 
