@@ -12,6 +12,9 @@
 	font-family: DM Sans, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 	font-weight: 400
 
+html
+	overflow-x: hidden
+
 main
 	h1
 		font-family: 'Grillmaster'

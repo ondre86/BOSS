@@ -1,8 +1,8 @@
 <template>
     <section class="w-full flex flex-col px-8 justify-between gap-8 my-3 sm:my-7 max-w-6xl lg:flex-row lg:gap-24 lg:px-12">
-        <div class="flex flex-col gap-4 mb-8 lg:mb-0">
+        <div class="flex flex-col gap-4 mb-8 relative lg:mb-0">
             <div class="flex flex-col gap-1">
-                <h1 class="text-6xl text-sand-800 dark:text-sand-300 lg:text-8xl">BOSS</h1>
+                <h1 class="text-6xl text-sand-800 dark:text-sand-300 lg:text-8xl -ml-1">BOSS</h1>
                 <span>Business Operations Solutions and Services</span>
             </div>
             <p class="max-w-prose mt-4">
@@ -25,7 +25,11 @@
                     Get Directions
                 </UButton>
             </div>
-            
+            <LogoIcon 
+                :svg-size="'250px'"
+                class="absolute opacity-10 bottom-0 invisible lg:visible"
+            >
+            </LogoIcon>
         </div>
         <TwoByTwoImgBlock></TwoByTwoImgBlock>
     </section>

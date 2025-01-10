@@ -1,5 +1,5 @@
 <template>
-    <main class="flex flex-col w-full items-center mt-36">
+    <main class="flex flex-col w-full items-center mt-24 sm:mt-36">
         <HomeHero></HomeHero>
         <HomeBusinessBuilder></HomeBusinessBuilder>
         <HomeDocuments></HomeDocuments>

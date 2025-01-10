@@ -3,7 +3,7 @@
         <LogoIcon :svg-size="svgSize" :animated="false"></LogoIcon>
         <div class="flex flex-col items-start justify-end">
             <span class="title">BOSS</span>
-            <span v-if="width > 500 || width < 500 && footer" class="subtitle">Business Operations Services and Solutions</span>
+            <span v-if="width > 640 || width < 640 && footer" class="subtitle">Business Operations Services and Solutions</span>
         </div>
     </div>
 </template>
@@ -15,10 +15,10 @@ defineProps({
 
 const { height, width } = useWindowSize()
 
-const svgSize = ref(width.value < 500 ? '35px' : '70px')
+const svgSize = ref(width.value < 640 ? '35px' : '70px')
 
 watch(width, (cur)=>{
-    if (cur < 500){
+    if (cur < 640){
         svgSize.value = '35px'
     }
     else {
