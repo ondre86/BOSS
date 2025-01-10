@@ -53,6 +53,15 @@ const open = ref(false)
 
 const items = ref(
     [
+    {
+            label: 'Admin Services',
+            icon: 'i-solar-buildings-3-line-duotone',
+            to: '/services/administrative-services',
+            color: 'primary' as const
+        },
+        {
+            type: 'separator' as const,
+        },
         {
             label: 'Notary',
             icon: 'i-solar-document-add-linear',
@@ -66,15 +75,6 @@ const items = ref(
             label: 'Tax Prep',
             icon: 'i-solar-chat-round-money-linear',
             to: '/services/tax-prep',
-            color: 'primary' as const
-        },
-        {
-            type: 'separator' as const,
-        },
-        {
-            label: 'Admin Services',
-            icon: 'i-solar-buildings-3-line-duotone',
-            to: '/services/administrative-services',
             color: 'primary' as const
         },
         {

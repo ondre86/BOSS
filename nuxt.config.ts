@@ -58,6 +58,7 @@ export default defineNuxtConfig({
 		headers: {
 			contentSecurityPolicy: {
 				"script-src": ["'self'", "'nonce-{{nonce}}'", 'https://*.cloudflare.com/', 'https://*.cloudflareinsights.com/', 'https://challenges.cloudflare.com/', 'https://static.cloudflareinsights.com/'],
+				"script-src-attr": ["'self'", "'unsafe-inline'"], // remove later
 				"connect-src": ["'self'", 'https://*.cloudflare.com/', 'https://*.cloudflareinsights.com/', 'https://challenges.cloudflare.com/', 'https://static.cloudflareinsights.com/']
 			}
 		}

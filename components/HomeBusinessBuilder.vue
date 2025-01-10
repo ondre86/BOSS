@@ -1,5 +1,5 @@
 <template>
-    <section class="w-full flex flex-col px-8 relative justify-center lg:items-center text-white py-16 my-12 h-fit bg-slate-800">
+    <section class="w-full flex flex-col px-8 relative justify-center lg:items-center text-white py-24 my-12 h-fit bg-slate-800">
         <div class=" max-w-6xl z-10 flex gap-8 flex-col-reverse lg:grid lg:gap-12 lg:grid-cols-2">
             <div class="max-w-6xl flex flex-col gap-8">
                 <div class="flex flex-col gap-3">

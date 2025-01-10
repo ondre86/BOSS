@@ -1,6 +1,11 @@
 <template>
-    <main class="flex flex-col w-full items-center mt-36 mb-12 gap-12">
-        <section class="flex flex-col gap-6 items-center px-8">
+    <main class="flex flex-col w-full items-center mb-12 gap-12 mt-24 sm:mt-36 overflow-hidden">
+        <LogoIcon 
+            :svg-size="'900px'"
+            class="absolute -z-10 opacity-5 top-24 right-1.5 invisible lg:visible"
+        >
+        </LogoIcon>
+        <section class="w-full max-w-6xl flex flex-col gap-6 px-8 relative">
             <div class="flex flex-col gap-1">
                 <h1 class="text-6xl text-sand-800 dark:text-sand-300 lg:text-8xl">Contact</h1>
             </div>
@@ -21,7 +26,7 @@
                 </UButton>
             </div>
         </section>
-        <section class="w-full flex justify-center px-8">
+        <section class="w-full max-w-6xl flex px-8">
             <UForm 
                 :state="state" 
                 @submit="onSubmit" 

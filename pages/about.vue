@@ -26,11 +26,22 @@
                 <NuxtImg src="/rect.png" class="rounded-md"></NuxtImg>
                 <span class="italic">Talana Anderson, founder, BOSS</span>
                 <LogoIcon 
-                    :svg-size="'300px'"
-                    class="absolute opacity-10 bottom-0 invisible lg:visible"
+                    :svg-size="'450px'"
+                    class="absolute -z-10 opacity-5 -bottom-36 invisible lg:visible"
                     style="left: 50%; transform: translate(-50%);"
                 >
                 </LogoIcon>
+            </div>
+        </section>
+        <section class="px-8 flex flex-col justify-center mt-24 mb-12 gap-6 max-w-6xl">
+            <h2 class="text-4xl font-display text-sand-800 dark:text-sand-300">Gallery</h2>
+            <div class="flex flex-wrap gap-4">
+                <NuxtImg src="/rect.png" class="w-full sm:max-w-72 rounded-md"></NuxtImg>
+                <NuxtImg src="/rect.png" class="w-full sm:max-w-72 rounded-md"></NuxtImg>
+                <NuxtImg src="/rect.png" class="w-full sm:max-w-72 rounded-md"></NuxtImg>
+                <NuxtImg src="/rect.png" class="w-full sm:max-w-72 rounded-md"></NuxtImg>
+                <NuxtImg src="/rect.png" class="w-full sm:max-w-72 rounded-md"></NuxtImg>
+                <NuxtImg src="/rect.png" class="w-full sm:max-w-72 rounded-md"></NuxtImg>
             </div>
         </section>
     </main>
@@ -41,6 +52,8 @@
 </script>
 
 <style scoped lang="sass">
+h2
+    font-family: "Grillmaster"
 img
     width: 100%
     min-height: 400px
