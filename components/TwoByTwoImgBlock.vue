@@ -1,12 +1,12 @@
 <template>
     <div class="grid grid-cols-2 gap-8 max-w-md lg:text-center">
         <span class="text-xl font-normal col-span-2">We're your one-stop shop for:</span>
-        <ImgBlock to="/services/notary" :img="'/rect.png'">Notary</ImgBlock>
-        <ImgBlock to="/services/administrative-services" :img="'/rect.png'">Administrative Services</ImgBlock>
-        <ImgBlock to="/services/tax-prep" :img="'/rect.png'">Tax Prep</ImgBlock>
-        <ImgBlock to="/services/print-copy" :img="'/rect.png'">Print & Copy</ImgBlock>
-        <ImgBlock to="/services/documents" :img="'/rect.png'">Document Services</ImgBlock>
-        <ImgBlock to="/services/pack-ship" :img="'/rect.png'">Pack & Ship</ImgBlock>
+        <ImgBlock to="/services/notary" :img="'/img/notary-sm.webp'" :imgClass="'max-h-36 sepia-10 object-cover'">Notary</ImgBlock>
+        <ImgBlock to="/services/administrative-services" :img="'/img/admin-sm.webp'" :imgClass="'max-h-36 sepia-10 object-cover'">Administrative Services</ImgBlock>
+        <ImgBlock to="/services/tax-prep" :img="'/img/tax-sm.webp'" :imgClass="'max-h-36 sepia-10 object-cover'">Tax Prep</ImgBlock>
+        <ImgBlock to="/services/print-copy" :img="'/img/print-sm.webp'" :imgClass="'max-h-36 sepia-10 object-cover'">Print & Copy</ImgBlock>
+        <ImgBlock to="/services/documents" :img="'/img/document-md.webp'" :imgClass="'max-h-36 sepia-10 object-cover'">Document Services</ImgBlock>
+        <ImgBlock to="/services/pack-ship" :img="'/img/boxes-sm.webp'" :imgClass="'max-h-36 sepia-10 object-cover'">Pack & Ship</ImgBlock>
     </div>
 </template>
 

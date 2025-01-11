@@ -33,7 +33,7 @@
                 </UButton>
             </div>
             <div>
-                <NuxtImg src="/rect.png" class="w-full h-full rounded-lg"></NuxtImg>
+                <NuxtImg src="/img/desk-md.webp" class="w-full max-h-96 object-cover rounded-lg"></NuxtImg>
             </div>
         </div>
     </section>

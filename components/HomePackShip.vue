@@ -6,11 +6,11 @@
                 <span>We make packing and shipping simple, secure, and efficient.</span>
             </div>
             <div class="flex gap-12 md:gap-4 flex-col md:flex-row md:justify-center">
-                <ImgBlock class="md:max-w-96 text-start md:text-center" img="/rect.png" link="/services/pack-ship">
+                <ImgBlock class="md:max-w-96 text-start md:text-center" img="/img/packing-supplies-md.webp" link="/services/pack-ship">
                     <span class="font-semibold text-xl">Packing Supplies</span>
                     Our store is fully stocked with high-quality packing supplies, including boxes, bubble wrap, and tape, to ensure your items are protected during transit.
                 </ImgBlock>
-                <ImgBlock class="md:max-w-96 text-start md:text-center" img="/rect.png" link="https://www.fedex.com/en-us/shipping/fedex-authorized-ship-center.html">
+                <ImgBlock class="md:max-w-96 text-start md:text-center" img="/img/fedex-lg.webp" link="https://www.fedex.com/en-us/shipping/fedex-authorized-ship-center.html">
                     <span class="font-semibold text-xl">Authorized FedEx Shipper</span>
                     As an authorized FedEx shipper, we provide reliable shipping solutions for packages of all sizes, whether domestic or international.
                 </ImgBlock>

@@ -5,13 +5,13 @@
                 <h2 class="text-4xl font-bold">Full Service Business Center</h2>
                 <span>Our comprehensive document services are designed to meet all your personal and professional needs.</span>
             </div>
-            <div class="grid grid-cols-2 md:flex md:flex-wrap md:gap-4 md:justify-center">
-                <ImgBlock class="md:max-w-56" img="/rect.png" link="/services/print-copy"><span class="font-semibold text-xl">Print</span></ImgBlock>
-                <ImgBlock class="md:max-w-56" img="/rect.png" link="/services/print-copy"><span class="font-semibold text-xl">Copy</span></ImgBlock>
-                <ImgBlock class="md:max-w-56" img="/rect.png" link="/services/documents"><span class="font-semibold text-xl">Fax</span></ImgBlock>
-                <ImgBlock class="md:max-w-56" img="/rect.png" link="/services/documents"><span class="font-semibold text-xl">Scan</span></ImgBlock>
-                <ImgBlock class="md:max-w-56" img="/rect.png" link="/services/documents"><span class="font-semibold text-xl">Reformatting</span></ImgBlock>
-                <ImgBlock class="md:max-w-56" img="/rect.png" link="/services/documents"><span class="font-semibold text-xl">Email</span></ImgBlock>
+            <div class="grid grid-cols-2 gap-2 md:flex md:flex-wrap md:gap-4 md:justify-center">
+                <ImgBlock class="md:max-w-56" :imgClass="'h-36 object-cover'" img="/img/print-sm.webp" link="/services/print-copy"><span class="font-semibold text-xl">Print</span></ImgBlock>
+                <ImgBlock class="md:max-w-56" :imgClass="'h-36 object-cover'" img="/img/copy-sm.webp" link="/services/print-copy"><span class="font-semibold text-xl">Copy</span></ImgBlock>
+                <ImgBlock class="md:max-w-56" :imgClass="'h-36 object-cover'" img="/img/fax-sm.webp" link="/services/documents"><span class="font-semibold text-xl">Fax</span></ImgBlock>
+                <ImgBlock class="md:max-w-56" :imgClass="'h-36 object-cover'" img="/img/scan-sm.webp" link="/services/documents"><span class="font-semibold text-xl">Scan</span></ImgBlock>
+                <ImgBlock class="md:max-w-56" :imgClass="'h-36 object-cover'" img="/img/format-sm.webp" link="/services/documents"><span class="font-semibold text-xl">Reformatting</span></ImgBlock>
+                <ImgBlock class="md:max-w-56" :imgClass="'h-36 object-cover'" img="/img/email-md.webp" link="/services/documents"><span class="font-semibold text-xl">Email</span></ImgBlock>
             </div>
             <p class="max-w-3xl mt-6">
                 We offer high-quality printing for documents, presentations, and marketing materials, as well as professional copying for large or small projects. <br><br>

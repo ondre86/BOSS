@@ -1,6 +1,6 @@
 <template>
     <section class="w-full flex flex-col px-8 relative justify-center lg:items-center py-16 mt-6 bg-gray-50 dark:bg-slate-800">
-        <div class="flex flex-col gap-24 sm:flex-row sm:flex-wrap sm:justify-center md:text-center xl:gap-6 xl:grid xl:grid-cols-3">
+        <div class="flex flex-col gap-24 md:flex-row md:flex-wrap md:justify-center md:text-center xl:gap-6 xl:grid xl:grid-cols-3">
             <div class="flex flex-col gap-8 md:items-center">
                 <div class="flex flex-col gap-2">
                     <h2 class="text-4xl font-bold">Notary</h2>
@@ -10,9 +10,9 @@
                     </span>
                 </div>
                 <NuxtLink to="/services/notary">
-                    <NuxtImg src="/rect.png" class="rounded-md w-full xl:max-w-96"></NuxtImg>
+                    <NuxtImg src="/img/notary-md.webp" class="rounded-md w-full md:w-96 md:h-56"></NuxtImg>
                 </NuxtLink>
-                <UButton class="w-fit" size="xl" to="/services/notary">Notary Services</UButton>
+                <UButton class="w-full justify-center sm:w-fit" size="xl" to="/services/notary">Notary Services</UButton>
             </div>
             <div class="flex flex-col gap-8 md:items-center">
                 <div class="flex flex-col gap-2">
@@ -23,9 +23,9 @@
                     </span>
                 </div>
                 <NuxtLink to="/services/administrative-services">
-                    <NuxtImg src="/rect.png" class="rounded-md w-full xl:max-w-96"></NuxtImg>
+                    <NuxtImg src="/img/admin-sm.webp" class="rounded-md w-full md:w-96 md:h-56"></NuxtImg>
                 </NuxtLink>
-                <UButton class="w-fit" size="xl" to="/services/administrative-services">Admin Services</UButton>
+                <UButton class="w-full justify-center sm:w-fit" size="xl" to="/services/administrative-services">Admin Services</UButton>
             </div>
             <div class="flex flex-col gap-8 md:items-center">
                 <div class="flex flex-col gap-2">
@@ -36,9 +36,9 @@
                     </span>
                 </div>
                 <NuxtLink to="/services/tax-prep">
-                    <NuxtImg src="/rect.png" class="rounded-md w-full xl:max-w-96"></NuxtImg>
+                    <NuxtImg src="/img/tax-sm.webp" class="rounded-md w-full md:w-96 md:h-56"></NuxtImg>
                 </NuxtLink>
-                <UButton class="w-fit" size="xl" to="/services/tax-prep">Tax Services</UButton>
+                <UButton class="w-full justify-center sm:w-fit" size="xl" to="/services/tax-prep">Tax Services</UButton>
             </div>
         </div>
     </section>
