@@ -3,50 +3,23 @@
         <section class="w-full flex flex-col px-8 justify-between gap-12 my-3 sm:my-7 max-w-6xl lg:px-12">
             <div class="flex flex-col gap-4 sm:gap-8">
                 <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-8xl text-sand-800 dark:text-sand-300 -ml-1">Document Services</h1>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis et quaerat neque, at perferendis tenetur, quam praesentium, debitis voluptate facilis alias dolor veritatis unde tempora?
-                </p>
             </div>
             <div class="flex flex-col-reverse gap-8 md:grid md:grid-cols-2 md:gap-16">
                 <div class="flex flex-col gap-10 mb-8 relative lg:mb-0">
                     <div class="flex flex-col gap-4">
                         <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display text-sand-800 dark:text-sand-300">Overview:</h2>
                         <p class="max-w-prose">
-                            BOSS provides comprehensive business support services, including professional printing and shipping, copy, fax, and scan solutions, certified notary services, expert tax preparation, and administrative assistance. <br><br>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam qui incidunt soluta ipsa quia esse expedita, vel neque accusamus! Mollitia sed vitae assumenda unde eius. <br><br>
+                            Our document services are designed to simplify your day-to-day tasks and ensure your files are handled with care and precision.  <br><br>
+                            We offer faxing services to send and receive documents securely, along with scanning solutions to convert paper files into high-quality digital formats.  <br><br>
+                            Need to update or adjust your documents? Our reformatting services can organize, resize, or edit your files to meet specific requirements. <br><br>
+                            Additionally, we provide email services, helping you send digital files directly from our location, and assist with file organization and conversion, ensuring your documents are in the right format for any purpose.  <br><br>
                         </p>
-                        <ul class="list-disc list-inside">
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                        </ul>
                     </div>
-                    <div class="flex gap-4">
-                        <UButton
-                            to="/contact"
-                            class="w-fit"
-                            size="xl"
-                        >
-                        Get in Touch
-                        </UButton>
-                    </div>
+
                 </div>
                 <div class="flex flex-col gap-4 text-center relative">
                     <NuxtImg src="/img/document-md.webp" class="rounded-md max-h-96 object-cover"></NuxtImg>
                 </div>
-            </div>
-        </section>
-        <section class="px-8 flex flex-col justify-center mb-12 gap-6 max-w-6xl">
-            <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display text-sand-800 dark:text-sand-300">Features:</h2>
-            <div class="grid grid-cols-2 md:flex md:flex-wrap md:gap-4 md:justify-start">
-                <ImgBlock class="md:max-w-56" img="/img/"><span class="font-semibold text-base">Lorem</span></ImgBlock>
-                <ImgBlock class="md:max-w-56" img="/img/"><span class="font-semibold text-base">Lorem</span></ImgBlock>
-                <ImgBlock class="md:max-w-56" img="/img/"><span class="font-semibold text-base">Lorem</span></ImgBlock>
-                <ImgBlock class="md:max-w-56" img="/img/"><span class="font-semibold text-base">Lorem</span></ImgBlock>
-                <ImgBlock class="md:max-w-56" img="/img/"><span class="font-semibold text-base">Lorem</span></ImgBlock>
-                <ImgBlock class="md:max-w-56" img="/img/"><span class="font-semibold text-base">Lorem</span></ImgBlock>
             </div>
         </section>
         <section class="w-full px-8 flex flex-col justify-center mb-12 gap-6 max-w-6xl">
@@ -70,29 +43,29 @@
 <script setup lang="ts">
 const items = ref([
   {
-    label: 'Lorem Impus',
+    label: 'Can you help me fax documents to an international number?',
     icon: 'i-solar-question-circle-outline',
-    content: 'You have nothing to do, @nuxt/icon will handle it automatically.'
+    content: `Yes, our faxing services support both domestic and international numbers. Just provide the recipient’s fax number and any required country codes, and we’ll handle the rest.`
   },
   {
-    label: 'Lorem Impus',
+    label: 'What file formats can you provide for scanned documents?',
     icon: 'i-solar-question-circle-outline',
-    content: 'Choose a primary and a neutral color from your Tailwind CSS theme.'
+    content: `We can scan documents into popular formats such as PDF, JPEG, or PNG. If you have specific requirements, let us know, and we’ll do our best to accommodate your needs.`
   },
   {
-    label: 'Lorem Impus',
+    label: `What is included in document reformatting services?`,
     icon: 'i-solar-question-circle-outline',
-    content: 'You can customize components by using the `class` / `ui` props or in your app.config.ts.'
+    content: `Our document reformatting services include resizing, reorganizing content, adjusting layouts, converting file types, and editing for clarity or compliance with specific guidelines. This ensures your documents meet your exact specifications.`
   },
   {
-    label: 'Lorem Impus',
+    label: `Can you email documents for me after scanning them?`,
     icon: 'i-solar-question-circle-outline',
-    content: 'You can customize components by using the `class` / `ui` props or in your app.config.ts.'
+    content: `Yes. Once your documents are scanned, we can assist in sending them via email directly from our location. Just provide the recipient’s email address, and we’ll ensure the files are sent securely.`
   },
   {
-    label: 'Lorem Impus',
+    label: `Are your services secure for handling sensitive documents?`,
     icon: 'i-solar-question-circle-outline',
-    content: 'You can customize components by using the `class` / `ui` props or in your app.config.ts.'
+    content: `Yes, we prioritize the security and confidentiality of all documents we handle. Our processes are designed to ensure your sensitive information is protected throughout every service we provide. Your documents are deleted from our systems after processing is completed.`
   },
 ])
 </script>

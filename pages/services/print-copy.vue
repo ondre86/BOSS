@@ -3,50 +3,22 @@
         <section class="w-full flex flex-col px-8 justify-between gap-12 my-3 sm:my-7 max-w-6xl lg:px-12">
             <div class="flex flex-col gap-4 sm:gap-8">
                 <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-8xl text-sand-800 dark:text-sand-300 -ml-1">Printing and Copying</h1>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis et quaerat neque, at perferendis tenetur, quam praesentium, debitis voluptate facilis alias dolor veritatis unde tempora?
-                </p>
             </div>
             <div class="flex flex-col-reverse gap-8 md:grid md:grid-cols-2 md:gap-16">
                 <div class="flex flex-col gap-10 mb-8 relative lg:mb-0">
                     <div class="flex flex-col gap-4">
                         <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display text-sand-800 dark:text-sand-300">Overview:</h2>
                         <p class="max-w-prose">
-                            BOSS provides comprehensive business support services, including professional printing and shipping, copy, fax, and scan solutions, certified notary services, expert tax preparation, and administrative assistance. <br><br>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam qui incidunt soluta ipsa quia esse expedita, vel neque accusamus! Mollitia sed vitae assumenda unde eius. <br><br>
+                            Our printing and copying services deliver high-quality results tailored to your needs.  <br><br>
+                            Whether you’re printing sharp, professional documents, vibrant marketing materials, or detailed presentations, we ensure your projects look their best. We offer a range of options, including black-and-white or full-color printing, various paper sizes and finishes, and customizable layouts. <br><br>
+                            For your copying needs, we provide fast and reliable duplication services, whether it’s a single page or a large batch of documents.  <br><br>
+                            Our advanced equipment guarantees crisp, clear copies every time. We’re here to handle all your printing and copying needs with precision and efficiency. <br><br>
                         </p>
-                        <ul class="list-disc list-inside">
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                        </ul>
-                    </div>
-                    <div class="flex gap-4">
-                        <UButton
-                            to="/contact"
-                            class="w-fit"
-                            size="xl"
-                        >
-                        Get in Touch
-                        </UButton>
                     </div>
                 </div>
                 <div class="flex flex-col gap-4 text-center relative">
                     <NuxtImg src="/img/print-sm.webp" class="rounded-md max-h-96 object-cover"></NuxtImg>
                 </div>
-            </div>
-        </section>
-        <section class="px-8 flex flex-col justify-center mb-12 gap-6 max-w-6xl">
-            <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display text-sand-800 dark:text-sand-300">Features:</h2>
-            <div class="grid grid-cols-2 md:flex md:flex-wrap md:gap-4 md:justify-start">
-                <ImgBlock class="md:max-w-56" img="/rect.png"><span class="font-semibold text-base">Lorem</span></ImgBlock>
-                <ImgBlock class="md:max-w-56" img="/rect.png"><span class="font-semibold text-base">Lorem</span></ImgBlock>
-                <ImgBlock class="md:max-w-56" img="/rect.png"><span class="font-semibold text-base">Lorem</span></ImgBlock>
-                <ImgBlock class="md:max-w-56" img="/rect.png"><span class="font-semibold text-base">Lorem</span></ImgBlock>
-                <ImgBlock class="md:max-w-56" img="/rect.png"><span class="font-semibold text-base">Lorem</span></ImgBlock>
-                <ImgBlock class="md:max-w-56" img="/rect.png"><span class="font-semibold text-base">Lorem</span></ImgBlock>
             </div>
         </section>
         <section class="w-full px-8 flex flex-col justify-center mb-12 gap-6 max-w-6xl">
@@ -70,29 +42,29 @@
 <script setup lang="ts">
 const items = ref([
   {
-    label: 'Lorem Impus',
+    label: `What types of documents can you print or copy?`,
     icon: 'i-solar-question-circle-outline',
-    content: 'You have nothing to do, @nuxt/icon will handle it automatically.'
+    content: `We can handle a wide variety of documents, including business presentations, flyers, posters, brochures, resumes, invitations, and more. If you have a specific project, let us know, and we’ll ensure it’s printed or copied to your specifications.`
   },
   {
-    label: 'Lorem Impus',
+    label: `Do you offer color printing and copying?`,
     icon: 'i-solar-question-circle-outline',
-    content: 'Choose a primary and a neutral color from your Tailwind CSS theme.'
+    content: `Yes, we provide both black-and-white and full-color printing and copying options. You can choose the best option based on your project needs and budget.`
   },
   {
-    label: 'Lorem Impus',
+    label: `Can I bring my own paper or materials for printing?`,
     icon: 'i-solar-question-circle-outline',
-    content: 'You can customize components by using the `class` / `ui` props or in your app.config.ts.'
+    content: `Yes, we can print or copy on your provided materials, as long as they are compatible with our equipment. Contact us to confirm your materials meet the necessary requirements.`
   },
   {
-    label: 'Lorem Impus',
+    label: `What file formats do you accept for printing?`,
     icon: 'i-solar-question-circle-outline',
-    content: 'You can customize components by using the `class` / `ui` props or in your app.config.ts.'
+    content: `We accept popular file formats, including PDF, DOCX, PNG, and JPEG. If your file is in a different format, let us know, and we’ll work with you to ensure it can be printed successfully.`
   },
   {
-    label: 'Lorem Impus',
+    label: `Do you offer bulk printing or copying discounts?`,
     icon: 'i-solar-question-circle-outline',
-    content: 'You can customize components by using the `class` / `ui` props or in your app.config.ts.'
+    content: `Yes, we can provide discounts for large-volume printing and copying orders. Contact us with your project details, and we’ll give you a customized quote.`
   },
 ])
 </script>

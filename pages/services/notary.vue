@@ -3,50 +3,21 @@
         <section class="w-full flex flex-col px-8 justify-between gap-12 my-3 sm:my-7 max-w-6xl lg:px-12">
             <div class="flex flex-col gap-4 sm:gap-8">
                 <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-8xl text-sand-800 dark:text-sand-300 -ml-1">Notary</h1>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis et quaerat neque, at perferendis tenetur, quam praesentium, debitis voluptate facilis alias dolor veritatis unde tempora?
-                </p>
             </div>
             <div class="flex flex-col-reverse gap-8 md:grid md:grid-cols-2 md:gap-16">
                 <div class="flex flex-col gap-10 mb-8 relative lg:mb-0">
                     <div class="flex flex-col gap-4">
                         <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display text-sand-800 dark:text-sand-300">Overview:</h2>
                         <p class="max-w-prose">
-                            BOSS provides comprehensive business support services, including professional printing and shipping, copy, fax, and scan solutions, certified notary services, expert tax preparation, and administrative assistance. <br><br>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam qui incidunt soluta ipsa quia esse expedita, vel neque accusamus! Mollitia sed vitae assumenda unde eius. <br><br>
+                            We offer reliable and professional notary services to meet all your document authentication needs. <br><br> 
+                            Our certified notaries are available to verify signatures, administer oaths, and witness the signing of important documents, ensuring they are legally binding and compliant. <br><br> 
+                            Whether you need assistance with affidavits, contracts, real estate documents, or power of attorney forms, we provide fast and accurate notarization in a secure and convenient setting. Trust us to handle your notarial needs with the utmost attention to detail and confidentiality.
                         </p>
-                        <ul class="list-disc list-inside">
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                        </ul>
-                    </div>
-                    <div class="flex gap-4">
-                        <UButton
-                            to="/contact"
-                            class="w-fit"
-                            size="xl"
-                        >
-                        Get in Touch
-                        </UButton>
                     </div>
                 </div>
                 <div class="flex flex-col gap-4 text-center relative">
                     <NuxtImg src="/img/notary-md.webp" class="rounded-md max-h-96 object-cover"></NuxtImg>
                 </div>
-            </div>
-        </section>
-        <section class="px-8 flex flex-col justify-center mb-12 gap-6 max-w-6xl">
-            <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display text-sand-800 dark:text-sand-300">Features:</h2>
-            <div class="grid grid-cols-2 md:flex md:flex-wrap md:gap-4 md:justify-start">
-                <ImgBlock class="md:max-w-56" img="/rect.png"><span class="font-semibold text-base">Lorem</span></ImgBlock>
-                <ImgBlock class="md:max-w-56" img="/rect.png"><span class="font-semibold text-base">Lorem</span></ImgBlock>
-                <ImgBlock class="md:max-w-56" img="/rect.png"><span class="font-semibold text-base">Lorem</span></ImgBlock>
-                <ImgBlock class="md:max-w-56" img="/rect.png"><span class="font-semibold text-base">Lorem</span></ImgBlock>
-                <ImgBlock class="md:max-w-56" img="/rect.png"><span class="font-semibold text-base">Lorem</span></ImgBlock>
-                <ImgBlock class="md:max-w-56" img="/rect.png"><span class="font-semibold text-base">Lorem</span></ImgBlock>
             </div>
         </section>
         <section class="w-full px-8 flex flex-col justify-center mb-12 gap-6 max-w-6xl">
@@ -70,29 +41,29 @@
 <script setup lang="ts">
 const items = ref([
   {
-    label: 'Lorem Impus',
+    label: 'What types of documents can you notarize?',
     icon: 'i-solar-question-circle-outline',
-    content: 'You have nothing to do, @nuxt/icon will handle it automatically.'
+    content: `We can notarize a wide range of documents, including affidavits, power of attorney forms, real estate documents, contracts, legal agreements, and more. If you're unsure whether your document requires notarization, feel free to ask, and we’ll guide you.`
   },
   {
-    label: 'Lorem Impus',
+    label: 'Do I need to bring identification for notary services?',
     icon: 'i-solar-question-circle-outline',
-    content: 'Choose a primary and a neutral color from your Tailwind CSS theme.'
+    content: `Yes, a valid, government-issued photo ID is required for all notary services. This ensures we can verify your identity and comply with legal requirements. Acceptable forms of ID include driver’s licenses, passports, and state-issued ID cards.`
   },
   {
-    label: 'Lorem Impus',
+    label: 'Can you notarize documents for someone who is not present?',
     icon: 'i-solar-question-circle-outline',
-    content: 'You can customize components by using the `class` / `ui` props or in your app.config.ts.'
+    content: 'No, all signers must be physically present at the time of notarization. This is necessary for the notary to witness the signing and verify the identity of all parties involved.'
   },
   {
-    label: 'Lorem Impus',
+    label: 'Do you provide mobile notary services?',
     icon: 'i-solar-question-circle-outline',
-    content: 'You can customize components by using the `class` / `ui` props or in your app.config.ts.'
+    content: `At this time, we offer in-office notary services. However, if you require special accommodations, contact us, and we’ll do our best to assist you or recommend alternative solutions.`
   },
   {
-    label: 'Lorem Impus',
+    label: 'How much do you charge for notary services?',
     icon: 'i-solar-question-circle-outline',
-    content: 'You can customize components by using the `class` / `ui` props or in your app.config.ts.'
+    content: '$20 for the first page, and $10 for each subsequent page. Businesses may be eligible for special volume pricing. Contact us for more details.'
   },
 ])
 </script>

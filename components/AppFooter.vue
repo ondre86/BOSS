@@ -93,6 +93,7 @@
                 </ul>
             </nav>
             <span class="mt-8 text-sm text-sand-800 dark:text-sand-300">© 2025 BOSS</span>
+            <span class="mt-2 text-sm text-sand-800 dark:text-sand-300">Website developed by <NuxtLink class="underline underline-offset-2 transition-all duration-300 hover:underline-offset-8 font-semibold hover:text-sand-500" to="https://ondre.org" target="_blank">ondre.org</NuxtLink></span>
         </div>
     </footer>
 </template>

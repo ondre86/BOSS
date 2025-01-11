@@ -3,50 +3,22 @@
         <section class="w-full flex flex-col px-8 justify-between gap-12 my-3 sm:my-7 max-w-6xl lg:px-12">
             <div class="flex flex-col gap-4 sm:gap-8">
                 <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-8xl text-sand-800 dark:text-sand-300 -ml-1">Packing and Shipping</h1>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis et quaerat neque, at perferendis tenetur, quam praesentium, debitis voluptate facilis alias dolor veritatis unde tempora?
-                </p>
             </div>
             <div class="flex flex-col-reverse gap-8 md:grid md:grid-cols-2 md:gap-16">
                 <div class="flex flex-col gap-10 mb-8 relative lg:mb-0">
                     <div class="flex flex-col gap-4">
                         <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display text-sand-800 dark:text-sand-300">Overview:</h2>
                         <p class="max-w-prose">
-                            BOSS provides comprehensive business support services, including professional printing and shipping, copy, fax, and scan solutions, certified notary services, expert tax preparation, and administrative assistance. <br><br>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam qui incidunt soluta ipsa quia esse expedita, vel neque accusamus! Mollitia sed vitae assumenda unde eius. <br><br>
+                            We provide convenient and reliable packing and shipping services to meet all your needs.  <br><br>
+                            As an authorized FedEx shipper, we offer trusted domestic and international shipping solutions to ensure your packages arrive safely and on time.  <br><br>
+                            Our store is fully stocked with a wide range of packing supplies, including boxes, bubble wrap, and tape, so your items are securely packed for transit. <br><br>
+                            If you’re shipping documents, gifts, fragile items, or anything in-between, we make the process stress-free and efficient. <br><br>
                         </p>
-                        <ul class="list-disc list-inside">
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                        </ul>
-                    </div>
-                    <div class="flex gap-4">
-                        <UButton
-                            to="/contact"
-                            class="w-fit"
-                            size="xl"
-                        >
-                        Get in Touch
-                        </UButton>
                     </div>
                 </div>
                 <div class="flex flex-col gap-4 text-center relative">
                     <NuxtImg src="/img/packing-supplies-md.webp" class="rounded-md max-h-96 object-cover"></NuxtImg>
                 </div>
-            </div>
-        </section>
-        <section class="px-8 flex flex-col justify-center mb-12 gap-6 max-w-6xl">
-            <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display text-sand-800 dark:text-sand-300">Features:</h2>
-            <div class="grid grid-cols-2 md:flex md:flex-wrap md:gap-4 md:justify-start">
-                <ImgBlock class="md:max-w-56" img="/rect.png"><span class="font-semibold text-base">Lorem</span></ImgBlock>
-                <ImgBlock class="md:max-w-56" img="/rect.png"><span class="font-semibold text-base">Lorem</span></ImgBlock>
-                <ImgBlock class="md:max-w-56" img="/rect.png"><span class="font-semibold text-base">Lorem</span></ImgBlock>
-                <ImgBlock class="md:max-w-56" img="/rect.png"><span class="font-semibold text-base">Lorem</span></ImgBlock>
-                <ImgBlock class="md:max-w-56" img="/rect.png"><span class="font-semibold text-base">Lorem</span></ImgBlock>
-                <ImgBlock class="md:max-w-56" img="/rect.png"><span class="font-semibold text-base">Lorem</span></ImgBlock>
             </div>
         </section>
         <section class="w-full px-8 flex flex-col justify-center mb-12 gap-6 max-w-6xl">
@@ -70,29 +42,39 @@
 <script setup lang="ts">
 const items = ref([
   {
-    label: 'Lorem Impus',
+    label: `What shipping carriers do you work with?`,
     icon: 'i-solar-question-circle-outline',
-    content: 'You have nothing to do, @nuxt/icon will handle it automatically.'
+    content: `We are an authorized FedEx shipper, offering reliable domestic and international shipping services. We will also work with UPS and DHL in the future. If you need help selecting the right shipping option, our team is happy to assist.`
   },
   {
-    label: 'Lorem Impus',
+    label: `Do you provide packing materials and supplies?`,
     icon: 'i-solar-question-circle-outline',
-    content: 'Choose a primary and a neutral color from your Tailwind CSS theme.'
+    content: `Yes, we offer a wide variety of packing supplies, including boxes, bubble wrap, packing peanuts, and tape. Whether you need to pack fragile items or standard goods, we have everything to ensure your package is secure.`
   },
   {
-    label: 'Lorem Impus',
+    label: `Can you pack my items for me?`,
     icon: 'i-solar-question-circle-outline',
-    content: 'You can customize components by using the `class` / `ui` props or in your app.config.ts.'
+    content: `Absolutely! Our team can professionally pack your items to ensure they’re protected during transit. Just bring your items in, and we’ll handle the rest.`
   },
   {
-    label: 'Lorem Impus',
+    label: `Can you ship oversized or fragile items?`,
     icon: 'i-solar-question-circle-outline',
-    content: 'You can customize components by using the `class` / `ui` props or in your app.config.ts.'
+    content: `Yes, we specialize in shipping items of all shapes and sizes, including oversized and fragile items. We’ll help you choose the right packing materials and shipping method to ensure safe delivery.`
   },
   {
-    label: 'Lorem Impus',
+    label: `How can I track my shipment?`,
     icon: 'i-solar-question-circle-outline',
-    content: 'You can customize components by using the `class` / `ui` props or in your app.config.ts.'
+    content: `Once your shipment is processed, we’ll provide you with a tracking number so you can monitor its progress online.`
+  },
+  {
+    label: `What are shipping lockers, and how will they work?`,
+    icon: 'i-solar-question-circle-outline',
+    content: `Our upcoming shipping lockers will provide a secure, self-service option for dropping off and picking up packages. You’ll receive a unique access code to access your locker, making shipping and receiving more convenient for your schedule.`
+  },
+  {
+    label: `When will the shipping lockers be available?`,
+    icon: 'i-solar-question-circle-outline',
+    content: `We’re excited to introduce shipping lockers soon! Stay tuned for updates, or contact us to learn more about their launch.`
   },
 ])
 </script>

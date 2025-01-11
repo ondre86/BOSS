@@ -3,50 +3,22 @@
         <section class="w-full flex flex-col px-8 justify-between gap-12 my-3 sm:my-7 max-w-6xl lg:px-12">
             <div class="flex flex-col gap-4 sm:gap-8">
                 <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-8xl text-sand-800 dark:text-sand-300 -ml-1">Tax Prep</h1>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis et quaerat neque, at perferendis tenetur, quam praesentium, debitis voluptate facilis alias dolor veritatis unde tempora?
-                </p>
             </div>
             <div class="flex flex-col-reverse gap-8 md:grid md:grid-cols-2 md:gap-16">
                 <div class="flex flex-col gap-10 mb-8 relative lg:mb-0">
                     <div class="flex flex-col gap-4">
                         <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display text-sand-800 dark:text-sand-300">Overview:</h2>
                         <p class="max-w-prose">
-                            BOSS provides comprehensive business support services, including professional printing and shipping, copy, fax, and scan solutions, certified notary services, expert tax preparation, and administrative assistance. <br><br>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam qui incidunt soluta ipsa quia esse expedita, vel neque accusamus! Mollitia sed vitae assumenda unde eius. <br><br>
+                            We offer comprehensive tax preparation services designed to simplify the often complex process of filing your taxes.  <br><br>
+                            Our experienced professionals stay up-to-date with the latest tax laws and regulations, ensuring your returns are accurate and compliant.  <br><br>
+                            Whether you’re an individual, small business, or self-employed, we handle everything from gathering necessary documents to preparing your tax forms, maximizing your deductions, and minimizing your liabilities. <br><br>
+                            We provide personalized support, including income tax filing, state and federal returns, business tax filings, and quarterly estimated taxes. Our goal is to make tax season as stress-free as possible while ensuring you receive the most accurate and beneficial outcome. <br><br>
                         </p>
-                        <ul class="list-disc list-inside">
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                        </ul>
-                    </div>
-                    <div class="flex gap-4">
-                        <UButton
-                            to="/contact"
-                            class="w-fit"
-                            size="xl"
-                        >
-                        Get in Touch
-                        </UButton>
                     </div>
                 </div>
                 <div class="flex flex-col gap-4 text-center relative">
                     <NuxtImg src="/img/tax-sm.webp" class="rounded-md max-h-96 object-cover"></NuxtImg>
                 </div>
-            </div>
-        </section>
-        <section class="px-8 flex flex-col justify-center mb-12 gap-6 max-w-6xl">
-            <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display text-sand-800 dark:text-sand-300">Features:</h2>
-            <div class="grid grid-cols-2 md:flex md:flex-wrap md:gap-4 md:justify-start">
-                <ImgBlock class="md:max-w-56" img="/rect.png"><span class="font-semibold text-base">Lorem</span></ImgBlock>
-                <ImgBlock class="md:max-w-56" img="/rect.png"><span class="font-semibold text-base">Lorem</span></ImgBlock>
-                <ImgBlock class="md:max-w-56" img="/rect.png"><span class="font-semibold text-base">Lorem</span></ImgBlock>
-                <ImgBlock class="md:max-w-56" img="/rect.png"><span class="font-semibold text-base">Lorem</span></ImgBlock>
-                <ImgBlock class="md:max-w-56" img="/rect.png"><span class="font-semibold text-base">Lorem</span></ImgBlock>
-                <ImgBlock class="md:max-w-56" img="/rect.png"><span class="font-semibold text-base">Lorem</span></ImgBlock>
             </div>
         </section>
         <section class="w-full px-8 flex flex-col justify-center mb-12 gap-6 max-w-6xl">
@@ -70,29 +42,34 @@
 <script setup lang="ts">
 const items = ref([
   {
-    label: 'Lorem Impus',
+    label: `What types of tax returns do you prepare?`,
     icon: 'i-solar-question-circle-outline',
-    content: 'You have nothing to do, @nuxt/icon will handle it automatically.'
+    content: `We prepare federal, state, and local tax returns for individuals, small businesses, self-employed individuals, and independent contractors. Whether you need help with personal tax filings or business tax filings, we’ve got you covered.`
   },
   {
-    label: 'Lorem Impus',
+    label: `How can I organize my tax documents for preparation?`,
     icon: 'i-solar-question-circle-outline',
-    content: 'Choose a primary and a neutral color from your Tailwind CSS theme.'
+    content: `We recommend gathering all relevant documents, including W-2s, 1099s, receipts, bank statements, and deduction records. We’re happy to guide you through the process and ensure nothing is overlooked.`
   },
   {
-    label: 'Lorem Impus',
+    label: `What if I have overdue or unfiled tax returns?`,
     icon: 'i-solar-question-circle-outline',
-    content: 'You can customize components by using the `class` / `ui` props or in your app.config.ts.'
+    content: `No problem! We can help you navigate overdue returns and get them filed correctly. Our team will work with you to address past-due taxes and create a plan to get everything up-to-date.`
   },
   {
-    label: 'Lorem Impus',
+    label: `How do you ensure my tax return is accurate?`,
     icon: 'i-solar-question-circle-outline',
-    content: 'You can customize components by using the `class` / `ui` props or in your app.config.ts.'
+    content: `We meticulously review all your financial information, cross-check it against tax laws, and use advanced software to ensure your return is accurate and compliant. You’ll receive a thorough review before submitting your final return.`
   },
   {
-    label: 'Lorem Impus',
+    label: `What happens if my tax situation is too complex for your service?`,
     icon: 'i-solar-question-circle-outline',
-    content: 'You can customize components by using the `class` / `ui` props or in your app.config.ts.'
+    content: `In cases where tax returns involve multiple income streams, international taxes, business audits, or specialized deductions, we may refer you to a more seasoned tax expert who specializes in those areas. This ensures you receive the most in-depth and accurate guidance for your situation.`
+  },
+  {
+    label: `How will I know if my tax situation requires a referral?`,
+    icon: 'i-solar-question-circle-outline',
+    content: `Our team will assess your tax return thoroughly. If we determine your situation is outside the scope of our expertise, we’ll promptly inform you and provide recommendations for specialized tax professionals who can assist you.`
   },
 ])
 </script>
