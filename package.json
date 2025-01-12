@@ -26,6 +26,7 @@
   },
   "devDependencies": {
     "@hypernym/nuxt-gsap": "^2.4.3",
+    "@iconify-json/lucide": "^1.2.22",
     "@iconify-json/solar": "^1.2.2",
     "sass": "^1.83.1",
     "typescript": "^5.7.2",
