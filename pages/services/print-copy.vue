@@ -2,12 +2,12 @@
     <main class="flex flex-col gap-12 w-full items-center mb-12 mt-24 sm:mt-36">
         <section class="w-full flex flex-col px-8 justify-between gap-12 my-3 sm:my-7 max-w-6xl lg:px-12">
             <div class="flex flex-col gap-4 sm:gap-8">
-                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-8xl text-sand-800 dark:text-sand-300 -ml-1">Printing and Copying</h1>
+                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-8xl text-sand-800 dark:text-sand-300 -ml-1">Print and Copy</h1>
             </div>
             <div class="flex flex-col-reverse gap-8 md:grid md:grid-cols-2 md:gap-16">
                 <div class="flex flex-col gap-10 mb-8 relative lg:mb-0">
                     <div class="flex flex-col gap-4">
-                        <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display text-sand-800 dark:text-sand-300">Overview:</h2>
+                        <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display text-sand-800 dark:text-sand-300">Overview</h2>
                         <p class="max-w-prose">
                             Our printing and copying services deliver high-quality results tailored to your needs.  <br><br>
                             Whether you’re printing sharp, professional documents, vibrant marketing materials, or detailed presentations, we ensure your projects look their best. We offer a range of options, including black-and-white or full-color printing, various paper sizes and finishes, and customizable layouts. <br><br>
@@ -17,12 +17,12 @@
                     </div>
                 </div>
                 <div class="flex flex-col gap-4 text-center relative">
-                    <NuxtImg src="/img/print-sm.webp" class="rounded-md max-h-96 object-cover"></NuxtImg>
+                    <NuxtImg src="/img/print-sm.webp" alt="printer" class="rounded-md max-h-56 md:max-h-96 object-cover"></NuxtImg>
                 </div>
             </div>
         </section>
         <section class="w-full px-8 flex flex-col justify-center mb-12 gap-6 max-w-6xl">
-            <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display text-sand-800 dark:text-sand-300">Frequently Asked Questions:</h2>
+            <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display text-sand-800 dark:text-sand-300">Frequently Asked Questions</h2>
             <div class="flex flex-col gap-4 w-full max-w-prose">
                 <UAccordion 
                     :items="items" 
@@ -40,6 +40,36 @@
 </template>
 
 <script setup lang="ts">
+useHead({
+    title: 'Print & Copy',
+    meta: [
+        {
+            name: 'description',
+            content: 'BOSS offers affordable printing and copying services directly tailored to your needs. Get documents printed and scanned in black and white or color, in sizes such as A4, letter, legal, and more.'
+        },
+        {
+            name: 'og:description',
+            content: 'BOSS offers affordable printing and copying services directly tailored to your needs. Get documents printed and scanned in black and white or color, in sizes such as A4, letter, legal, and more.'
+        },
+        {
+            name: 'og:title',
+            content: 'Document Services · BOSS'
+        },
+        {
+            name: 'og:image',
+            content: '/og-img.jpg'
+        },
+        {
+            name: 'twitter:card',
+            content: 'summary_large_image'
+        }
+    ],
+    titleTemplate: '%s %seperator %siteName',
+    templateParams: {
+        seperator: '·',
+        siteName: 'BOSS'
+    }
+})
 const items = ref([
   {
     label: `What types of documents can you print or copy?`,

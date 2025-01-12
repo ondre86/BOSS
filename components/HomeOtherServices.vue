@@ -10,9 +10,9 @@
                     </span>
                 </div>
                 <NuxtLink to="/services/notary">
-                    <NuxtImg src="/img/notary-md.webp" class="rounded-md w-full md:w-96 md:h-56"></NuxtImg>
+                    <NuxtImg src="/img/notary-md.webp" alt="person stamping a document on a desk" class="rounded-md w-full md:w-96 md:h-56"></NuxtImg>
                 </NuxtLink>
-                <UButton class="w-full justify-center sm:w-fit" size="xl" to="/services/notary">Notary Services</UButton>
+                <UButton class="w-full justify-center sm:w-fit" size="xl" to="/services/notary">View Notary Services</UButton>
             </div>
             <div class="flex flex-col gap-8 md:items-center">
                 <div class="flex flex-col gap-2">
@@ -23,9 +23,9 @@
                     </span>
                 </div>
                 <NuxtLink to="/services/administrative-services">
-                    <NuxtImg src="/img/admin-sm.webp" class="rounded-md w-full md:w-96 md:h-56"></NuxtImg>
+                    <NuxtImg src="/img/admin-sm.webp" alt="files room with lots of files on shelves" class="rounded-md w-full md:w-96 md:h-56"></NuxtImg>
                 </NuxtLink>
-                <UButton class="w-full justify-center sm:w-fit" size="xl" to="/services/administrative-services">Admin Services</UButton>
+                <UButton class="w-full justify-center sm:w-fit" size="xl" to="/services/administrative-services">View Administrative Services</UButton>
             </div>
             <div class="flex flex-col gap-8 md:items-center">
                 <div class="flex flex-col gap-2">
@@ -36,9 +36,9 @@
                     </span>
                 </div>
                 <NuxtLink to="/services/tax-prep">
-                    <NuxtImg src="/img/tax-sm.webp" class="rounded-md w-full md:w-96 md:h-56"></NuxtImg>
+                    <NuxtImg src="/img/tax-sm.webp" alt="desk with calculator, pens, papers, and binders" class="rounded-md w-full md:w-96 md:h-56"></NuxtImg>
                 </NuxtLink>
-                <UButton class="w-full justify-center sm:w-fit" size="xl" to="/services/tax-prep">Tax Services</UButton>
+                <UButton class="w-full justify-center sm:w-fit" size="xl" to="/services/tax-prep">View Tax Services</UButton>
             </div>
         </div>
     </section>

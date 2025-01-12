@@ -45,7 +45,7 @@
                     <UInput placeholder="5041239090" v-model="state.phone" class="w-full"/>
                 </UFormField>
                 <UFormField label="Service in Question" name="service" required size="xl" color="primary">
-                    <USelect :items="services" v-model="selectValue" class="w-full"></USelect>
+                    <USelect :items="services" v-model="selectValue" trailing-icon="i-solar-alt-arrow-down-linear" class="w-full"></USelect>
                 </UFormField>
                 <UFormField label="Message" name="message" required size="xl">
                     <UTextarea v-model="state.message" class="w-full"/>
@@ -69,6 +69,34 @@ import validator from 'validator'
 import DOMPurify from 'dompurify'
 
 useHead({
+    title: 'Contact',
+    meta: [
+        {
+            name: 'description',
+            content: 'Contact us to learn more about our specialized document, adminstrative, tax prep, packing, shipping, and other services. BOSS is located in New Orleans East at 5790 Crowder Blvd, Suite E.'
+        },
+        {
+            name: 'og:description',
+            content: 'Contact us to learn more about our specialized document, adminstrative, tax prep, packing, shipping, and other services. BOSS is located in New Orleans East at 5790 Crowder Blvd, Suite E.'
+        },
+        {
+            name: 'og:title',
+            content: 'Contact · BOSS'
+        },
+        {
+            name: 'og:image',
+            content: '/og-img.jpg'
+        },
+        {
+            name: 'twitter:card',
+            content: 'summary_large_image'
+        }
+    ],
+    titleTemplate: '%s %seperator %siteName',
+    templateParams: {
+        seperator: '·',
+        siteName: 'BOSS'
+    },
     script: [
         { 
             src: "https://challenges.cloudflare.com/turnstile/v0/api.js",
@@ -89,8 +117,8 @@ const state = reactive({
     phone: '',
     message: ''
 })
-const services = ref([ 'Administrative Services', 'Print & Copy', 'Documents', 'Notary', 'Tax Prep', 'Pack & Ship', 'Other'])
-const selectValue = ref('Administrative Services')
+const services = ref(['Small Business Package', 'Administrative Services', 'Print & Copy', 'Documents', 'Notary', 'Tax Prep', 'Pack & Ship', 'Other'])
+const selectValue = ref('Small Business Package')
 
 const validate = () => {
     const errors = []

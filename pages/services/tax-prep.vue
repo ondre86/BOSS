@@ -7,7 +7,7 @@
             <div class="flex flex-col-reverse gap-8 md:grid md:grid-cols-2 md:gap-16">
                 <div class="flex flex-col gap-10 mb-8 relative lg:mb-0">
                     <div class="flex flex-col gap-4">
-                        <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display text-sand-800 dark:text-sand-300">Overview:</h2>
+                        <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display text-sand-800 dark:text-sand-300">Overview</h2>
                         <p class="max-w-prose">
                             We offer comprehensive tax preparation services designed to simplify the often complex process of filing your taxes.  <br><br>
                             Our experienced professionals stay up-to-date with the latest tax laws and regulations, ensuring your returns are accurate and compliant.  <br><br>
@@ -17,12 +17,12 @@
                     </div>
                 </div>
                 <div class="flex flex-col gap-4 text-center relative">
-                    <NuxtImg src="/img/tax-sm.webp" class="rounded-md max-h-96 object-cover"></NuxtImg>
+                    <NuxtImg src="/img/tax-sm.webp" alt="desk with calculator, pens, papers, and binders" class="rounded-md max-h-56 md:max-h-96 object-cover"></NuxtImg>
                 </div>
             </div>
         </section>
         <section class="w-full px-8 flex flex-col justify-center mb-12 gap-6 max-w-6xl">
-            <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display text-sand-800 dark:text-sand-300">Frequently Asked Questions:</h2>
+            <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display text-sand-800 dark:text-sand-300">Frequently Asked Questions</h2>
             <div class="flex flex-col gap-4 w-full max-w-prose">
                 <UAccordion 
                     :items="items" 
@@ -40,6 +40,36 @@
 </template>
 
 <script setup lang="ts">
+useHead({
+    title: 'Tax Preparation',
+    meta: [
+        {
+            name: 'description',
+            content: 'BOSS offers tax preparation services for individuals and businesses. We can help maximize your deductions and minimize your liabilities to get you the best tax return possible.'
+        },
+        {
+            name: 'og:description',
+            content: 'BOSS offers tax preparation services for individuals and businesses. We can help maximize your deductions and minimize your liabilities to get you the best tax return possible.'
+        },
+        {
+            name: 'og:title',
+            content: 'Packing & Shipping · BOSS'
+        },
+        {
+            name: 'og:image',
+            content: '/og-img.jpg'
+        },
+        {
+            name: 'twitter:card',
+            content: 'summary_large_image'
+        }
+    ],
+    titleTemplate: '%s %seperator %siteName',
+    templateParams: {
+        seperator: '·',
+        siteName: 'BOSS'
+    }
+})
 const items = ref([
   {
     label: `What types of tax returns do you prepare?`,

@@ -26,7 +26,7 @@ useHead({
         },
         {
             name: 'og:image',
-            content: '/og-img.jpg' // MISSING
+            content: '/og-img.jpg'
         },
         {
             name: 'twitter:card',
@@ -36,7 +36,7 @@ useHead({
     titleTemplate: '%siteName',
     templateParams: {
         seperator: '·',
-        siteName: 'BOSS - Business Operations Services & Solutions'
+        siteName: 'BOSS · Business Operations Services & Solutions'
     }
 })
 </script>

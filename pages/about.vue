@@ -6,10 +6,10 @@
                     <h1 class="text-6xl text-sand-800 dark:text-sand-300 lg:text-8xl -ml-1">About</h1>
                 </div>
                 <p class="max-w-prose">
-                    BOSS is dedicated to serving the community with a wide range of essential services designed to make your life and business operations easier. <br><br>
+                    <abbr title="Business Operations Solutions and Services">BOSS</abbr> (Business Operations Solutions and Services) is dedicated to serving New Orleans East with a wide range of essential services designed to make your life and business operations easier. <br><br>
                     Founded in 2024, we specialize in printing and shipping, document services, notary services, tax preparation, and administrative services delivered with precision, care, and a focus on customer satisfaction. <br><br>
-                    The business was founded by an experienced notary public and business operations expert, with years of experience helping individuals and businesses navigate their administrative, financial, and legal needs. <br><br>
-                    With a deep understanding of community needs, our founder, Talana Anderson, created this business to provide affordable and accessible services that empower local residents and entrepreneurs to achieve their goals with confidence.
+                    BOSS was founded by Talana Anderson, a notary public and business operations expert, who has 15+ years of experience helping individuals and businesses navigate their administrative, financial, and legal needs. <br><br>
+                    With a deep understanding of the community and its needs, BOSS was specifically designed to provide affordable and accessible services that empower local residents and entrepreneurs to achieve their goals with confidence.
                 </p>
                 <div class="flex flex-col gap-4">
                     <h2 class="text-xl text-sand-800 dark:text-sand-300">Mission</h2>
@@ -17,11 +17,11 @@
                 </div>
                 <div class="flex flex-col gap-4">
                     <h2 class="text-xl text-sand-800 dark:text-sand-300">Vision</h2>
-                    <p>To become the leading provider of business services in community & be known for exceptional customer service, innovation & a commitment to excellence.</p>
+                    <p>To become the leading provider of business services in community and be known for exceptional customer service, innovation, and a commitment to excellence.</p>
                 </div>
             </div>
             <div class="flex flex-col gap-4 text-center relative">
-                <NuxtImg src="/rect.png" class="rounded-md"></NuxtImg>
+                <NuxtImg src="/rect.png" alt="Talanda Anderson" class="rounded-md"></NuxtImg>
                 <span class="italic">Talana Anderson, founder, BOSS</span>
                 <LogoIcon 
                     :svg-size="'450px'"
@@ -46,7 +46,36 @@
 </template>
 
 <script setup lang="ts">
-
+useHead({
+    title: 'About',
+    meta: [
+        {
+            name: 'description',
+            content: 'BOSS is a full-service business center located in New Orleans East, founded in 2024. We provide a number of administration, document, and shipping services.'
+        },
+        {
+            name: 'og:description',
+            content: 'BOSS is a full-service business center located in New Orleans East, founded in 2024. We provide a number of administration, document, and shipping services.'
+        },
+        {
+            name: 'og:title',
+            content: 'About · BOSS'
+        },
+        {
+            name: 'og:image',
+            content: '/og-img.jpg'
+        },
+        {
+            name: 'twitter:card',
+            content: 'summary_large_image'
+        }
+    ],
+    titleTemplate: '%s %seperator %siteName',
+    templateParams: {
+        seperator: '·',
+        siteName: 'BOSS'
+    }
+})
 </script>
 
 <style scoped lang="sass">

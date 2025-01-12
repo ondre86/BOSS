@@ -1,6 +1,7 @@
 <template>
     <div class="w-fit h-fit" ref="logoWrap">
         <svg viewBox="0 0 587 587" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <title>BOSS logo - 3 concentric diamonds of different sizes</title>
             <path data-animate="path-3" d="M293.539 280.993L314.018 260.508L293.529 240.024L273.049 260.509L293.539 280.993Z" fill="url(#paint3_linear_2_24)" stroke="url(#paint4_linear_2_24)" stroke-width="26.3415" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
             <path data-animate="path-2" d="M293.507 417.663L450.67 260.513L293.513 103.344L136.363 260.507L293.507 417.663ZM382.326 260.507L293.507 349.319L204.694 260.507L293.513 171.681L382.326 260.507Z" fill="url(#paint1_linear_2_24)" stroke="url(#paint2_linear_2_24)" stroke-width="26.3415" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
             <path data-animate="path-1" d="M518.989 260.499L293.49 35L68 260.49L293.499 485.989L518.989 260.499Z" stroke="url(#paint0_linear_2_24)" stroke-width="26.3415" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>

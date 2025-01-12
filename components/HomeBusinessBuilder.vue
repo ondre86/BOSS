@@ -29,11 +29,11 @@
                     to="/contact"
                     :ui="{ base: 'focus:outline-visible' }"
                 >
-                    Get Started Now
+                    Contact Us Now
                 </UButton>
             </div>
             <div>
-                <NuxtImg src="/img/desk-md.webp" class="w-full max-h-96 object-cover rounded-lg"></NuxtImg>
+                <NuxtImg src="/img/desk-md.webp" class="w-full max-h-96 object-cover rounded-lg" :alt="'desk with person typing on laptop, two notebooks, another laptop, a candle, and an eaten muffin'"></NuxtImg>
             </div>
         </div>
     </section>

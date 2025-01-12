@@ -7,15 +7,16 @@
             <div class="flex flex-col-reverse gap-8 md:grid md:grid-cols-2 md:gap-16">
                 <div class="flex flex-col gap-10 relative lg:mb-0">
                     <div class="flex flex-col gap-4">
-                        <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display text-sand-800 dark:text-sand-300">Overview:</h2>
+                        <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display text-sand-800 dark:text-sand-300">Overview</h2>
                         <p class="max-w-prose">
                             Our team specializes in total administrative organization, helping you streamline processes, centralize credentials, and create efficient systems for managing your business documents. <br><br> 
-                            With proficiency in a wide range of administrative tasks, we’re your go-to partner for staying on top of the details that drive success.
+                            With proficiency in a wide range of administrative tasks, we’re your go-to partner for staying on top of the details that drive success. <br><br>
+                            Our services are ideal for new business owners and existing enterprises looking to save time and improve efficiency. Whether you’re launching a startup, expanding your operations, or simply need help staying on top of administrative tasks, our expertise ensures that everything is done correctly and on time.
                         </p>
                     </div>
                 </div>
                 <div class="flex flex-col gap-4 text-center relative">
-                    <NuxtImg src="/img/admin-sm.webp" class="rounded-md max-h-96 object-cover"></NuxtImg>
+                    <NuxtImg src="/img/admin-sm.webp" alt="files room with lots of files on shelves" class="rounded-md max-h-56 md:max-h-96 object-cover"></NuxtImg>
                 </div>
             </div>
         </section>
@@ -29,7 +30,7 @@
             <UButton target="_blank" to="https://ondre.org" size="xl" class="w-fit">Visit ondre.org</UButton>
         </section>
         <section class="w-full px-8 flex flex-col justify-center mb-12 gap-6 max-w-6xl">
-            <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display text-sand-800 dark:text-sand-300">Frequently Asked Questions:</h2>
+            <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display text-sand-800 dark:text-sand-300">Frequently Asked Questions</h2>
             <div class="flex flex-col gap-4 w-full max-w-prose">
                 <UAccordion 
                     :items="items" 
@@ -47,6 +48,36 @@
 </template>
 
 <script setup lang="ts">
+useHead({
+    title: 'Administrative Services',
+    meta: [
+        {
+            name: 'description',
+            content: 'BOSS specializes in total administrative organization, helping you streamline processes, centralize credentials, and create efficient systems for managing your business documents.'
+        },
+        {
+            name: 'og:description',
+            content: 'BOSS specializes in total administrative organization, helping you streamline processes, centralize credentials, and create efficient systems for managing your business documents.'
+        },
+        {
+            name: 'og:title',
+            content: 'Administrative Services · BOSS'
+        },
+        {
+            name: 'og:image',
+            content: '/og-img.jpg'
+        },
+        {
+            name: 'twitter:card',
+            content: 'summary_large_image'
+        }
+    ],
+    titleTemplate: '%s %seperator %siteName',
+    templateParams: {
+        seperator: '·',
+        siteName: 'BOSS'
+    }
+})
 const items = ref([
   {
     label: 'What is included in the Secretary of State filing service?',

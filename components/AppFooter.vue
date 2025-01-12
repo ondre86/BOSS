@@ -28,7 +28,7 @@
                     </NuxtLink>
                 </div>
             </div>
-            <nav class="mt-8">
+            <nav class="mt-8" aria-label="Footer Navigation">
                 <ul class="flex w-fit flex-col gap-4">
                     <li class="text-xl underline underline-offset-2 transition-all duration-300 hover:underline-offset-8 font-semibold text-sand-800 dark:text-sand-300 hover:text-sand-500 w-fit">
                         <NuxtLink

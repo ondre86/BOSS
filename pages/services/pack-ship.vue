@@ -7,22 +7,27 @@
             <div class="flex flex-col-reverse gap-8 md:grid md:grid-cols-2 md:gap-16">
                 <div class="flex flex-col gap-10 mb-8 relative lg:mb-0">
                     <div class="flex flex-col gap-4">
-                        <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display text-sand-800 dark:text-sand-300">Overview:</h2>
+                        <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display text-sand-800 dark:text-sand-300">Overview</h2>
                         <p class="max-w-prose">
                             We provide convenient and reliable packing and shipping services to meet all your needs.  <br><br>
-                            As an authorized FedEx shipper, we offer trusted domestic and international shipping solutions to ensure your packages arrive safely and on time.  <br><br>
                             Our store is fully stocked with a wide range of packing supplies, including boxes, bubble wrap, and tape, so your items are securely packed for transit. <br><br>
                             If you’re shipping documents, gifts, fragile items, or anything in-between, we make the process stress-free and efficient. <br><br>
                         </p>
                     </div>
                 </div>
                 <div class="flex flex-col gap-4 text-center relative">
-                    <NuxtImg src="/img/packing-supplies-md.webp" class="rounded-md max-h-96 object-cover"></NuxtImg>
+                    <NuxtImg src="/img/packing-supplies-md.webp" alt="rows of cardboard boxes with their tops open" class="rounded-md max-h-56 md:max-h-96 object-cover"></NuxtImg>
                 </div>
             </div>
         </section>
         <section class="w-full px-8 flex flex-col justify-center mb-12 gap-6 max-w-6xl">
-            <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display text-sand-800 dark:text-sand-300">Frequently Asked Questions:</h2>
+            <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display text-sand-800 dark:text-sand-300">Authorized Shipping</h2>
+            <ImgBlock class="md:max-w-96 text-start md:text-center" img="/img/fedex-lg.webp" :altText="'FedEx logo on a textured purple background'" link="https://www.fedex.com/en-us/shipping/fedex-authorized-ship-center.html" :newTab="true">
+                <span class="font-semibold text-xl">Authorized FedEx Shipper</span>
+            </ImgBlock>
+        </section>
+        <section class="w-full px-8 flex flex-col justify-center mb-12 gap-6 max-w-6xl">
+            <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display text-sand-800 dark:text-sand-300">Frequently Asked Questions</h2>
             <div class="flex flex-col gap-4 w-full max-w-prose">
                 <UAccordion 
                     :items="items" 
@@ -40,11 +45,41 @@
 </template>
 
 <script setup lang="ts">
+useHead({
+    title: 'Packing & Shipping',
+    meta: [
+        {
+            name: 'description',
+            content: 'Get packing supplies and ship items easily with our dedicated logistics services. As an Authorized FedEx Shipper, you can rest assured that your packages will be handled with care.'
+        },
+        {
+            name: 'og:description',
+            content: 'Get packing supplies and ship items easily with our dedicated logistics services. As an Authorized FedEx Shipper, you can rest assured that your packages will be handled with care.'
+        },
+        {
+            name: 'og:title',
+            content: 'Packing & Shipping · BOSS'
+        },
+        {
+            name: 'og:image',
+            content: '/og-img.jpg'
+        },
+        {
+            name: 'twitter:card',
+            content: 'summary_large_image'
+        }
+    ],
+    titleTemplate: '%s %seperator %siteName',
+    templateParams: {
+        seperator: '·',
+        siteName: 'BOSS'
+    }
+})
 const items = ref([
   {
     label: `What shipping carriers do you work with?`,
     icon: 'i-solar-question-circle-outline',
-    content: `We are an authorized FedEx shipper, offering reliable domestic and international shipping services. We will also work with UPS and DHL in the future. If you need help selecting the right shipping option, our team is happy to assist.`
+    content: `We currently work with USPS and FedEx, as an authorized FedEx Shipper. We will also work with other logistics companies, such as UPS and DHL, in the future. If you need help selecting the right shipping option, our team is happy to assist.`
   },
   {
     label: `Do you provide packing materials and supplies?`,

@@ -19,6 +19,9 @@ main
 	h1
 		font-family: 'Grillmaster'
 
+abbr
+	text-decoration: none
+
 .fade-move,
 .fade-enter-active,
 .fade-leave-active 

@@ -1,6 +1,6 @@
 <template>
     <header class="flex border-b py-4 px-8 justify-center w-full fixed top-0 left-0 z-50 bg-white dark:bg-slate-900">
-        <nav class="flex w-full items-center justify-between max-w-7xl">
+        <nav class="flex w-full items-center justify-between max-w-7xl" aria-label="Main Navigation">
             <NuxtLink to="/">
                 <MainLogo :footer="false" />
             </NuxtLink>
@@ -54,7 +54,7 @@ const open = ref(false)
 const items = ref(
     [
     {
-            label: 'Admin Services',
+            label: 'Administrative Services',
             icon: 'i-solar-buildings-3-line-duotone',
             to: '/services/administrative-services',
             color: 'primary' as const
@@ -137,7 +137,7 @@ const mobileItems = ref(
             onSelect: ()=>{open.value = false}
         },
         {
-            label: 'Admin Services',
+            label: 'Administrative Services',
             icon: 'i-solar-buildings-3-line-duotone',
             to: '/services/administrative-services',
             color: 'primary' as const,
