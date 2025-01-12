@@ -7,7 +7,6 @@ export default defineNuxtConfig({
 		'@nuxt/fonts',
 		'@vueuse/nuxt',
 		'@nuxtjs/seo',
-		'@nuxtjs/turnstile',
 		'@hypernym/nuxt-gsap',
 		'@nuxt/ui'
 	],

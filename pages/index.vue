@@ -17,10 +17,6 @@
 </template>
 
 <script setup lang="ts">
-definePageMeta({
-    layout: 'loading'
-})
-
 useHead({
   title: '',
   meta: [
