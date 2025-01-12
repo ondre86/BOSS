@@ -22,10 +22,10 @@
         </section>
         <HomeBusinessBuilder></HomeBusinessBuilder>
         <section class="w-full px-8 flex flex-col justify-center mb-12 gap-6 max-w-6xl">
-            <h2 class="text-2xl font-semibold text-sand-800 dark:text-sand-300">Need A Website?</h2>
+            <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display font-semibold text-sand-800 dark:text-sand-300">Need A Website?</h2>
             <p>
                 We work with our partners to provide you with all of the administrative services you need. <br>
-                <NuxtLink target="_blank" to="https://ondre.org" class="underline">ondre.org</NuxtLink> offers web development services tailored for startup businesses.
+                <NuxtLink target="_blank" to="https://ondre.org" class="text-sand-800 dark:text-sand-300 hover:text-sand-500 underline underline-offset-2 transition-all duration-300 hover:underline-offset-4">ondre.org</NuxtLink> offers web development services tailored for startup businesses.
             </p>
             <UButton target="_blank" to="https://ondre.org" size="xl" class="w-fit">Visit ondre.org</UButton>
         </section>

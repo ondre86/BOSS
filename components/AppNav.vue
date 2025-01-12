@@ -14,7 +14,7 @@
                     </UDropdownMenu>
                 </li>
                 <li>
-                    <UButton to="/contact" size="lg">Contact Us</UButton>
+                    <UButton to="/contact" size="lg">Contact</UButton>
                 </li>
             </ul>
             <USlideover

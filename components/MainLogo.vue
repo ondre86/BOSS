@@ -2,8 +2,8 @@
     <div class="flex gap-2 w-fit">
         <LogoIcon :svg-size="svgSize" :animated="false"></LogoIcon>
         <div class="flex flex-col items-start justify-end">
-            <span class="title">BOSS</span>
-            <span v-if="width > 640 || width < 640 && footer" class="subtitle">Business Operations Services and Solutions</span>
+            <span class="title text-4xl">BOSS</span>
+            <span v-if="width > 640 || width < 640 && footer" class="subtitle font-display text-xs">Business Operations Services and Solutions</span>
         </div>
     </div>
 </template>
@@ -32,16 +32,14 @@ span
     &.title
         height: fit-content
         font-family: 'Grillmaster'
-        font-size: 36px
-        line-height: 36px
         color: var(--color-sand-800)
         margin-right: 8px
 
     &.subtitle
         height: fit-content
-        font-size: 14px
-        line-height: 14px
         color: var(--color-sand-800)
+        letter-spacing: 0px
+        word-spacing: -2px
         margin: 4px 8px 0 0
 
 @media (prefers-color-scheme:dark)
