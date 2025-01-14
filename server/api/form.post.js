@@ -66,7 +66,7 @@ export default defineEventHandler(async (event)=>{
                 from: config.mailgunSender,
                 to: config.mailgunRecipient,
                 subject: `BOSS Web Inquiry: ${clientRequest.jsonForm.service}`,
-                mailText,
+                text: mailText,
             }),
         });
 
