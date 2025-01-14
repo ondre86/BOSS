@@ -1,6 +1,6 @@
 <template>
     <main class="flex flex-col gap-12 w-full items-center mb-12 mt-24 sm:mt-36">
-        <section class="w-full flex flex-col px-8 justify-between gap-12 my-3 sm:my-7 max-w-6xl lg:px-12">
+        <section class="w-full flex flex-col px-8 justify-between gap-12 my-3 sm:my-7 max-w-6xl">
             <div class="flex flex-col gap-4 sm:gap-8">
                 <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-8xl text-sand-800 dark:text-sand-300 -ml-1">Administrative Services</h1>
             </div>

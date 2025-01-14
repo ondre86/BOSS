@@ -1,6 +1,6 @@
 <template>
     <main class="flex flex-col gap-12 w-full items-center mb-12 mt-24 sm:mt-36">
-        <section class="w-full flex flex-col px-8 justify-between gap-12 my-3 sm:my-7 max-w-6xl lg:px-12">
+        <section class="w-full flex flex-col px-8 justify-between gap-12 my-3 sm:my-7 max-w-6xl">
             <div class="flex flex-col gap-4 sm:gap-8">
                 <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-8xl text-sand-800 dark:text-sand-300 -ml-1">Notary</h1>
             </div>
@@ -88,12 +88,12 @@ const items = ref([
   {
     label: 'Do you provide mobile notary services?',
     icon: 'i-solar-question-circle-outline',
-    content: `At this time, we offer in-office notary services. However, if you require special accommodations, contact us, and we’ll do our best to assist you or recommend alternative solutions.`
+    content: `Yes, we provide mobile notary services in addition to our in-store notary services. Please call, email, or use our contact form to learn more and schedule a mobile notarization.`
   },
   {
     label: 'How much do you charge for notary services?',
     icon: 'i-solar-question-circle-outline',
-    content: '$20 for the first page, and $10 for each subsequent page. Businesses may be eligible for special volume pricing. Contact us for more details.'
+    content: 'In-store notary services are $20 for the first page, and $10 for each subsequent page. Mobile notary prices may vary due to distance traveled and type of documents. Businesses may be eligible for special volume pricing. Contact us for more details regarding pricing.'
   },
 ])
 </script>
