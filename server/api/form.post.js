@@ -73,7 +73,7 @@ export default defineEventHandler(async (event)=>{
         return {
             success: false,
             error: 'Failed to send email',
-            error: error,
+            err: error,
             details: errorDetails,
         }
     }
