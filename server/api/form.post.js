@@ -12,7 +12,6 @@ export default defineEventHandler(async (event)=>{
             response: clientRequest.turnstile,
             secret: config.turnstileSecretKey
         }
-    
         const result = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
             method: 'POST',
             headers: {
@@ -21,7 +20,6 @@ export default defineEventHandler(async (event)=>{
             },
             body: JSON.stringify(cfData),
         })
-
         outcome = await result.json()
     }
 
@@ -32,11 +30,6 @@ export default defineEventHandler(async (event)=>{
         }
     }
 
-    // let mailApiKey = String(config.mailgunApiKey)
-    // let mailSubject = String('BOSS Web Inquiry: '+clientRequest.jsonForm.service)
-    // let mailDomain = String(config.mailgunDomain)
-    // let mailFrom = String(config.mailgunSender)
-    // let mailTo = String(config.mailgunRecipient)
     let mailText = ''
     let value
     for (let key in clientRequest.jsonForm) {
@@ -54,8 +47,7 @@ export default defineEventHandler(async (event)=>{
     })
 
     try {
-        const mailgunApiUrl = `https://api.mailgun.net/v3/${config.mailgunDomain}/messages`;
-
+        const mailgunApiUrl = `https://api.mailgun.net/v3/${config.mailgunDomain}/messages`
         const response = await fetch(mailgunApiUrl, {
             method: 'POST',
             headers: {
@@ -68,19 +60,15 @@ export default defineEventHandler(async (event)=>{
                 subject: `BOSS Web Inquiry: ${clientRequest.jsonForm.service}`,
                 text: mailText,
             }),
-        });
-
+        })
         if (!response.ok) {
-            const errorData = await response.json();
-            console.error('Mailgun error response:', errorData);
-            return { success: false, error: errorData || 'Unknown error' };
+            const errorData = await response.json()
+            return { success: false, error: errorData || 'Unknown error' }
         }
-
-        const result = await response.json();
-        console.log('Mailgun success response:', result);
-        return { success: true, message: 'Email sent successfully', result };
-    } catch (err) {
-        console.error('Error sending email via Mailgun:', err);
-        return { success: false, error: 'Failed to send email', details: err.message || err };
+        const result = await response.json()
+        return { success: true, message: 'Email sent successfully', result }
+    } 
+    catch (err) {
+        return { success: false, error: 'Failed to send email', details: err.message || err }
     }
 })
