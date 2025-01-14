@@ -37,7 +37,7 @@ export default defineEventHandler(async (event)=>{
     for (let key in clientRequest.jsonForm) {
         if (clientRequest.jsonForm.hasOwnProperty(key)) {
             value = clientRequest.jsonForm[key]
-            txt += `${changeCase.capitalCase(key)}: ${value}\n` 
+            txt += `${changeCase.capitalCase(key)}: ${String(value)}\n` 
         }
     }
 
@@ -52,7 +52,7 @@ export default defineEventHandler(async (event)=>{
             from: config.mailgunSender,
             to: [config.mailgunRecipient],
             subject: `BOSS Web Inquiry: ${clientRequest.jsonForm.service}`,
-            text: txt,
+            text: String(txt),
         })
         return { success: true, message: 'Email sent successfully', data: msg }
     } catch (error) {
