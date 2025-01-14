@@ -28,7 +28,7 @@ export default defineEventHandler(async (event)=>{
     if (!outcome || outcome && !outcome.success) {
         return { 
             success: false,
-            cfResult: outcome
+            cfResult: JSON.stringify(outcome)
         }
     }
 
@@ -59,7 +59,7 @@ export default defineEventHandler(async (event)=>{
     catch (err) {
         return { 
             success: false,
-            mgError: err
+            mgError: JSON.stringify(err)
         }
     }
 })
