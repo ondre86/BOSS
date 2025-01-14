@@ -49,8 +49,10 @@ export default defineNuxtConfig({
 			turnstileSiteKey: process.env.NUXT_PUBLIC_TURNSTILE_SITE_KEY
 		},
 		turnstileSecretKey: process.env.NUXT_TURNSTILE_SECRET_KEY,
-		emailUser: process.env.NUXT_EMAIL_USER,
-		emailPass: process.env.NUXT_EMAIL_PASS
+		mailgunApiKey: process.env.NUXT_MAILGUN_API_KEY,
+		mailgunDomain: process.env.NUXT_MAILGUN_DOMAIN,
+		mailgunSender: process.env.NUXT_MAILGUN_SENDER,
+		mailgunRecipient: process.env.NUXT_MAILGUN_RECIPIENT,
 	},
 	security: {
 		headers: {
