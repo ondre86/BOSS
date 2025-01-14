@@ -33,7 +33,7 @@ export default defineEventHandler(async (event)=>{
     }
 
     let mailApiKey = String(config.mailgunApiKey)
-    let mailSubject = String(`BOSS Web Inquiry: ${clientRequest.jsonForm.service}`)
+    let mailSubject = String('BOSS Web Inquiry: '+clientRequest.jsonForm.service)
     let mailDomain = String(config.mailgunDomain)
     let mailFrom = String(config.mailgunSender)
     let mailTo = String(config.mailgunRecipient)
