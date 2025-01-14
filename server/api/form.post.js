@@ -32,11 +32,11 @@ export default defineEventHandler(async (event)=>{
         }
     }
 
-    let mailApiKey = String(config.mailgunApiKey)
-    let mailSubject = String('BOSS Web Inquiry: '+clientRequest.jsonForm.service)
-    let mailDomain = String(config.mailgunDomain)
-    let mailFrom = String(config.mailgunSender)
-    let mailTo = String(config.mailgunRecipient)
+    // let mailApiKey = String(config.mailgunApiKey)
+    // let mailSubject = String('BOSS Web Inquiry: '+clientRequest.jsonForm.service)
+    // let mailDomain = String(config.mailgunDomain)
+    // let mailFrom = String(config.mailgunSender)
+    // let mailTo = String(config.mailgunRecipient)
     let mailText = ''
     let value
     for (let key in clientRequest.jsonForm) {
@@ -50,31 +50,37 @@ export default defineEventHandler(async (event)=>{
     const mailgun = new Mailgun(formData)
     const mg = mailgun.client({
         username: 'api',
-        key: mailApiKey
+        key: config.mailgunApiKey
     })
 
     try {
-        const msg = await mg.messages.create(mailDomain, {
-            from: mailFrom,
-            to: mailTo,
-            subject: mailSubject,
-            text: mailText,
-        })
-        return { success: true, message: 'Email sent successfully', data: msg }
-    } catch (error) {
-        const errorDetails = {
-            status: error.response?.status || 'Unknown',
-            message: error.message || 'Unknown error',
-            details: error.response?.body || null,
+        const mailgunApiUrl = `https://api.mailgun.net/v3/${config.mailgunDomain}/messages`;
+
+        const response = await fetch(mailgunApiUrl, {
+            method: 'POST',
+            headers: {
+                Authorization: `Basic ${Buffer.from(`api:${config.mailgunApiKey}`).toString('base64')}`,
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: new URLSearchParams({
+                from: config.mailgunSender,
+                to: config.mailgunRecipient,
+                subject: `BOSS Web Inquiry: ${clientRequest.jsonForm.service}`,
+                mailText,
+            }),
+        });
+
+        if (!response.ok) {
+            const errorData = await response.json();
+            console.error('Mailgun error response:', errorData);
+            return { success: false, error: errorData || 'Unknown error' };
         }
 
-        console.error('Mailgun error:', errorDetails)
-
-        return {
-            success: false,
-            error: 'Failed to send email',
-            err: error,
-            details: errorDetails,
-        }
+        const result = await response.json();
+        console.log('Mailgun success response:', result);
+        return { success: true, message: 'Email sent successfully', result };
+    } catch (err) {
+        console.error('Error sending email via Mailgun:', err);
+        return { success: false, error: 'Failed to send email', details: err.message || err };
     }
 })
