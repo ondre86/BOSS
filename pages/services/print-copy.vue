@@ -74,27 +74,32 @@ const items = ref([
   {
     label: `What types of documents can you print or copy?`,
     icon: 'i-solar-question-circle-outline',
-    content: `We can handle a wide variety of documents, including business presentations, flyers, posters, brochures, resumes, invitations, and more. If you have a specific project, let us know, and we’ll ensure it’s printed or copied to your specifications.`
+    content: `We can handle a wide variety of documents, including business presentations, flyers, posters, brochures, resumes, invitations, and more. If you have a specific project, let us know, and we’ll ensure it’s printed or copied to your specifications.`,
+    trailingIcon: 'i-solar-alt-arrow-down-linear'
   },
   {
     label: `Do you offer color printing and copying?`,
     icon: 'i-solar-question-circle-outline',
-    content: `Yes, we provide both black-and-white and full-color printing and copying options. You can choose the best option based on your project needs and budget.`
+    content: `Yes, we provide both black-and-white and full-color printing and copying options. You can choose the best option based on your project needs and budget.`,
+    trailingIcon: 'i-solar-alt-arrow-down-linear'
   },
   {
     label: `Can I bring my own paper or materials for printing?`,
     icon: 'i-solar-question-circle-outline',
-    content: `Yes, we can print or copy on your provided materials, as long as they are compatible with our equipment. Contact us to confirm your materials meet the necessary requirements.`
+    content: `Yes, we can print or copy on your provided materials, as long as they are compatible with our equipment. Contact us to confirm your materials meet the necessary requirements.`,
+    trailingIcon: 'i-solar-alt-arrow-down-linear'
   },
   {
     label: `What file formats do you accept for printing?`,
     icon: 'i-solar-question-circle-outline',
-    content: `We accept popular file formats, including PDF, DOCX, PNG, and JPEG. If your file is in a different format, let us know, and we’ll work with you to ensure it can be printed successfully.`
+    content: `We accept popular file formats, including PDF, DOCX, PNG, and JPEG. If your file is in a different format, let us know, and we’ll work with you to ensure it can be printed successfully.`,
+    trailingIcon: 'i-solar-alt-arrow-down-linear'
   },
   {
     label: `Do you offer bulk printing or copying discounts?`,
     icon: 'i-solar-question-circle-outline',
-    content: `Yes, we can provide discounts for large-volume printing and copying orders. Contact us with your project details, and we’ll give you a customized quote.`
+    content: `Yes, we can provide discounts for large-volume printing and copying orders. Contact us with your project details, and we’ll give you a customized quote.`,
+    trailingIcon: 'i-solar-alt-arrow-down-linear'
   },
 ])
 </script>

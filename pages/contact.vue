@@ -45,7 +45,7 @@
                     <UInput placeholder="5041239090" v-model="state.phone" class="w-full"/>
                 </UFormField>
                 <UFormField label="Service in Question" name="service" required size="xl" color="primary">
-                    <USelect :items="services" v-model="selectValue" trailing-icon="i-solar-alt-arrow-down-linear" class="w-full"></USelect>
+                    <USelect :items="services" v-model="selectValue" selected-icon="i-solar-check-circle-linear" trailing-icon="i-solar-alt-arrow-down-linear" class="w-full"></USelect>
                 </UFormField>
                 <UFormField label="Message" name="message" required size="xl">
                     <UTextarea v-model="state.message" class="w-full"/>
@@ -55,6 +55,7 @@
                     ref="submitBtn"
                     block
                     loading-auto
+                    loading-icon="i-solar-refresh-line-duotone"
                     :color="formSuccess == true || formSuccess == null ? 'primary' : 'error'"
                     :label="formSuccess == true || formSuccess == null ? 'Submit' : 'Error'"
                 >
@@ -153,7 +154,11 @@ async function onSubmit() {
             formSuccess.value = response._data.success
 
             if (formSuccess.value == true){
-                toast.add({ title: 'Success!', description: 'The form was submitted successfully.', color: 'primary' })
+                toast.add({ title: 'Success!', 
+                    description: 'The form was submitted successfully.', 
+                    color: 'primary', 
+                    closeIcon: 'i-solar-close-circle-linear'
+                })
 
                 state.name = ''
                 state.email = ''
@@ -162,7 +167,11 @@ async function onSubmit() {
             }
             else if (formSuccess.value == false) {
                 toast.add({ 
-                    title: 'Error', description: `Please reload and try again later.`, color: 'error' })
+                    title: 'Error', 
+                    description: `Please reload and try again later.`, 
+                    color: 'error' ,
+                    closeIcon: 'i-solar-close-circle-linear'
+                })
             }
         },
     })

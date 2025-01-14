@@ -2,7 +2,7 @@
     <main class="flex flex-col gap-12 w-full items-center mb-12 mt-24 sm:mt-36">
         <section class="w-full flex flex-col px-8 justify-between gap-12 my-3 sm:my-7 max-w-6xl">
             <div class="flex flex-col gap-4 sm:gap-8">
-                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-8xl text-sand-800 dark:text-sand-300 -ml-1">Packing and Shipping</h1>
+                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-8xl text-sand-800 dark:text-sand-300 -ml-1">Pack and Ship</h1>
             </div>
             <div class="flex flex-col-reverse gap-8 md:grid md:grid-cols-2 md:gap-16">
                 <div class="flex flex-col gap-10 mb-8 relative lg:mb-0">
@@ -16,14 +16,15 @@
                     </div>
                 </div>
                 <div class="flex flex-col gap-4 text-center relative">
-                    <NuxtImg src="/img/packing-supplies-md.webp" alt="rows of cardboard boxes with their tops open" class="rounded-md max-h-56 md:max-h-96 object-cover"></NuxtImg>
+                    <NuxtImg src="/img/boxes-sm.webp" alt="constructed cardboard boxes with a roll of packing tape" class="rounded-md max-h-56 md:max-h-96 object-cover"></NuxtImg>
                 </div>
             </div>
         </section>
         <section class="w-full px-8 flex flex-col justify-center mb-12 gap-6 max-w-6xl">
-            <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display text-sand-800 dark:text-sand-300">Authorized Shipping</h2>
+            <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display text-sand-800 dark:text-sand-300">Authorized Shipping Services</h2>
             <ImgBlock class="md:max-w-96 text-start md:text-center" img="/img/fedex-lg.webp" :altText="'FedEx logo on a textured purple background'" link="https://www.fedex.com/en-us/shipping/fedex-authorized-ship-center.html" :newTab="true">
                 <span class="font-semibold text-xl">Authorized FedEx Shipper</span>
+                <span>Read More <UIcon name="i-solar-arrow-right-up-linear"></UIcon></span>
             </ImgBlock>
         </section>
         <section class="w-full px-8 flex flex-col justify-center mb-12 gap-6 max-w-6xl">
@@ -79,37 +80,44 @@ const items = ref([
   {
     label: `What shipping carriers do you work with?`,
     icon: 'i-solar-question-circle-outline',
-    content: `We currently work with USPS and FedEx, as an authorized FedEx Shipper. We will also work with other logistics companies, such as UPS and DHL, in the future. If you need help selecting the right shipping option, our team is happy to assist.`
+    content: `We currently work with USPS and FedEx, as an authorized FedEx Shipper. We will also work with other logistics companies, such as UPS and DHL, in the future. If you need help selecting the right shipping option, our team is happy to assist.`,
+    trailingIcon: 'i-solar-alt-arrow-down-linear'
   },
   {
     label: `Do you provide packing materials and supplies?`,
     icon: 'i-solar-question-circle-outline',
-    content: `Yes, we offer a wide variety of packing supplies, including boxes, bubble wrap, packing peanuts, and tape. Whether you need to pack fragile items or standard goods, we have everything to ensure your package is secure.`
+    content: `Yes, we offer a wide variety of packing supplies, including boxes, bubble wrap, packing peanuts, and tape. Whether you need to pack fragile items or standard goods, we have everything to ensure your package is secure.`,
+    trailingIcon: 'i-solar-alt-arrow-down-linear'
   },
   {
     label: `Can you pack my items for me?`,
     icon: 'i-solar-question-circle-outline',
-    content: `Absolutely! Our team can professionally pack your items to ensure they’re protected during transit. Just bring your items in, and we’ll handle the rest.`
+    content: `Absolutely! Our team can professionally pack your items to ensure they’re protected during transit. Just bring your items in, and we’ll handle the rest.`,
+    trailingIcon: 'i-solar-alt-arrow-down-linear'
   },
   {
     label: `Can you ship oversized or fragile items?`,
     icon: 'i-solar-question-circle-outline',
-    content: `Yes, we specialize in shipping items of all shapes and sizes, including oversized and fragile items. We’ll help you choose the right packing materials and shipping method to ensure safe delivery.`
+    content: `Yes, we specialize in shipping items of all shapes and sizes, including oversized and fragile items. We’ll help you choose the right packing materials and shipping method to ensure safe delivery.`,
+    trailingIcon: 'i-solar-alt-arrow-down-linear'
   },
   {
     label: `How can I track my shipment?`,
     icon: 'i-solar-question-circle-outline',
-    content: `Once your shipment is processed, we’ll provide you with a tracking number so you can monitor its progress online.`
+    content: `Once your shipment is processed, we’ll provide you with a tracking number so you can monitor its progress online.`,
+    trailingIcon: 'i-solar-alt-arrow-down-linear'
   },
   {
     label: `What are shipping lockers, and how will they work?`,
     icon: 'i-solar-question-circle-outline',
-    content: `Our upcoming shipping lockers will provide a secure, self-service option for dropping off and picking up packages. You’ll receive a unique access code to access your locker, making shipping and receiving more convenient for your schedule.`
+    content: `Our upcoming shipping lockers will provide a secure, self-service option for dropping off and picking up packages. You’ll receive a unique access code to access your locker, making shipping and receiving more convenient for your schedule.`,
+    trailingIcon: 'i-solar-alt-arrow-down-linear'
   },
   {
     label: `When will the shipping lockers be available?`,
     icon: 'i-solar-question-circle-outline',
-    content: `We’re excited to introduce shipping lockers soon! Stay tuned for updates, or contact us to learn more about their launch.`
+    content: `We’re excited to introduce shipping lockers soon! Stay tuned for updates, or contact us to learn more about their launch.`,
+    trailingIcon: 'i-solar-alt-arrow-down-linear'
   },
 ])
 </script>

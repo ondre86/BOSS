@@ -25,7 +25,7 @@
                 <span class="italic">Talana Anderson, founder, BOSS</span>
                 <LogoIcon 
                     :svg-size="'450px'"
-                    class="absolute -z-10 opacity-5 -bottom-36 invisible lg:visible"
+                    class="absolute -z-10 opacity-5 -bottom-36 hidden lg:block"
                     style="left: 50%; transform: translate(-50%);"
                 >
                 </LogoIcon>
@@ -33,14 +33,18 @@
         </section>
         <section class="px-8 flex flex-col justify-center mt-24 mb-12 gap-6 max-w-6xl">
             <h2 class="text-4xl font-display text-sand-800 dark:text-sand-300">Our Location</h2>
-            <div class="flex flex-wrap gap-4">
+            <p>
+                Our brick and mortar location is coming soon to New Orleans East – located at 5790 Crowder Blvd. Suite E, New Orleans, 70807. <br><br>
+                Please check back later to view photos of the completed building. 
+            </p>
+            <!-- <div class="flex flex-wrap gap-4">
                 <NuxtImg src="/rect.png" class="w-full sm:max-w-72 rounded-md"></NuxtImg>
                 <NuxtImg src="/rect.png" class="w-full sm:max-w-72 rounded-md"></NuxtImg>
                 <NuxtImg src="/rect.png" class="w-full sm:max-w-72 rounded-md"></NuxtImg>
                 <NuxtImg src="/rect.png" class="w-full sm:max-w-72 rounded-md"></NuxtImg>
                 <NuxtImg src="/rect.png" class="w-full sm:max-w-72 rounded-md"></NuxtImg>
                 <NuxtImg src="/rect.png" class="w-full sm:max-w-72 rounded-md"></NuxtImg>
-            </div>
+            </div> -->
         </section>
     </main>
 </template>

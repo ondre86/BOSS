@@ -5,7 +5,7 @@
                 <h2 class="text-4xl font-bold">Full Service Business Center</h2>
                 <span>Our comprehensive document services are designed to meet all your personal and professional needs.</span>
             </div>
-            <div class="grid grid-cols-2 gap-2 md:flex md:flex-wrap md:gap-4 md:justify-center">
+            <div class="grid grid-cols-2 gap-2 md:grid-cols-3 md:mt-2">
                 <ImgBlock class="md:max-w-56" :imgClass="'h-36 object-cover'" img="/img/print-sm.webp" :altText="'printer'" link="/services/print-copy"><span class="font-semibold text-xl">Print</span></ImgBlock>
                 <ImgBlock class="md:max-w-56" :imgClass="'h-36 object-cover'" img="/img/copy-sm.webp" :altText="'a few sheets of carbon copy paper with different colors'" link="/services/print-copy"><span class="font-semibold text-xl">Copy</span></ImgBlock>
                 <ImgBlock class="md:max-w-56" :imgClass="'h-36 object-cover'" img="/img/fax-sm.webp" :altText="'small fax machine with a sheet protruding'" link="/services/documents"><span class="font-semibold text-xl">Fax</span></ImgBlock>

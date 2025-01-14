@@ -74,32 +74,38 @@ const items = ref([
   {
     label: `What types of tax returns do you prepare?`,
     icon: 'i-solar-question-circle-outline',
-    content: `We prepare federal, state, and local tax returns for individuals, small businesses, self-employed individuals, and independent contractors. Whether you need help with personal tax filings or business tax filings, we’ve got you covered.`
+    content: `We prepare federal, state, and local tax returns for individuals, small businesses, self-employed individuals, and independent contractors. Whether you need help with personal tax filings or business tax filings, we’ve got you covered.`,
+    trailingIcon: 'i-solar-alt-arrow-down-linear'
   },
   {
     label: `How can I organize my tax documents for preparation?`,
     icon: 'i-solar-question-circle-outline',
-    content: `We recommend gathering all relevant documents, including W-2s, 1099s, receipts, bank statements, and deduction records. We’re happy to guide you through the process and ensure nothing is overlooked.`
+    content: `We recommend gathering all relevant documents, including W-2s, 1099s, receipts, bank statements, and deduction records. We’re happy to guide you through the process and ensure nothing is overlooked.`,
+    trailingIcon: 'i-solar-alt-arrow-down-linear'
   },
   {
     label: `What if I have overdue or unfiled tax returns?`,
     icon: 'i-solar-question-circle-outline',
-    content: `No problem! We can help you navigate overdue returns and get them filed correctly. Our team will work with you to address past-due taxes and create a plan to get everything up-to-date.`
+    content: `No problem! We can help you navigate overdue returns and get them filed correctly. Our team will work with you to address past-due taxes and create a plan to get everything up-to-date.`,
+    trailingIcon: 'i-solar-alt-arrow-down-linear'
   },
   {
     label: `How do you ensure my tax return is accurate?`,
     icon: 'i-solar-question-circle-outline',
-    content: `We meticulously review all your financial information, cross-check it against tax laws, and use advanced software to ensure your return is accurate and compliant. You’ll receive a thorough review before submitting your final return.`
+    content: `We meticulously review all your financial information, cross-check it against tax laws, and use advanced software to ensure your return is accurate and compliant. You’ll receive a thorough review before submitting your final return.`,
+    trailingIcon: 'i-solar-alt-arrow-down-linear'
   },
   {
     label: `What happens if my tax situation is too complex for your service?`,
     icon: 'i-solar-question-circle-outline',
-    content: `In cases where tax returns involve multiple income streams, international taxes, business audits, or specialized deductions, we may refer you to a more seasoned tax expert who specializes in those areas. This ensures you receive the most in-depth and accurate guidance for your situation.`
+    content: `In cases where tax returns involve multiple income streams, international taxes, business audits, or specialized deductions, we may refer you to a more seasoned tax expert who specializes in those areas. This ensures you receive the most in-depth and accurate guidance for your situation.`,
+    trailingIcon: 'i-solar-alt-arrow-down-linear'
   },
   {
     label: `How will I know if my tax situation requires a referral?`,
     icon: 'i-solar-question-circle-outline',
-    content: `Our team will assess your tax return thoroughly. If we determine your situation is outside the scope of our expertise, we’ll promptly inform you and provide recommendations for specialized tax professionals who can assist you.`
+    content: `Our team will assess your tax return thoroughly. If we determine your situation is outside the scope of our expertise, we’ll promptly inform you and provide recommendations for specialized tax professionals who can assist you.`,
+    trailingIcon: 'i-solar-alt-arrow-down-linear'
   },
 ])
 </script>

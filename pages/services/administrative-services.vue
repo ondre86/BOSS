@@ -82,27 +82,32 @@ const items = ref([
   {
     label: 'What is included in the Secretary of State filing service?',
     icon: 'i-solar-question-circle-outline',
-    content: `We handle all aspects of your Secretary of State filing, including preparing and submitting your business registration documents, verifying compliance with state requirements, and tracking the status of your application until approval. Whether you're forming an LLC, corporation, or another entity, we ensure the process is seamless and accurate.`
+    content: `We handle all aspects of your Secretary of State filing, including preparing and submitting your business registration documents, verifying compliance with state requirements, and tracking the status of your application until approval. Whether you're forming an LLC, corporation, or another entity, we ensure the process is seamless and accurate.`,
+    trailingIcon: 'i-solar-alt-arrow-down-linear'
   },
   {
     label: 'How does the IRS EIN filing service work?',
     icon: 'i-solar-question-circle-outline',
-    content: `Our IRS EIN filing service assists you in obtaining your Employer Identification Number (EIN), which is essential for opening business bank accounts, filing taxes, and hiring employees. We’ll gather the necessary information, complete the application, and submit it directly to the IRS, ensuring you receive your EIN promptly.`
+    content: `Our IRS EIN filing service assists you in obtaining your Employer Identification Number (EIN), which is essential for opening business bank accounts, filing taxes, and hiring employees. We’ll gather the necessary information, complete the application, and submit it directly to the IRS, ensuring you receive your EIN promptly.`,
+    trailingIcon: 'i-solar-alt-arrow-down-linear'
   },
   {
     label: `How can your Administrative Services benefit my business?`,
     icon: 'i-solar-question-circle-outline',
-    content: `Our Administrative Services involve streamlining and organizing all your administrative processes, including document storage, filing systems, and workflows. This service helps improve efficiency, reduce errors, and save time, so you can focus on growing your business rather than managing tedious details.`
+    content: `Our Administrative Services involve streamlining and organizing all your administrative processes, including document storage, filing systems, and workflows. This service helps improve efficiency, reduce errors, and save time, so you can focus on growing your business rather than managing tedious details.`,
+    trailingIcon: 'i-solar-alt-arrow-down-linear'
   },
   {
     label: `What is Credential Centralization, and why is it important?`,
     icon: 'i-solar-question-circle-outline',
-    content: `Credential Centralization involves consolidating all your business accounts, logins, licenses, and certifications into one secure and accessible system. This service eliminates the hassle of managing scattered credentials and ensures that your critical information is always up to date and easy to locate.`
+    content: `Credential Centralization involves consolidating all your business accounts, logins, licenses, and certifications into one secure and accessible system. This service eliminates the hassle of managing scattered credentials and ensures that your critical information is always up to date and easy to locate.`,
+    trailingIcon: 'i-solar-alt-arrow-down-linear'
   },
   {
     label: `Can you assist with other administrative tasks outside of the listed services?`,
     icon: 'i-solar-question-circle-outline',
-    content: `Yes! We are proficient in a variety of administrative tasks and can customize our services to meet your unique needs. Whether you require help with data entry, compliance tracking, or specialized business paperwork, we’re here to provide expert support tailored to your goals. We also work with other businesses to provide referrals for other services, such as website development.`
+    content: `Yes! We are proficient in a variety of administrative tasks and can customize our services to meet your unique needs. Whether you require help with data entry, compliance tracking, or specialized business paperwork, we’re here to provide expert support tailored to your goals. We also work with other businesses to provide referrals for other services, such as website development.`,
+    trailingIcon: 'i-solar-alt-arrow-down-linear'
   },
 ])
 </script>

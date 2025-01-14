@@ -3,7 +3,7 @@
         <div class=" max-w-6xl z-10 flex gap-8 flex-col-reverse lg:grid lg:gap-12 lg:grid-cols-2">
             <div class="max-w-6xl flex flex-col gap-8">
                 <div class="flex flex-col gap-3">
-                    <h2 class="text-3xl font-bold">Building your own business?</h2>
+                    <h2 class="text-3xl font-bold">Want to build your own business?</h2>
                     <p class="max-w-prose">
                         Building your own business can be empowering, but there are necessary you need to take to stay compliant and above board.
                         Our “Small Business Package” takes care of all of those pesky administrative tasks so you can focus on the success of your new business.
@@ -29,7 +29,7 @@
                     to="/contact"
                     :ui="{ base: 'focus:outline-visible' }"
                 >
-                    Contact Us Now
+                    Help Build My Business
                 </UButton>
             </div>
             <div>

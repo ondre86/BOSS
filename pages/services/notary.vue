@@ -73,27 +73,32 @@ const items = ref([
   {
     label: 'What types of documents can you notarize?',
     icon: 'i-solar-question-circle-outline',
-    content: `We can notarize a wide range of documents, including affidavits, power of attorney forms, real estate documents, contracts, legal agreements, and more. If you're unsure whether your document requires notarization, feel free to ask, and we’ll guide you.`
+    content: `We can notarize a wide range of documents, including affidavits, power of attorney forms, real estate documents, contracts, legal agreements, and more. If you're unsure whether your document requires notarization, feel free to ask, and we’ll guide you.`,
+    trailingIcon: 'i-solar-alt-arrow-down-linear'
   },
   {
     label: 'Do I need to bring identification for notary services?',
     icon: 'i-solar-question-circle-outline',
-    content: `Yes, a valid, government-issued photo ID is required for all notary services. This ensures we can verify your identity and comply with legal requirements. Acceptable forms of ID include driver’s licenses, passports, and state-issued ID cards.`
+    content: `Yes, a valid, government-issued photo ID is required for all notary services. This ensures we can verify your identity and comply with legal requirements. Acceptable forms of ID include driver’s licenses, passports, and state-issued ID cards.`,
+    trailingIcon: 'i-solar-alt-arrow-down-linear'
   },
   {
     label: 'Can you notarize documents for someone who is not present?',
     icon: 'i-solar-question-circle-outline',
-    content: 'No, all signers must be physically present at the time of notarization. This is necessary for the notary to witness the signing and verify the identity of all parties involved.'
+    content: 'No, all signers must be physically present at the time of notarization. This is necessary for the notary to witness the signing and verify the identity of all parties involved.',
+    trailingIcon: 'i-solar-alt-arrow-down-linear'
   },
   {
     label: 'Do you provide mobile notary services?',
     icon: 'i-solar-question-circle-outline',
-    content: `Yes, we provide mobile notary services in addition to our in-store notary services. Please call, email, or use our contact form to learn more and schedule a mobile notarization.`
+    content: `Yes, we provide mobile notary services in addition to our in-store notary services. Please call, email, or use our contact form to learn more and schedule a mobile notarization.`,
+    trailingIcon: 'i-solar-alt-arrow-down-linear'
   },
   {
     label: 'How much do you charge for notary services?',
     icon: 'i-solar-question-circle-outline',
-    content: 'In-store notary services are $20 for the first page, and $10 for each subsequent page. Mobile notary prices may vary due to distance traveled and type of documents. Businesses may be eligible for special volume pricing. Contact us for more details regarding pricing.'
+    content: 'In-store notary services are $20 for the first page, and $10 for each subsequent page. Mobile notary prices may vary due to distance traveled and type of documents. Businesses may be eligible for special volume pricing. Contact us for more details regarding pricing.',
+    trailingIcon: 'i-solar-alt-arrow-down-linear'
   },
 ])
 </script>

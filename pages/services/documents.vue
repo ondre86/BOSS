@@ -75,27 +75,32 @@ const items = ref([
   {
     label: 'Can you help me fax documents to an international number?',
     icon: 'i-solar-question-circle-outline',
-    content: `Yes, our faxing services support both domestic and international numbers. Just provide the recipient’s fax number and any required country codes, and we’ll handle the rest.`
+    content: `Yes, our faxing services support both domestic and international numbers. Just provide the recipient’s fax number and any required country codes, and we’ll handle the rest.`,
+    trailingIcon: 'i-solar-alt-arrow-down-linear'
   },
   {
     label: 'What file formats can you provide for scanned documents?',
     icon: 'i-solar-question-circle-outline',
-    content: `We can scan documents into popular formats such as PDF, JPEG, or PNG. If you have specific requirements, let us know, and we’ll do our best to accommodate your needs.`
+    content: `We can scan documents into popular formats such as PDF, JPEG, or PNG. If you have specific requirements, let us know, and we’ll do our best to accommodate your needs.`,
+    trailingIcon: 'i-solar-alt-arrow-down-linear'
   },
   {
     label: `What is included in document reformatting services?`,
     icon: 'i-solar-question-circle-outline',
-    content: `Our document reformatting services include resizing, reorganizing content, adjusting layouts, converting file types, and editing for clarity or compliance with specific guidelines. This ensures your documents meet your exact specifications.`
+    content: `Our document reformatting services include resizing, reorganizing content, adjusting layouts, converting file types, and editing for clarity or compliance with specific guidelines. This ensures your documents meet your exact specifications.`,
+    trailingIcon: 'i-solar-alt-arrow-down-linear'
   },
   {
     label: `Can you email documents for me after scanning them?`,
     icon: 'i-solar-question-circle-outline',
-    content: `Yes. Once your documents are scanned, we can assist in sending them via email directly from our location. Just provide the recipient’s email address, and we’ll ensure the files are sent securely.`
+    content: `Yes. Once your documents are scanned, we can assist in sending them via email directly from our location. Just provide the recipient’s email address, and we’ll ensure the files are sent securely.`,
+    trailingIcon: 'i-solar-alt-arrow-down-linear'
   },
   {
     label: `Are your services secure for handling sensitive documents?`,
     icon: 'i-solar-question-circle-outline',
-    content: `Yes, we prioritize the security and confidentiality of all documents we handle. Our processes are designed to ensure your sensitive information is protected throughout every service we provide. Your documents are deleted from our systems after processing is completed.`
+    content: `Yes, we prioritize the security and confidentiality of all documents we handle. Our processes are designed to ensure your sensitive information is protected throughout every service we provide. Your documents are deleted from our systems after processing is completed.`,
+    trailingIcon: 'i-solar-alt-arrow-down-linear'
   },
 ])
 </script>
