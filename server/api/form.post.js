@@ -12,8 +12,8 @@ export default defineEventHandler(async (event)=>{
         port: 465,
         secure: true,
         auth: {
-            user: process.env.NUXT_EMAIL_USER,
-            pass: process.env.NUXT_EMAIL_PASS
+            user: config.emailUser,
+            pass: config.emailPass
         }
     })
 
