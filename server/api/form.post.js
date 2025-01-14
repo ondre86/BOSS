@@ -48,7 +48,7 @@ export default defineEventHandler(async (event)=>{
     }
 
     mailOptions.text = text
-    mailOptions.subject = 'New Website Form'
+    mailOptions.subject = `New Website Form: ${clientRequest.jsonForm.service}`
 
     transporter.sendMail(mailOptions, function(error, info){
         if (error) return { success: false }

@@ -74,11 +74,11 @@ useHead({
     meta: [
         {
             name: 'description',
-            content: 'Contact us to learn more about our specialized document, adminstrative, tax prep, packing, shipping, and other services. BOSS is located in New Orleans East at 5790 Crowder Blvd, Suite E.'
+            content: 'Contact us to learn more about our specialized document, adminstrative, tax prep, packing, shipping, and notary services. BOSS is located in New Orleans East at 5790 Crowder Blvd, Suite E.'
         },
         {
             name: 'og:description',
-            content: 'Contact us to learn more about our specialized document, adminstrative, tax prep, packing, shipping, and other services. BOSS is located in New Orleans East at 5790 Crowder Blvd, Suite E.'
+            content: 'Contact us to learn more about our specialized document, adminstrative, tax prep, packing, shipping, and notary services. BOSS is located in New Orleans East at 5790 Crowder Blvd, Suite E.'
         },
         {
             name: 'og:title',
@@ -97,15 +97,7 @@ useHead({
     templateParams: {
         seperator: '·',
         siteName: 'BOSS'
-    },
-    script: [
-        { 
-            src: "https://challenges.cloudflare.com/turnstile/v0/api.js",
-            async: true,
-            defer: true,
-            type: 'text/javascript'
-        },
-    ]
+    }
 })
 const config = useRuntimeConfig()
 
@@ -118,7 +110,7 @@ const state = reactive({
     phone: '',
     message: ''
 })
-const services = ref(['Small Business Package', 'Administrative Services', 'Print & Copy', 'Documents', 'Notary', 'Tax Prep', 'Pack & Ship', 'Other'])
+const services = ref(['Small Business Package', 'Administrative Services', 'Print & Copy', 'Document Services', 'Notary', 'Tax Prep', 'Pack & Ship', 'Other'])
 const selectValue = ref('Small Business Package')
 
 const validate = () => {
@@ -176,6 +168,19 @@ async function onSubmit() {
         },
     })
 }
+
+onMounted(() => {
+    useHead({
+        script: [
+        { 
+            src: "https://challenges.cloudflare.com/turnstile/v0/api.js",
+            async: true,
+            defer: true,
+            type: 'text/javascript'
+        },
+    ]
+    })
+})
 </script>
 
 <style scoped lang="sass">
