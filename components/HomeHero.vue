@@ -3,7 +3,7 @@
         <div class="flex flex-col gap-4 mb-8 relative lg:mb-0">
             <div class="flex flex-col gap-1">
                 <h1 class="text-6xl text-sand-800 dark:text-sand-300 lg:text-8xl -ml-1">BOSS</h1>
-                <span class="font-display text-sand-800 dark:text-sand-300">Business Operations Solutions and Services</span>
+                <span class="font-display text-sand-800 dark:text-sand-300">Business Operations Services and Solutions</span>
             </div>
             <p class="max-w-prose mt-4">
                 <abbr title="Business Operations Solutions and Services">BOSS</abbr> provides comprehensive business support services, including professional printing and shipping, copy, fax, and scan solutions, certified notary services, expert tax preparation, and administrative assistance. <br><br>
