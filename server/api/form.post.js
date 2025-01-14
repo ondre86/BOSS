@@ -25,7 +25,12 @@ export default defineEventHandler(async (event)=>{
         outcome = await result.json()
     }
 
-    if (!outcome || outcome && !outcome.success) return { success: false }
+    if (!outcome || outcome && !outcome.success) {
+        return { 
+            success: false,
+            cfResult: outcome
+        }
+    }
 
     let text = ''
     let value
@@ -52,6 +57,9 @@ export default defineEventHandler(async (event)=>{
         return { success: true }
     } 
     catch (err) {
-        return { success: false }
+        return { 
+            success: false,
+            mgError: err
+        }
     }
 })
