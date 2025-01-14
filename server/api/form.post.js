@@ -8,14 +8,20 @@ export default defineEventHandler(async (event)=>{
     let outcome
 
     if (clientRequest.turnstile){
-        const cfData = new FormData()
-        cfData.append('response', clientRequest.turnstile)
-        cfData.append('secret', config.turnstileSecretKey)
+        const cfData = {
+            response: clientRequest.turnstile,
+            secret: config.turnstileSecretKey
+        }
     
         const result = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
             method: 'POST',
-            body: cfData,
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify(cfData),
         })
+
         outcome = await result.json()
     }
 
