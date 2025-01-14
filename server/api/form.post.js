@@ -32,48 +32,33 @@ export default defineEventHandler(async (event)=>{
         }
     }
 
-    let txt = ''
+    let mailApiKey = String(config.mailgunApiKey)
+    let mailSubject = String(`BOSS Web Inquiry: ${clientRequest.jsonForm.service}`)
+    let mailDomain = String(config.mailgunDomain)
+    let mailFrom = String(config.mailgunSender)
+    let mailTo = String(config.mailgunRecipient)
+    let mailText = ''
     let value
     for (let key in clientRequest.jsonForm) {
         if (clientRequest.jsonForm.hasOwnProperty(key)) {
             value = clientRequest.jsonForm[key]
-            txt += `${changeCase.capitalCase(key)}: ${String(value)}\n` 
+            mailText += `${changeCase.capitalCase(key)}: ${String(value)}\n` 
         }
     }
-
-    console.log({
-        cfResult: outcome,
-        mailBody: txt,
-        mailKey: config.mailgunApiKey,
-        mailDomain: config.mailgunDomain,
-        mailSender: config.mailgunSender,
-        mailRecipient: config.mailgunRecipient,
-        mailSubject: clientRequest.jsonForm.service
-    })
-    console.log({
-        cfResultType: typeof outcome,
-        mailBodyType: typeof txt,
-        mailKeyType: typeof config.mailgunApiKey,
-        mailDomainType: typeof config.mailgunDomain,
-        mailSenderType: typeof config.mailgunSender,
-        mailRecipientType: typeof config.mailgunRecipient,
-        mailSubjectType: typeof clientRequest.jsonForm.service
-    })
+    mailText = String(mailText)
 
     const mailgun = new Mailgun(formData)
     const mg = mailgun.client({
         username: 'api',
-        key: config.mailgunApiKey
+        key: mailApiKey
     })
 
-    let subject = `BOSS Web Inquiry: ${clientRequest.jsonForm.service}`
-
     try {
-        const msg = await mg.messages.create(config.mailgunDomain, {
-            from: config.mailgunSender,
-            to: config.mailgunRecipient,
-            subject: subject,
-            text: String(txt),
+        const msg = await mg.messages.create(mailDomain, {
+            from: mailFrom,
+            to: mailTo,
+            subject: mailSubject,
+            text: mailText,
         })
         return { success: true, message: 'Email sent successfully', data: msg }
     } catch (error) {
