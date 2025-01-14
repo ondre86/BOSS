@@ -28,7 +28,7 @@ export default defineEventHandler(async (event)=>{
     if (!outcome || outcome && !outcome.success) {
         return { 
             success: false,
-            cfResult: JSON.stringify(outcome)
+            cfResult: outcome
         }
     }
 
@@ -54,12 +54,20 @@ export default defineEventHandler(async (event)=>{
             subject: `BOSS Web Inquiry: ${clientRequest.jsonForm.service}`,
             text: txt,
         })
-        return { success: true }
-    } 
-    catch (err) {
-        return { 
+        return { success: true, message: 'Email sent successfully', data: msg }
+    } catch (error) {
+        const errorDetails = {
+            status: error.response?.status || 'Unknown',
+            message: error.message || 'Unknown error',
+            details: error.response?.body || null,
+        }
+
+        console.error('Mailgun error:', errorDetails)
+
+        return {
             success: false,
-            mgError: JSON.stringify(err)
+            error: 'Failed to send email',
+            details: errorDetails,
         }
     }
 })
