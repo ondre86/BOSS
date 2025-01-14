@@ -41,17 +41,38 @@ export default defineEventHandler(async (event)=>{
         }
     }
 
+    console.log({
+        cfResult: outcome,
+        mailBody: txt,
+        mailKey: config.mailgunApiKey,
+        mailDomain: config.mailgunDomain,
+        mailSender: config.mailgunSender,
+        mailRecipient: config.mailgunRecipient,
+        mailSubject: clientRequest.jsonForm.service
+    })
+    console.log({
+        cfResultType: typeof outcome,
+        mailBodyType: typeof txt,
+        mailKeyType: typeof config.mailgunApiKey,
+        mailDomainType: typeof config.mailgunDomain,
+        mailSenderType: typeof config.mailgunSender,
+        mailRecipientType: typeof config.mailgunRecipient,
+        mailSubjectType: typeof clientRequest.jsonForm.service
+    })
+
     const mailgun = new Mailgun(formData)
     const mg = mailgun.client({
         username: 'api',
         key: config.mailgunApiKey
     })
 
+    let subject = `BOSS Web Inquiry: ${clientRequest.jsonForm.service}`
+
     try {
         const msg = await mg.messages.create(config.mailgunDomain, {
             from: config.mailgunSender,
-            to: [config.mailgunRecipient],
-            subject: `BOSS Web Inquiry: ${clientRequest.jsonForm.service}`,
+            to: config.mailgunRecipient,
+            subject: subject,
             text: String(txt),
         })
         return { success: true, message: 'Email sent successfully', data: msg }
