@@ -27,7 +27,7 @@
                 v-model:open="open"
                 :ui="{ title: 'text-xl'}"
             >
-                <UButton class="md:hidden" icon="i-solar-hamburger-menu-linear"></UButton>
+                <UButton class="md:hidden" icon="i-solar-hamburger-menu-linear" aria-label="Open Mobile Navigation"></UButton>
                 
                 <template #body>
                     <UNavigationMenu 

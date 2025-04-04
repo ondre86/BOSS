@@ -8,7 +8,7 @@
                 <p class="max-w-prose">
                     <abbr title="Business Operations Solutions and Services">BOSS</abbr> (Business Operations Solutions and Services) is dedicated to serving New Orleans East with a wide range of essential services designed to make your life and business operations easier. <br><br>
                     Founded in 2024, we specialize in printing and shipping, document services, notary services, tax preparation, and administrative services delivered with precision, care, and a focus on customer satisfaction. <br><br>
-                    BOSS was founded by Talana Anderson, a notary public and business operations expert, who has 15+ years of experience helping individuals and businesses navigate their administrative, financial, and legal needs. <br><br>
+                    BOSS is led by Talana Anderson, a notary public and business operations expert, who has 15+ years of experience helping individuals and businesses navigate their administrative, financial, and legal needs. <br><br>
                     With a deep understanding of the community and its needs, BOSS was specifically designed to provide affordable and accessible services that empower local residents and entrepreneurs to achieve their goals with confidence.
                 </p>
                 <div class="flex flex-col gap-4">
@@ -31,11 +31,11 @@
                 </LogoIcon>
             </div>
         </section>
-        <section class="px-8 flex flex-col justify-center mt-24 mb-12 gap-6 max-w-6xl">
+        <section class="w-full px-8 flex flex-col justify-center mt-24 mb-12 gap-6 max-w-6xl">
             <h2 class="text-4xl font-display text-sand-800 dark:text-sand-300">Our Location</h2>
             <p>
-                Our brick and mortar location is coming soon to New Orleans East – located at 5790 Crowder Blvd. Suite E, New Orleans, 70807. <br><br>
-                Please check back later to view photos of the completed building. 
+                Our brick and mortar location is coming soon to New Orleans East – located at 5790 Crowder Blvd. Suite E, New Orleans, 70127. <br>
+                Please check back later to view photos. 
             </p>
             <!-- <div class="flex flex-wrap gap-4">
                 <NuxtImg src="/rect.png" class="w-full sm:max-w-72 rounded-md"></NuxtImg>

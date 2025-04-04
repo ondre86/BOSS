@@ -12,13 +12,13 @@
                         to="https://www.google.com/maps/place/5790+Crowder+Blvd+Ste+E,+New+Orleans,+LA+70127/@30.0281244,-89.9967336,17z/data=!3m1!4b1!4m6!3m5!1s0x889e027bb876935b:0x97ca628b597ff069!8m2!3d30.0281244!4d-89.9941587!16s%2Fg%2F11scv0fd7b?entry=ttu&g_ep=EgoyMDI1MDEwMi4wIKXMDSoASAFQAw%3D%3D"
                     >
                         5790 Crowder Blvd. Suite E<br>
-                        New Orleans, LA, 70807
+                        New Orleans, LA, 70127
                     </NuxtLink>
                     <NuxtLink
                         class="underline underline-offset-2 transition-all duration-300 w-fit hover:underline-offset-4 text-sand-800 hover:text-sand-500 dark:text-sand-300 dark:hover:text-sand-500"
-                        to="tel:504-555-555"
+                        to="tel:504-812-1390"
                     >
-                        504-555-5555
+                        504-812-1390
                     </NuxtLink>
                     <NuxtLink
                         class="underline underline-offset-2 transition-all duration-300 w-fit hover:underline-offset-4 text-sand-800 hover:text-sand-500 dark:text-sand-300 dark:hover:text-sand-500"

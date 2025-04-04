@@ -19,10 +19,10 @@
                 </UButton>
                 <UButton
                     variant="link"
-                    to="tel:505-555-555"
+                    to="tel:505-812-1390"
                     class="text-xl underline underline-offset-2 transition-all duration-300 hover:underline-offset-8"
                 >
-                    504-555-5555
+                    504-812-1390
                 </UButton>
             </div>
         </section>
