@@ -18,7 +18,7 @@
                         <h2
                             class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display text-sand-800 dark:text-sand-300"
                         >
-                            High-Quality Printing and Copying Services
+                            High Quality Printing and Copying Services
                         </h2>
                         <p class="max-w-prose">
                             Our printing and copying services deliver
