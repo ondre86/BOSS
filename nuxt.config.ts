@@ -65,6 +65,7 @@ export default defineNuxtConfig({
                     "https://challenges.cloudflare.com/",
                     "https://static.cloudflareinsights.com/"
                 ],
+                "script-src-elem": ["'self'", "'unsafe-inline'"],
                 "script-src-attr": ["'self'", "'unsafe-inline'"],
                 "connect-src": [
                     "'self'",
