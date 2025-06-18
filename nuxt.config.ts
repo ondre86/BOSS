@@ -59,6 +59,7 @@ export default defineNuxtConfig({
                     "'self'",
                     "'nonce-{{nonce}}'",
                     "cloud.umami.is",
+                    "api-gateway.umami.dev",
                     "https://*.cloudflare.com/",
                     "https://*.cloudflareinsights.com/",
                     "https://challenges.cloudflare.com/",
@@ -67,6 +68,7 @@ export default defineNuxtConfig({
                 "script-src-attr": ["'self'", "'unsafe-inline'"],
                 "connect-src": [
                     "'self'",
+                    "cloud.umami.is",
                     "api-gateway.umami.dev",
                     "https://*.cloudflare.com/",
                     "https://*.cloudflareinsights.com/",
