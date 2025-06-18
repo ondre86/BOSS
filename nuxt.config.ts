@@ -65,8 +65,26 @@ export default defineNuxtConfig({
                     "https://challenges.cloudflare.com/",
                     "https://static.cloudflareinsights.com/"
                 ],
-                "script-src-elem": ["'self'", "'unsafe-inline'"],
-                "script-src-attr": ["'self'", "'unsafe-inline'"],
+                "script-src-elem": [
+                    "'self'",
+                    "'unsafe-inline'",
+                    "cloud.umami.is",
+                    "api-gateway.umami.dev",
+                    "https://*.cloudflare.com/",
+                    "https://*.cloudflareinsights.com/",
+                    "https://challenges.cloudflare.com/",
+                    "https://static.cloudflareinsights.com/"
+                ],
+                "script-src-attr": [
+                    "'self'",
+                    "'unsafe-inline'",
+                    "cloud.umami.is",
+                    "api-gateway.umami.dev",
+                    "https://*.cloudflare.com/",
+                    "https://*.cloudflareinsights.com/",
+                    "https://challenges.cloudflare.com/",
+                    "https://static.cloudflareinsights.com/"
+                ],
                 "connect-src": [
                     "'self'",
                     "cloud.umami.is",
@@ -74,7 +92,14 @@ export default defineNuxtConfig({
                     "https://*.cloudflare.com/",
                     "https://*.cloudflareinsights.com/",
                     "https://challenges.cloudflare.com/",
-                    "https://static.cloudflareinsights.com/"
+                    "https://static.cloudflareinsights.com/",
+                    "https://api.iconify.design"
+                ],
+                "img-src": [
+                    "'self'",
+                    "data:",
+                    "blob:",
+                    "https://api.iconify.design"
                 ]
             }
         }
