@@ -7,7 +7,7 @@
                 <h1
                     class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-sand-800 dark:text-sand-300 -ml-1"
                 >
-                    Document Services in New Orleans East
+                    Print and Copy Shop in New Orleans East
                 </h1>
             </div>
             <div
@@ -18,32 +18,33 @@
                         <h2
                             class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display text-sand-800 dark:text-sand-300"
                         >
-                            Keep Your Records Organized and Updated
+                            High Quality Printing and Copying Services
                         </h2>
                         <p class="max-w-prose">
-                            Our document services are designed to simplify your
-                            day-to-day tasks and ensure your files are handled
-                            with care and precision. <br /><br />
-                            We offer faxing services to send and receive
-                            documents securely, along with scanning solutions to
-                            convert paper files into high-quality digital
-                            formats. <br /><br />
-                            Need to update or adjust your documents? Our
-                            reformatting services can organize, resize, or edit
-                            your files to meet specific requirements.
+                            Our printing and copying services deliver
+                            high-quality results tailored to your needs.
                             <br /><br />
-                            Additionally, we provide email services, helping you
-                            send digital files directly from our location, and
-                            assist with file organization and conversion,
-                            ensuring your documents are in the right format for
-                            any purpose. <br /><br />
+                            Whether you’re printing sharp, professional
+                            documents, vibrant marketing materials, or detailed
+                            presentations, we ensure your projects look their
+                            best. We offer a range of options, including
+                            black-and-white or full-color printing, various
+                            paper sizes and finishes, and customizable layouts.
+                            <br /><br />
+                            For your copying needs, we provide fast and reliable
+                            duplication services, whether it’s a single page or
+                            a large batch of documents. <br /><br />
+                            Our advanced equipment guarantees crisp, clear
+                            copies every time. We’re here to handle all your
+                            printing and copying needs with precision and
+                            efficiency. <br /><br />
                         </p>
                     </div>
                 </div>
                 <div class="flex flex-col gap-4 text-center relative">
                     <NuxtImg
-                        src="/img/document-md.webp"
-                        alt="several flat sheets of paper overlapped"
+                        src="/img/print-sm.webp"
+                        alt="printer"
                         class="rounded-md max-h-56 md:max-h-96 object-cover"
                     ></NuxtImg>
                 </div>
@@ -75,17 +76,17 @@
 
 <script setup lang="ts">
 useHead({
-    title: "Document Services",
+    title: "Print & Copy",
     meta: [
         {
             name: "description",
             content:
-                "BOSS offers document services that are designed to simplify your day-to-day tasks and ensure your files are handled with care and precision. Get documents faxed, scanned, reformatted, and emailed with ease and efficiency."
+                "BOSS offers affordable printing and copying services directly tailored to your needs. Get documents printed and scanned in black and white or color, in sizes such as A4, letter, legal, and more."
         },
         {
             name: "og:description",
             content:
-                "BOSS offers document services that are designed to simplify your day-to-day tasks and ensure your files are handled with care and precision. Get documents faxed, scanned, reformatted, and emailed with ease and efficiency."
+                "BOSS offers affordable printing and copying services directly tailored to your needs. Get documents printed and scanned in black and white or color, in sizes such as A4, letter, legal, and more."
         },
         {
             name: "og:title",
@@ -113,18 +114,18 @@ useHead({
                 "@graph": [
                     {
                         "@type": "WebPage",
-                        "@id": "https://boss504.com/services/document-services",
-                        url: "https://boss504.com/services/document-services",
-                        name: "Document Services",
+                        "@id": "https://boss504.com/printing-copying-new-orleans",
+                        url: "https://boss504.com/printing-copying-new-orleans",
+                        name: "Print & Copy",
                         description:
-                            "BOSS provides reliable document services including faxing, scanning, emailing, reformatting, and file conversions for individuals and businesses in New Orleans East.",
+                            "BOSS offers affordable printing and copying services tailored to your needs, including black-and-white and full-color printing, various paper sizes, and fast, reliable copying.",
                         isPartOf: {
                             "@id": "https://boss504.com"
                         }
                     },
                     {
                         "@type": "Service",
-                        serviceType: "Document Services",
+                        serviceType: "Printing and Copying Services",
                         provider: {
                             "@type": "LocalBusiness",
                             "@id": "https://boss504.com#business"
@@ -148,44 +149,44 @@ useHead({
                             }
                         },
                         description:
-                            "Document-related services including sending and receiving faxes, scanning documents to digital formats, emailing files, reformatting documents, and file organization.",
+                            "High-quality document printing and copying including black & white, color, various paper sizes, and fast duplication for single or bulk jobs.",
                         hasOfferCatalog: {
                             "@type": "OfferCatalog",
-                            name: "Document Services Catalog",
+                            name: "Print and Copy Services Catalog",
                             itemListElement: [
                                 {
                                     "@type": "Offer",
                                     itemOffered: {
                                         "@type": "Service",
-                                        name: "Faxing Services"
+                                        name: "Black and White Printing"
                                     }
                                 },
                                 {
                                     "@type": "Offer",
                                     itemOffered: {
                                         "@type": "Service",
-                                        name: "Scanning Services"
+                                        name: "Full Color Printing"
                                     }
                                 },
                                 {
                                     "@type": "Offer",
                                     itemOffered: {
                                         "@type": "Service",
-                                        name: "Document Reformatting"
+                                        name: "Document Copying"
                                     }
                                 },
                                 {
                                     "@type": "Offer",
                                     itemOffered: {
                                         "@type": "Service",
-                                        name: "Emailing Services"
+                                        name: "Various Paper Sizes and Finishes"
                                     }
                                 },
                                 {
                                     "@type": "Offer",
                                     itemOffered: {
                                         "@type": "Service",
-                                        name: "File Organization & Conversion"
+                                        name: "Bulk Printing Discounts"
                                     }
                                 }
                             ]
@@ -196,42 +197,42 @@ useHead({
                         mainEntity: [
                             {
                                 "@type": "Question",
-                                name: "Can you help me fax documents to an international number?",
+                                name: "What types of documents can you print or copy?",
                                 acceptedAnswer: {
                                     "@type": "Answer",
-                                    text: "Yes, our faxing services support both domestic and international numbers. Just provide the recipient’s fax number and any required country codes, and we’ll handle the rest."
+                                    text: "We can handle a wide variety of documents, including business presentations, flyers, posters, brochures, resumes, invitations, and more. If you have a specific project, let us know, and we’ll ensure it’s printed or copied to your specifications."
                                 }
                             },
                             {
                                 "@type": "Question",
-                                name: "What file formats can you provide for scanned documents?",
+                                name: "Do you offer color printing and copying?",
                                 acceptedAnswer: {
                                     "@type": "Answer",
-                                    text: "We can scan documents into popular formats such as PDF, JPEG, or PNG. If you have specific requirements, let us know, and we’ll do our best to accommodate your needs."
+                                    text: "Yes, we provide both black-and-white and full-color printing and copying options. You can choose the best option based on your project needs and budget."
                                 }
                             },
                             {
                                 "@type": "Question",
-                                name: "What is included in document reformatting services?",
+                                name: "Can I bring my own paper or materials for printing?",
                                 acceptedAnswer: {
                                     "@type": "Answer",
-                                    text: "Our document reformatting services include resizing, reorganizing content, adjusting layouts, converting file types, and editing for clarity or compliance with specific guidelines. This ensures your documents meet your exact specifications."
+                                    text: "Yes, we can print or copy on your provided materials, as long as they are compatible with our equipment. Contact us to confirm your materials meet the necessary requirements."
                                 }
                             },
                             {
                                 "@type": "Question",
-                                name: "Can you email documents for me after scanning them?",
+                                name: "What file formats do you accept for printing?",
                                 acceptedAnswer: {
                                     "@type": "Answer",
-                                    text: "Yes. Once your documents are scanned, we can assist in sending them via email directly from our location. Just provide the recipient’s email address, and we’ll ensure the files are sent securely."
+                                    text: "We accept popular file formats, including PDF, DOCX, PNG, and JPEG. If your file is in a different format, let us know, and we’ll work with you to ensure it can be printed successfully."
                                 }
                             },
                             {
                                 "@type": "Question",
-                                name: "Are your services secure for handling sensitive documents?",
+                                name: "Do you offer bulk printing or copying discounts?",
                                 acceptedAnswer: {
                                     "@type": "Answer",
-                                    text: "Yes, we prioritize the security and confidentiality of all documents we handle. Our processes are designed to ensure your sensitive information is protected throughout every service we provide. Your documents are deleted from our systems after processing is completed."
+                                    text: "Yes, we can provide discounts for large-volume printing and copying orders. Contact us with your project details, and we’ll give you a customized quote."
                                 }
                             }
                         ]
@@ -243,33 +244,33 @@ useHead({
 })
 const items = ref([
     {
-        label: "Can you help me fax documents to an international number?",
+        label: `What types of documents can you print or copy?`,
         icon: "i-solar-question-circle-outline",
-        content: `Yes, our faxing services support both domestic and international numbers. Just provide the recipient’s fax number and any required country codes, and we’ll handle the rest.`,
+        content: `We can handle a wide variety of documents, including business presentations, flyers, posters, brochures, resumes, invitations, and more. If you have a specific project, let us know, and we’ll ensure it’s printed or copied to your specifications.`,
         trailingIcon: "i-solar-alt-arrow-down-linear"
     },
     {
-        label: "What file formats can you provide for scanned documents?",
+        label: `Do you offer color printing and copying?`,
         icon: "i-solar-question-circle-outline",
-        content: `We can scan documents into popular formats such as PDF, JPEG, or PNG. If you have specific requirements, let us know, and we’ll do our best to accommodate your needs.`,
+        content: `Yes, we provide both black-and-white and full-color printing and copying options. You can choose the best option based on your project needs and budget.`,
         trailingIcon: "i-solar-alt-arrow-down-linear"
     },
     {
-        label: `What is included in document reformatting services?`,
+        label: `Can I bring my own paper or materials for printing?`,
         icon: "i-solar-question-circle-outline",
-        content: `Our document reformatting services include resizing, reorganizing content, adjusting layouts, converting file types, and editing for clarity or compliance with specific guidelines. This ensures your documents meet your exact specifications.`,
+        content: `Yes, we can print or copy on your provided materials, as long as they are compatible with our equipment. Contact us to confirm your materials meet the necessary requirements.`,
         trailingIcon: "i-solar-alt-arrow-down-linear"
     },
     {
-        label: `Can you email documents for me after scanning them?`,
+        label: `What file formats do you accept for printing?`,
         icon: "i-solar-question-circle-outline",
-        content: `Yes. Once your documents are scanned, we can assist in sending them via email directly from our location. Just provide the recipient’s email address, and we’ll ensure the files are sent securely.`,
+        content: `We accept popular file formats, including PDF, DOCX, PNG, and JPEG. If your file is in a different format, let us know, and we’ll work with you to ensure it can be printed successfully.`,
         trailingIcon: "i-solar-alt-arrow-down-linear"
     },
     {
-        label: `Are your services secure for handling sensitive documents?`,
+        label: `Do you offer bulk printing or copying discounts?`,
         icon: "i-solar-question-circle-outline",
-        content: `Yes, we prioritize the security and confidentiality of all documents we handle. Our processes are designed to ensure your sensitive information is protected throughout every service we provide. Your documents are deleted from our systems after processing is completed.`,
+        content: `Yes, we can provide discounts for large-volume printing and copying orders. Contact us with your project details, and we’ll give you a customized quote.`,
         trailingIcon: "i-solar-alt-arrow-down-linear"
     }
 ])

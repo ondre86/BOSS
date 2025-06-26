@@ -16,7 +16,7 @@
                     :imgClass="'h-36 object-cover'"
                     img="/img/print-sm.webp"
                     :altText="'printer'"
-                    link="/services/print-copy"
+                    link="/printing-copying-new-orleans"
                     ><h4 class="font-semibold text-xl">Printing</h4></ImgBlock
                 >
                 <ImgBlock
@@ -24,7 +24,7 @@
                     :imgClass="'h-36 object-cover'"
                     img="/img/copy-sm.webp"
                     :altText="'a few sheets of carbon copy paper with different colors'"
-                    link="/services/print-copy"
+                    link="/printing-copying-new-orleans"
                     ><h4 class="font-semibold text-xl">Copying</h4></ImgBlock
                 >
                 <ImgBlock
@@ -32,7 +32,7 @@
                     :imgClass="'h-36 object-cover'"
                     img="/img/fax-sm.webp"
                     :altText="'small fax machine with a sheet protruding'"
-                    link="/services/documents"
+                    link="/document-preparation-new-orleans"
                     ><h4 class="font-semibold text-xl">Faxing</h4></ImgBlock
                 >
                 <ImgBlock
@@ -40,7 +40,7 @@
                     :imgClass="'h-36 object-cover'"
                     img="/img/scan-sm.webp"
                     :altText="'cartoon image of a large printer with sheets of paper flying out of it wildly'"
-                    link="/services/documents"
+                    link="/document-preparation-new-orleans"
                     ><h4 class="font-semibold text-xl">Scanning</h4></ImgBlock
                 >
                 <ImgBlock
@@ -48,7 +48,7 @@
                     :imgClass="'h-36 object-cover'"
                     img="/img/format-sm.webp"
                     :altText="'several representations of a file as a sheet of paper different file format tags on them'"
-                    link="/services/documents"
+                    link="/document-preparation-new-orleans"
                     ><h4 class="font-semibold text-xl">
                         Reformatting
                     </h4></ImgBlock
@@ -58,7 +58,7 @@
                     :imgClass="'h-36 object-cover'"
                     img="/img/email-md.webp"
                     :altText="'a macbook viewing the gmail web client'"
-                    link="/services/documents"
+                    link="/document-preparation-new-orleans"
                     ><h4 class="font-semibold text-xl">Emailing</h4></ImgBlock
                 >
             </div>
@@ -78,13 +78,13 @@
             <div class="flex gap-6 mt-8">
                 <UButton
                     size="xl"
-                    to="/services/print-copy"
+                    to="/printing-copying-new-orleans"
                     class="text-center"
                     >View Print & Copy Services</UButton
                 >
                 <UButton
                     size="xl"
-                    to="/services/documents"
+                    to="/document-preparation-new-orleans"
                     class="text-center"
                     >View Document Services</UButton
                 >

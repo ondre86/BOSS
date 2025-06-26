@@ -7,7 +7,7 @@
                 <h1
                     class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-sand-800 dark:text-sand-300 -ml-1"
                 >
-                    Print and Copy Shop in New Orleans East
+                    Notary Public in New Orleans East
                 </h1>
             </div>
             <div
@@ -18,33 +18,29 @@
                         <h2
                             class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display text-sand-800 dark:text-sand-300"
                         >
-                            High Quality Printing and Copying Services
+                            Convenient and Professional Notary Services
                         </h2>
                         <p class="max-w-prose">
-                            Our printing and copying services deliver
-                            high-quality results tailored to your needs.
+                            We offer reliable and professional notary services
+                            to meet all your document authentication needs.
                             <br /><br />
-                            Whether you’re printing sharp, professional
-                            documents, vibrant marketing materials, or detailed
-                            presentations, we ensure your projects look their
-                            best. We offer a range of options, including
-                            black-and-white or full-color printing, various
-                            paper sizes and finishes, and customizable layouts.
-                            <br /><br />
-                            For your copying needs, we provide fast and reliable
-                            duplication services, whether it’s a single page or
-                            a large batch of documents. <br /><br />
-                            Our advanced equipment guarantees crisp, clear
-                            copies every time. We’re here to handle all your
-                            printing and copying needs with precision and
-                            efficiency. <br /><br />
+                            Our certified notaries are available to verify
+                            signatures, administer oaths, and witness the
+                            signing of important documents, ensuring they are
+                            legally binding and compliant. <br /><br />
+                            Whether you need assistance with affidavits,
+                            contracts, real estate documents, or power of
+                            attorney forms, we provide fast and accurate
+                            notarization in a secure and convenient setting.
+                            Trust us to handle your notarial needs with the
+                            utmost attention to detail and confidentiality.
                         </p>
                     </div>
                 </div>
                 <div class="flex flex-col gap-4 text-center relative">
                     <NuxtImg
-                        src="/img/print-sm.webp"
-                        alt="printer"
+                        src="/img/notary-md.webp"
+                        alt="person stamping a document on a desk"
                         class="rounded-md max-h-56 md:max-h-96 object-cover"
                     ></NuxtImg>
                 </div>
@@ -76,21 +72,21 @@
 
 <script setup lang="ts">
 useHead({
-    title: "Print & Copy",
+    title: "Notary Services",
     meta: [
         {
             name: "description",
             content:
-                "BOSS offers affordable printing and copying services directly tailored to your needs. Get documents printed and scanned in black and white or color, in sizes such as A4, letter, legal, and more."
+                "BOSS offers affordable notary services for business and individuals in New Orleans East. Get affidavits, contracts, real estate documents, power of attorney forms, and more notarized quickly and easily."
         },
         {
             name: "og:description",
             content:
-                "BOSS offers affordable printing and copying services directly tailored to your needs. Get documents printed and scanned in black and white or color, in sizes such as A4, letter, legal, and more."
+                "BOSS offers affordable notary services for business and individuals in New Orleans East. Get affidavits, contracts, real estate documents, power of attorney forms, and more notarized quickly and easily."
         },
         {
             name: "og:title",
-            content: "Document Services · BOSS"
+            content: "Notary Services · BOSS"
         },
         {
             name: "og:image",
@@ -114,18 +110,18 @@ useHead({
                 "@graph": [
                     {
                         "@type": "WebPage",
-                        "@id": "https://boss504.com/services/print-copy",
-                        url: "https://boss504.com/services/print-copy",
-                        name: "Print & Copy",
+                        "@id": "https://boss504.com/notary-public-new-orleans",
+                        url: "https://boss504.com/notary-public-new-orleans",
+                        name: "Notary Services",
                         description:
-                            "BOSS offers affordable printing and copying services tailored to your needs, including black-and-white and full-color printing, various paper sizes, and fast, reliable copying.",
+                            "BOSS offers affordable notary services for individuals and businesses in New Orleans East, including affidavits, contracts, real estate documents, and power of attorney forms.",
                         isPartOf: {
                             "@id": "https://boss504.com"
                         }
                     },
                     {
                         "@type": "Service",
-                        serviceType: "Printing and Copying Services",
+                        serviceType: "Notary Services",
                         provider: {
                             "@type": "LocalBusiness",
                             "@id": "https://boss504.com#business"
@@ -149,44 +145,44 @@ useHead({
                             }
                         },
                         description:
-                            "High-quality document printing and copying including black & white, color, various paper sizes, and fast duplication for single or bulk jobs.",
+                            "Certified notary services for affidavits, contracts, real estate paperwork, power of attorney forms, and more. In-store and mobile options available.",
                         hasOfferCatalog: {
                             "@type": "OfferCatalog",
-                            name: "Print and Copy Services Catalog",
+                            name: "Notary Services Catalog",
                             itemListElement: [
                                 {
                                     "@type": "Offer",
                                     itemOffered: {
                                         "@type": "Service",
-                                        name: "Black and White Printing"
+                                        name: "Affidavit Notarization"
                                     }
                                 },
                                 {
                                     "@type": "Offer",
                                     itemOffered: {
                                         "@type": "Service",
-                                        name: "Full Color Printing"
+                                        name: "Power of Attorney Notarization"
                                     }
                                 },
                                 {
                                     "@type": "Offer",
                                     itemOffered: {
                                         "@type": "Service",
-                                        name: "Document Copying"
+                                        name: "Real Estate Document Notarization"
                                     }
                                 },
                                 {
                                     "@type": "Offer",
                                     itemOffered: {
                                         "@type": "Service",
-                                        name: "Various Paper Sizes and Finishes"
+                                        name: "Contract Notarization"
                                     }
                                 },
                                 {
                                     "@type": "Offer",
                                     itemOffered: {
                                         "@type": "Service",
-                                        name: "Bulk Printing Discounts"
+                                        name: "Mobile Notary Service"
                                     }
                                 }
                             ]
@@ -197,42 +193,42 @@ useHead({
                         mainEntity: [
                             {
                                 "@type": "Question",
-                                name: "What types of documents can you print or copy?",
+                                name: "What types of documents can you notarize?",
                                 acceptedAnswer: {
                                     "@type": "Answer",
-                                    text: "We can handle a wide variety of documents, including business presentations, flyers, posters, brochures, resumes, invitations, and more. If you have a specific project, let us know, and we’ll ensure it’s printed or copied to your specifications."
+                                    text: "We can notarize a wide range of documents, including affidavits, power of attorney forms, real estate documents, contracts, legal agreements, and more. If you're unsure whether your document requires notarization, feel free to ask, and we’ll guide you."
                                 }
                             },
                             {
                                 "@type": "Question",
-                                name: "Do you offer color printing and copying?",
+                                name: "Do I need to bring identification for notary services?",
                                 acceptedAnswer: {
                                     "@type": "Answer",
-                                    text: "Yes, we provide both black-and-white and full-color printing and copying options. You can choose the best option based on your project needs and budget."
+                                    text: "Yes, a valid, government-issued photo ID is required for all notary services. This ensures we can verify your identity and comply with legal requirements. Acceptable forms of ID include driver’s licenses, passports, and state-issued ID cards."
                                 }
                             },
                             {
                                 "@type": "Question",
-                                name: "an I bring my own paper or materials for printing?",
+                                name: "Can you notarize documents for someone who is not present?",
                                 acceptedAnswer: {
                                     "@type": "Answer",
-                                    text: "Yes, we can print or copy on your provided materials, as long as they are compatible with our equipment. Contact us to confirm your materials meet the necessary requirements."
+                                    text: "No, all signers must be physically present at the time of notarization. This is necessary for the notary to witness the signing and verify the identity of all parties involved."
                                 }
                             },
                             {
                                 "@type": "Question",
-                                name: "What file formats do you accept for printing?",
+                                name: "Do you provide mobile notary services?",
                                 acceptedAnswer: {
                                     "@type": "Answer",
-                                    text: "We accept popular file formats, including PDF, DOCX, PNG, and JPEG. If your file is in a different format, let us know, and we’ll work with you to ensure it can be printed successfully."
+                                    text: "Yes, we provide mobile notary services in addition to our in-store notary services. Please call, email, or use our contact form to learn more and schedule a mobile notarization."
                                 }
                             },
                             {
                                 "@type": "Question",
-                                name: "Do you offer bulk printing or copying discounts?",
+                                name: "How much do you charge for notary services?",
                                 acceptedAnswer: {
                                     "@type": "Answer",
-                                    text: "Yes, we can provide discounts for large-volume printing and copying orders. Contact us with your project details, and we’ll give you a customized quote."
+                                    text: "In-store notary services are $20 for the first page, and $10 for each subsequent page. Mobile notary prices may vary due to distance traveled and type of documents. Businesses may be eligible for special volume pricing. Contact us for more details regarding pricing."
                                 }
                             }
                         ]
@@ -244,33 +240,35 @@ useHead({
 })
 const items = ref([
     {
-        label: `What types of documents can you print or copy?`,
+        label: "What types of documents can you notarize?",
         icon: "i-solar-question-circle-outline",
-        content: `We can handle a wide variety of documents, including business presentations, flyers, posters, brochures, resumes, invitations, and more. If you have a specific project, let us know, and we’ll ensure it’s printed or copied to your specifications.`,
+        content: `We can notarize a wide range of documents, including affidavits, power of attorney forms, real estate documents, contracts, legal agreements, and more. If you're unsure whether your document requires notarization, feel free to ask, and we’ll guide you.`,
         trailingIcon: "i-solar-alt-arrow-down-linear"
     },
     {
-        label: `Do you offer color printing and copying?`,
+        label: "Do I need to bring identification for notary services?",
         icon: "i-solar-question-circle-outline",
-        content: `Yes, we provide both black-and-white and full-color printing and copying options. You can choose the best option based on your project needs and budget.`,
+        content: `Yes, a valid, government-issued photo ID is required for all notary services. This ensures we can verify your identity and comply with legal requirements. Acceptable forms of ID include driver’s licenses, passports, and state-issued ID cards.`,
         trailingIcon: "i-solar-alt-arrow-down-linear"
     },
     {
-        label: `Can I bring my own paper or materials for printing?`,
+        label: "Can you notarize documents for someone who is not present?",
         icon: "i-solar-question-circle-outline",
-        content: `Yes, we can print or copy on your provided materials, as long as they are compatible with our equipment. Contact us to confirm your materials meet the necessary requirements.`,
+        content:
+            "No, all signers must be physically present at the time of notarization. This is necessary for the notary to witness the signing and verify the identity of all parties involved.",
         trailingIcon: "i-solar-alt-arrow-down-linear"
     },
     {
-        label: `What file formats do you accept for printing?`,
+        label: "Do you provide mobile notary services?",
         icon: "i-solar-question-circle-outline",
-        content: `We accept popular file formats, including PDF, DOCX, PNG, and JPEG. If your file is in a different format, let us know, and we’ll work with you to ensure it can be printed successfully.`,
+        content: `Yes, we provide mobile notary services in addition to our in-store notary services. Please call, email, or use our contact form to learn more and schedule a mobile notarization.`,
         trailingIcon: "i-solar-alt-arrow-down-linear"
     },
     {
-        label: `Do you offer bulk printing or copying discounts?`,
+        label: "How much do you charge for notary services?",
         icon: "i-solar-question-circle-outline",
-        content: `Yes, we can provide discounts for large-volume printing and copying orders. Contact us with your project details, and we’ll give you a customized quote.`,
+        content:
+            "In-store notary services are $20 for the first page, and $10 for each subsequent page. Mobile notary prices may vary due to distance traveled and type of documents. Businesses may be eligible for special volume pricing. Contact us for more details regarding pricing.",
         trailingIcon: "i-solar-alt-arrow-down-linear"
     }
 ])

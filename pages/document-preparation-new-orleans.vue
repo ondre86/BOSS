@@ -7,7 +7,7 @@
                 <h1
                     class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-sand-800 dark:text-sand-300 -ml-1"
                 >
-                    Notary Public in New Orleans East
+                    Document Preparation Services in New Orleans East
                 </h1>
             </div>
             <div
@@ -18,29 +18,32 @@
                         <h2
                             class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display text-sand-800 dark:text-sand-300"
                         >
-                            Convenient and Professional Notary Services
+                            Keep Your Records Organized and Updated
                         </h2>
                         <p class="max-w-prose">
-                            We offer reliable and professional notary services
-                            to meet all your document authentication needs.
+                            Our document preparation services are designed to
+                            simplify your day-to-day tasks and ensure your files
+                            are handled with care and precision. <br /><br />
+                            We offer faxing services to send and receive
+                            documents securely, along with scanning solutions to
+                            convert paper files into high-quality digital
+                            formats. <br /><br />
+                            Need to update or adjust your documents? Our
+                            reformatting services can organize, resize, or edit
+                            your files to meet specific requirements.
                             <br /><br />
-                            Our certified notaries are available to verify
-                            signatures, administer oaths, and witness the
-                            signing of important documents, ensuring they are
-                            legally binding and compliant. <br /><br />
-                            Whether you need assistance with affidavits,
-                            contracts, real estate documents, or power of
-                            attorney forms, we provide fast and accurate
-                            notarization in a secure and convenient setting.
-                            Trust us to handle your notarial needs with the
-                            utmost attention to detail and confidentiality.
+                            Additionally, we provide email services, helping you
+                            send digital files directly from our location, and
+                            assist with file organization and conversion,
+                            ensuring your documents are in the right format for
+                            any purpose. <br /><br />
                         </p>
                     </div>
                 </div>
                 <div class="flex flex-col gap-4 text-center relative">
                     <NuxtImg
-                        src="/img/notary-md.webp"
-                        alt="person stamping a document on a desk"
+                        src="/img/document-md.webp"
+                        alt="several flat sheets of paper overlapped"
                         class="rounded-md max-h-56 md:max-h-96 object-cover"
                     ></NuxtImg>
                 </div>
@@ -72,21 +75,21 @@
 
 <script setup lang="ts">
 useHead({
-    title: "Notary Services",
+    title: "Document Services",
     meta: [
         {
             name: "description",
             content:
-                "BOSS offers affordable notary services for business and individuals in New Orleans East. Get affidavits, contracts, real estate documents, power of attorney forms, and more notarized quickly and easily."
+                "BOSS offers document preparation services that are designed to simplify your day-to-day tasks and ensure your files are handled with care and precision. Get documents faxed, scanned, reformatted, and emailed with ease and efficiency."
         },
         {
             name: "og:description",
             content:
-                "BOSS offers affordable notary services for business and individuals in New Orleans East. Get affidavits, contracts, real estate documents, power of attorney forms, and more notarized quickly and easily."
+                "BOSS offers document preparation services that are designed to simplify your day-to-day tasks and ensure your files are handled with care and precision. Get documents faxed, scanned, reformatted, and emailed with ease and efficiency."
         },
         {
             name: "og:title",
-            content: "Notary Services · BOSS"
+            content: "Document Services · BOSS"
         },
         {
             name: "og:image",
@@ -110,18 +113,18 @@ useHead({
                 "@graph": [
                     {
                         "@type": "WebPage",
-                        "@id": "https://boss504.com/services/notary",
-                        url: "https://boss504.com/services/notary",
-                        name: "Notary Services",
+                        "@id": "https://boss504.com/document-preparation-new-orleans",
+                        url: "https://boss504.com/document-preparation-new-orleans",
+                        name: "Document Services",
                         description:
-                            "BOSS offers affordable notary services for individuals and businesses in New Orleans East, including affidavits, contracts, real estate documents, and power of attorney forms.",
+                            "BOSS provides reliable document preparation services including faxing, scanning, emailing, reformatting, and file conversions for individuals and businesses in New Orleans East.",
                         isPartOf: {
                             "@id": "https://boss504.com"
                         }
                     },
                     {
                         "@type": "Service",
-                        serviceType: "Notary Services",
+                        serviceType: "Document Services",
                         provider: {
                             "@type": "LocalBusiness",
                             "@id": "https://boss504.com#business"
@@ -145,44 +148,44 @@ useHead({
                             }
                         },
                         description:
-                            "Certified notary services for affidavits, contracts, real estate paperwork, power of attorney forms, and more. In-store and mobile options available.",
+                            "Document-related services including sending and receiving faxes, scanning documents to digital formats, emailing files, reformatting documents, and file organization.",
                         hasOfferCatalog: {
                             "@type": "OfferCatalog",
-                            name: "Notary Services Catalog",
+                            name: "Document Services Catalog",
                             itemListElement: [
                                 {
                                     "@type": "Offer",
                                     itemOffered: {
                                         "@type": "Service",
-                                        name: "Affidavit Notarization"
+                                        name: "Faxing Services"
                                     }
                                 },
                                 {
                                     "@type": "Offer",
                                     itemOffered: {
                                         "@type": "Service",
-                                        name: "Power of Attorney Notarization"
+                                        name: "Scanning Services"
                                     }
                                 },
                                 {
                                     "@type": "Offer",
                                     itemOffered: {
                                         "@type": "Service",
-                                        name: "Real Estate Document Notarization"
+                                        name: "Document Reformatting"
                                     }
                                 },
                                 {
                                     "@type": "Offer",
                                     itemOffered: {
                                         "@type": "Service",
-                                        name: "Contract Notarization"
+                                        name: "Emailing Services"
                                     }
                                 },
                                 {
                                     "@type": "Offer",
                                     itemOffered: {
                                         "@type": "Service",
-                                        name: "Mobile Notary Service"
+                                        name: "File Organization & Conversion"
                                     }
                                 }
                             ]
@@ -193,42 +196,42 @@ useHead({
                         mainEntity: [
                             {
                                 "@type": "Question",
-                                name: "What types of documents can you notarize?",
+                                name: "Can you help me fax documents to an international number?",
                                 acceptedAnswer: {
                                     "@type": "Answer",
-                                    text: "We can notarize a wide range of documents, including affidavits, power of attorney forms, real estate documents, contracts, legal agreements, and more. If you're unsure whether your document requires notarization, feel free to ask, and we’ll guide you."
+                                    text: "Yes, our faxing services support both domestic and international numbers. Just provide the recipient’s fax number and any required country codes, and we’ll handle the rest."
                                 }
                             },
                             {
                                 "@type": "Question",
-                                name: "Do I need to bring identification for notary services?",
+                                name: "What file formats can you provide for scanned documents?",
                                 acceptedAnswer: {
                                     "@type": "Answer",
-                                    text: "Yes, a valid, government-issued photo ID is required for all notary services. This ensures we can verify your identity and comply with legal requirements. Acceptable forms of ID include driver’s licenses, passports, and state-issued ID cards."
+                                    text: "We can scan documents into popular formats such as PDF, JPEG, or PNG. If you have specific requirements, let us know, and we’ll do our best to accommodate your needs."
                                 }
                             },
                             {
                                 "@type": "Question",
-                                name: "Can you notarize documents for someone who is not present?",
+                                name: "What is included in document reformatting services?",
                                 acceptedAnswer: {
                                     "@type": "Answer",
-                                    text: "No, all signers must be physically present at the time of notarization. This is necessary for the notary to witness the signing and verify the identity of all parties involved."
+                                    text: "Our document reformatting services include resizing, reorganizing content, adjusting layouts, converting file types, and editing for clarity or compliance with specific guidelines. This ensures your documents meet your exact specifications."
                                 }
                             },
                             {
                                 "@type": "Question",
-                                name: "Do you provide mobile notary services?",
+                                name: "Can you email documents for me after scanning them?",
                                 acceptedAnswer: {
                                     "@type": "Answer",
-                                    text: "Yes, we provide mobile notary services in addition to our in-store notary services. Please call, email, or use our contact form to learn more and schedule a mobile notarization."
+                                    text: "Yes. Once your documents are scanned, we can assist in sending them via email directly from our location. Just provide the recipient’s email address, and we’ll ensure the files are sent securely."
                                 }
                             },
                             {
                                 "@type": "Question",
-                                name: "How much do you charge for notary services?",
+                                name: "Are your services secure for handling sensitive documents?",
                                 acceptedAnswer: {
                                     "@type": "Answer",
-                                    text: "In-store notary services are $20 for the first page, and $10 for each subsequent page. Mobile notary prices may vary due to distance traveled and type of documents. Businesses may be eligible for special volume pricing. Contact us for more details regarding pricing."
+                                    text: "Yes, we prioritize the security and confidentiality of all documents we handle. Our processes are designed to ensure your sensitive information is protected throughout every service we provide. Your documents are deleted from our systems after processing is completed."
                                 }
                             }
                         ]
@@ -240,35 +243,33 @@ useHead({
 })
 const items = ref([
     {
-        label: "What types of documents can you notarize?",
+        label: "Can you help me fax documents to an international number?",
         icon: "i-solar-question-circle-outline",
-        content: `We can notarize a wide range of documents, including affidavits, power of attorney forms, real estate documents, contracts, legal agreements, and more. If you're unsure whether your document requires notarization, feel free to ask, and we’ll guide you.`,
+        content: `Yes, our faxing services support both domestic and international numbers. Just provide the recipient’s fax number and any required country codes, and we’ll handle the rest.`,
         trailingIcon: "i-solar-alt-arrow-down-linear"
     },
     {
-        label: "Do I need to bring identification for notary services?",
+        label: "What file formats can you provide for scanned documents?",
         icon: "i-solar-question-circle-outline",
-        content: `Yes, a valid, government-issued photo ID is required for all notary services. This ensures we can verify your identity and comply with legal requirements. Acceptable forms of ID include driver’s licenses, passports, and state-issued ID cards.`,
+        content: `We can scan documents into popular formats such as PDF, JPEG, or PNG. If you have specific requirements, let us know, and we’ll do our best to accommodate your needs.`,
         trailingIcon: "i-solar-alt-arrow-down-linear"
     },
     {
-        label: "Can you notarize documents for someone who is not present?",
+        label: `What is included in document reformatting services?`,
         icon: "i-solar-question-circle-outline",
-        content:
-            "No, all signers must be physically present at the time of notarization. This is necessary for the notary to witness the signing and verify the identity of all parties involved.",
+        content: `Our document reformatting services include resizing, reorganizing content, adjusting layouts, converting file types, and editing for clarity or compliance with specific guidelines. This ensures your documents meet your exact specifications.`,
         trailingIcon: "i-solar-alt-arrow-down-linear"
     },
     {
-        label: "Do you provide mobile notary services?",
+        label: `Can you email documents for me after scanning them?`,
         icon: "i-solar-question-circle-outline",
-        content: `Yes, we provide mobile notary services in addition to our in-store notary services. Please call, email, or use our contact form to learn more and schedule a mobile notarization.`,
+        content: `Yes. Once your documents are scanned, we can assist in sending them via email directly from our location. Just provide the recipient’s email address, and we’ll ensure the files are sent securely.`,
         trailingIcon: "i-solar-alt-arrow-down-linear"
     },
     {
-        label: "How much do you charge for notary services?",
+        label: `Are your services secure for handling sensitive documents?`,
         icon: "i-solar-question-circle-outline",
-        content:
-            "In-store notary services are $20 for the first page, and $10 for each subsequent page. Mobile notary prices may vary due to distance traveled and type of documents. Businesses may be eligible for special volume pricing. Contact us for more details regarding pricing.",
+        content: `Yes, we prioritize the security and confidentiality of all documents we handle. Our processes are designed to ensure your sensitive information is protected throughout every service we provide. Your documents are deleted from our systems after processing is completed.`,
         trailingIcon: "i-solar-alt-arrow-down-linear"
     }
 ])

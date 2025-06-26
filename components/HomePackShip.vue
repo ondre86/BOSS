@@ -11,13 +11,14 @@
                 >
             </div>
             <div
-                class="flex gap-12 md:gap-4 flex-col md:flex-row md:justify-center"
+                class="flex gap-12 md:gap-4 flex-col lg:flex-row lg:justify-center"
             >
                 <ImgBlock
                     class="md:max-w-96 text-start md:text-center"
                     img="/img/packing-supplies-md.webp"
+                    imgClass="sm:min-h-64"
                     :altText="'rows of cardboard boxes with their tops open'"
-                    link="/services/pack-ship"
+                    link="/packing-shipping-new-orleans"
                 >
                     <span class="font-semibold text-xl">Packing Supplies</span>
                     Our store is fully stocked with high-quality packing
@@ -27,8 +28,10 @@
                 <ImgBlock
                     class="md:max-w-96 text-start md:text-center"
                     img="/img/fedex-lg.webp"
+                    imgClass="sm:min-h-64"
                     :altText="'FedEx logo on a textured purple background'"
                     link="https://www.fedex.com/en-us/shipping/fedex-authorized-ship-center.html"
+                    :newTab="true"
                 >
                     <span class="font-semibold text-xl"
                         >Authorized FedEx Shipper</span
@@ -40,8 +43,10 @@
                 <ImgBlock
                     class="md:max-w-96 text-start md:text-center"
                     img="/img/rsa.webp"
+                    imgClass="sm:min-h-64"
                     :altText="'FedEx logo on a textured purple background'"
                     link="https://www.rscentral.org/Programs/RS-Programs/PackageHub-Business-Centers"
+                    :newTab="true"
                 >
                     <span class="font-semibold text-xl"
                         >Official RSA PackageHub Business Center</span
@@ -58,7 +63,7 @@
             <div class="flex gap-6 mt-8">
                 <UButton
                     size="xl"
-                    to="/services/pack-ship"
+                    to="/packing-shipping-new-orleans"
                     class="text-center"
                     >View Packing & Shipping Services</UButton
                 >

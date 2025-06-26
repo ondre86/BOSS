@@ -36,6 +36,9 @@ export default defineNuxtConfig({
             }
         }
     },
+    schemaOrg: {
+        defaults: false
+    },
     gsap: {
         extraPlugins: {
             scrollTrigger: true,

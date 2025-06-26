@@ -49,14 +49,14 @@
                             <li
                                 class="underline underline-offset-2 transition-all duration-300 hover:underline-offset-8 text-sand-800 dark:text-sand-300 hover:text-sand-500"
                             >
-                                <NuxtLink to="/services/notary">
+                                <NuxtLink to="/notary-public-new-orleans">
                                     Notary
                                 </NuxtLink>
                             </li>
                             <li
                                 class="underline underline-offset-2 transition-all duration-300 hover:underline-offset-8 text-sand-800 dark:text-sand-300 hover:text-sand-500"
                             >
-                                <NuxtLink to="/services/tax-prep">
+                                <NuxtLink to="/tax-prep-new-orleans">
                                     Tax Prep
                                 </NuxtLink>
                             </li>
@@ -64,30 +64,32 @@
                                 class="underline underline-offset-2 transition-all duration-300 hover:underline-offset-8 text-sand-800 dark:text-sand-300 hover:text-sand-500"
                             >
                                 <NuxtLink
-                                    to="/services/administrative-services"
+                                    to="/administrative-services-new-orleans"
                                 >
-                                    Admin Services
+                                    Administrative Services
                                 </NuxtLink>
                             </li>
                             <li
                                 class="underline underline-offset-2 transition-all duration-300 hover:underline-offset-8 text-sand-800 dark:text-sand-300 hover:text-sand-500"
                             >
-                                <NuxtLink to="/services/print-copy">
-                                    Print & Copy
+                                <NuxtLink to="/printing-copying-new-orleans">
+                                    Printing & Copying
                                 </NuxtLink>
                             </li>
                             <li
                                 class="underline underline-offset-2 transition-all duration-300 hover:underline-offset-8 text-sand-800 dark:text-sand-300 hover:text-sand-500"
                             >
-                                <NuxtLink to="/services/documents">
-                                    Documents
+                                <NuxtLink
+                                    to="/document-preparation-new-orleans"
+                                >
+                                    Document Preparation
                                 </NuxtLink>
                             </li>
                             <li
                                 class="underline underline-offset-2 transition-all duration-300 hover:underline-offset-8 text-sand-800 dark:text-sand-300 hover:text-sand-500"
                             >
-                                <NuxtLink to="/services/pack-ship">
-                                    Pack & Ship
+                                <NuxtLink to="/packing-shipping-new-orleans">
+                                    Packing & Shipping
                                 </NuxtLink>
                             </li>
                         </ul>

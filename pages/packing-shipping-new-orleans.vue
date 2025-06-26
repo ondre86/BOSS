@@ -7,7 +7,7 @@
                 <h1
                     class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-sand-800 dark:text-sand-300 -ml-1"
                 >
-                    Pack and Ship Center in New Orleans East
+                    Packing and Shipping Center in New Orleans East
                 </h1>
             </div>
             <div
@@ -51,36 +51,39 @@
             >
                 Verified Shpping Partners
             </h2>
-            <ImgBlock
-                class="md:max-w-96 text-start md:text-center"
-                img="/img/fedex-lg.webp"
-                :altText="'FedEx logo on a textured purple background'"
-                link="https://www.fedex.com/en-us/shipping/fedex-authorized-ship-center.html"
-                :newTab="true"
-            >
-                <span class="font-semibold text-xl"
-                    >Authorized FedEx Shipper</span
+            <div class="flex flex-col gap-2 sm:flex-row">
+                <ImgBlock
+                    class="md:max-w-96 text-start md:text-center"
+                    img="/img/fedex-lg.webp"
+                    :altText="'FedEx logo on a textured purple background'"
+                    link="https://www.fedex.com/en-us/shipping/fedex-authorized-ship-center.html"
+                    :newTab="true"
                 >
-                <span
-                    >Read More
-                    <UIcon name="i-solar-arrow-right-up-linear"></UIcon
-                ></span>
-            </ImgBlock>
-            <ImgBlock
-                class="md:max-w-96 text-start md:text-center"
-                img="/img/rsa.webp"
-                :altText="'Retail Shipping Associates Logo'"
-                link="https://www.rscentral.org/Programs/RS-Programs/PackageHub-Business-Centers"
-                :newTab="true"
-            >
-                <span class="font-semibold text-xl"
-                    >Official RSA PackageHub Business Center</span
+                    <span class="font-semibold text-xl"
+                        >Authorized FedEx Shipper</span
+                    >
+                    <span
+                        >Read More
+                        <UIcon name="i-solar-arrow-right-up-linear"></UIcon
+                    ></span>
+                </ImgBlock>
+                <ImgBlock
+                    class="md:max-w-96 text-start md:text-center"
+                    img="/img/rsa.webp"
+                    imgClass="sm:min-h-64"
+                    :altText="'Retail Shipping Associates Logo'"
+                    link="https://www.rscentral.org/Programs/RS-Programs/PackageHub-Business-Centers"
+                    :newTab="true"
                 >
-                <span
-                    >Read More
-                    <UIcon name="i-solar-arrow-right-up-linear"></UIcon
-                ></span>
-            </ImgBlock>
+                    <span class="font-semibold text-xl"
+                        >Official RSA PackageHub Business Center</span
+                    >
+                    <span
+                        >Read More
+                        <UIcon name="i-solar-arrow-right-up-linear"></UIcon
+                    ></span>
+                </ImgBlock>
+            </div>
         </section>
         <section
             class="w-full px-8 flex flex-col justify-center mb-12 gap-6 max-w-6xl"
@@ -146,8 +149,8 @@ useHead({
                 "@graph": [
                     {
                         "@type": "WebPage",
-                        "@id": "https://boss504.com/services/packing-shipping",
-                        url: "https://boss504.com/services/packing-shipping",
+                        "@id": "https://boss504.com/packing-shipping-new-orleans",
+                        url: "https://boss504.com/packing-shipping-new-orleans",
                         name: "Packing & Shipping",
                         description:
                             "Get packing supplies and ship items easily with our dedicated logistics services. As an Authorized FedEx Shipper, your packages will be handled with care.",
@@ -248,7 +251,7 @@ useHead({
                                 name: "Can you pack my items for me?",
                                 acceptedAnswer: {
                                     "@type": "Answer",
-                                    text: "bsolutely! Our team can professionally pack your items to ensure they’re protected during transit. Just bring your items in, and we’ll handle the rest."
+                                    text: "Absolutely! Our team can professionally pack your items to ensure they’re protected during transit. Just bring your items in, and we’ll handle the rest."
                                 }
                             },
                             {

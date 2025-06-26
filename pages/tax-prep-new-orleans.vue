@@ -114,8 +114,8 @@ useHead({
                 "@graph": [
                     {
                         "@type": "WebPage",
-                        "@id": "https://boss504.com/services/tax-prep",
-                        url: "https://boss504.com/services/tax-prep",
+                        "@id": "https://boss504.com/tax-prep-new-orleans",
+                        url: "https://boss504.com/tax-prep-new-orleans",
                         name: "Tax Preparation",
                         description:
                             "BOSS offers tax preparation services for individuals and businesses. We can help maximize your deductions and minimize your liabilities to get you the best tax return possible.",

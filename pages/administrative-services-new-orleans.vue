@@ -139,8 +139,8 @@ useHead({
                 "@graph": [
                     {
                         "@type": "WebPage",
-                        "@id": "https://boss504.com/services/administrative-services",
-                        url: "https://boss504.com/services/administrative-services",
+                        "@id": "https://boss504.com/administrative-services-new-orleans",
+                        url: "https://boss504.com/administrative-services-new-orleans",
                         name: "Administrative Services",
                         description:
                             "BOSS offers complete administrative support for businesses in New Orleans East including EIN filing, Secretary of State registration, credential centralization, and more.",
@@ -225,7 +225,6 @@ useHead({
                         }
                     },
                     {
-                        "@context": "https://schema.org",
                         "@type": "FAQPage",
                         mainEntity: [
                             {

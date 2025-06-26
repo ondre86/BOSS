@@ -181,6 +181,23 @@ useHead({
                             "Reach out to BOSS for printing, notary, tax prep, and administrative services in New Orleans East.",
                         isPartOf: {
                             "@id": "https://boss504.com"
+                        },
+                        breadcrumb: {
+                            "@type": "BreadcrumbList",
+                            itemListElement: [
+                                {
+                                    "@type": "ListItem",
+                                    position: 1,
+                                    name: "Home",
+                                    item: "https://boss504.com/"
+                                },
+                                {
+                                    "@type": "ListItem",
+                                    position: 2,
+                                    name: "Contact",
+                                    item: "https://boss504.com/contact"
+                                }
+                            ]
                         }
                     },
                     {
