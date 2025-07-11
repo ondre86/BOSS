@@ -107,15 +107,15 @@ const items = ref([
     {
         type: "separator" as const
     },
-    {
-        label: "Tax Prep",
-        icon: "i-solar-chat-round-money-linear",
-        to: "/tax-prep-new-orleans",
-        color: "primary" as const
-    },
-    {
-        type: "separator" as const
-    },
+    // {
+    //     label: "Tax Prep",
+    //     icon: "i-solar-chat-round-money-linear",
+    //     to: "/tax-prep-new-orleans",
+    //     color: "primary" as const
+    // },
+    // {
+    //     type: "separator" as const
+    // },
     {
         label: "Print & Copy",
         icon: "i-solar-printer-linear",
@@ -169,15 +169,15 @@ const mobileItems = ref([
             open.value = false
         }
     },
-    {
-        label: "Tax Prep",
-        icon: "i-solar-chat-round-money-linear",
-        to: "/tax-prep-new-orleans",
-        color: "primary" as const,
-        onSelect: () => {
-            open.value = false
-        }
-    },
+    // {
+    //     label: "Tax Prep",
+    //     icon: "i-solar-chat-round-money-linear",
+    //     to: "/tax-prep-new-orleans",
+    //     color: "primary" as const,
+    //     onSelect: () => {
+    //         open.value = false
+    //     }
+    // },
     {
         label: "Administrative Services",
         icon: "i-solar-buildings-3-line-duotone",

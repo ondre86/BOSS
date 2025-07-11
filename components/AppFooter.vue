@@ -53,13 +53,13 @@
                                     Notary
                                 </NuxtLink>
                             </li>
-                            <li
+                            <!-- <li
                                 class="underline underline-offset-2 transition-all duration-300 hover:underline-offset-8 text-sand-800 dark:text-sand-300 hover:text-sand-500"
                             >
                                 <NuxtLink to="/tax-prep-new-orleans">
                                     Tax Prep
                                 </NuxtLink>
-                            </li>
+                            </li> -->
                             <li
                                 class="underline underline-offset-2 transition-all duration-300 hover:underline-offset-8 text-sand-800 dark:text-sand-300 hover:text-sand-500"
                             >

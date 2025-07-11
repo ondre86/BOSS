@@ -141,12 +141,12 @@ useHead({
         {
             name: "description",
             content:
-                "Contact us to learn more about our specialized document, adminstrative, tax prep, packing, shipping, and notary services. BOSS is located in New Orleans East at 5790 Crowder Blvd, Suite E."
+                "Contact us to learn more about our specialized document, adminstrative, packing, shipping, and notary services. BOSS is located in New Orleans East at 5790 Crowder Blvd, Suite E."
         },
         {
             name: "og:description",
             content:
-                "Contact us to learn more about our specialized document, adminstrative, tax prep, packing, shipping, and notary services. BOSS is located in New Orleans East at 5790 Crowder Blvd, Suite E."
+                "Contact us to learn more about our specialized document, adminstrative, packing, shipping, and notary services. BOSS is located in New Orleans East at 5790 Crowder Blvd, Suite E."
         },
         {
             name: "og:title",
@@ -178,7 +178,7 @@ useHead({
                         url: "https://boss504.com/about",
                         name: "Contact BOSS",
                         description:
-                            "Reach out to BOSS for printing, notary, tax prep, and administrative services in New Orleans East.",
+                            "Reach out to BOSS for printing, packing & shipping, notary, and administrative services in New Orleans East.",
                         isPartOf: {
                             "@id": "https://boss504.com"
                         },
@@ -247,7 +247,6 @@ const services = ref([
     "Print & Copy",
     "Document Services",
     "Notary",
-    "Tax Prep",
     "Pack & Ship",
     "Other"
 ])

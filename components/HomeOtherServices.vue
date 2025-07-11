@@ -50,7 +50,7 @@
                     >View Administrative Services</UButton
                 >
             </div>
-            <div class="flex flex-col gap-8 md:items-center">
+            <!-- <div class="flex flex-col gap-8 md:items-center">
                 <div class="flex flex-col gap-2">
                     <h2 class="text-4xl font-bold">Tax Prep</h2>
                     <span>
@@ -71,7 +71,7 @@
                     to="/tax-prep-new-orleans"
                     >View Tax Services</UButton
                 >
-            </div>
+            </div> -->
         </div>
     </section>
 </template>

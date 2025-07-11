@@ -12,8 +12,7 @@
                 Logo for BOSS, a Business and Shipping Center that offers
                 comprehensive business support services, including professional
                 printing and shipping, copy, fax, and scan solutions, certified
-                notary services, expert tax preparation, and administrative
-                assistance.
+                notary services, and administrative assistance.
             </title>
             <path
                 data-animate="path-3"

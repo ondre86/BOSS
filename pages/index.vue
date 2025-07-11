@@ -15,12 +15,12 @@ useHead({
         {
             name: "description",
             content:
-                "BOSS provides comprehensive business support services, including professional printing and shipping, copy, fax, and scan solutions, certified notary services, expert tax preparation, and administrative assistance."
+                "BOSS provides comprehensive business support services, including professional printing and shipping, copy, fax, and scan solutions, certified notary services, and business administration assistance."
         },
         {
             name: "og:description",
             content:
-                "BOSS provides comprehensive business support services, including professional printing and shipping, copy, fax, and scan solutions, certified notary services, expert tax preparation, and administrative assistance."
+                "BOSS provides comprehensive business support services, including professional printing and shipping, copy, fax, and scan solutions, certified notary services, and business administration assistance."
         },
         {
             name: "og:title",
@@ -86,7 +86,7 @@ useHead({
                         url: "https://boss504.com",
                         name: "BOSS - Business Support Services in New Orleans East",
                         description:
-                            "BOSS provides comprehensive business support services, including professional printing and shipping, copy, fax, and scan solutions, certified notary services, expert tax preparation, and administrative assistance.",
+                            "BOSS provides comprehensive business support services, including professional printing and shipping, copy, fax, and scan solutions, certified notary services, and business administration assistance.",
                         isPartOf: {
                             "@id": "https://boss504.com/#website"
                         },

@@ -11,19 +11,27 @@
             ><h2>Notary Public</h2></ImgBlock
         >
         <ImgBlock
+            to="/packing-shipping-new-orleans"
+            :img="'/img/boxes-sm.webp'"
+            :imgClass="'max-h-36 aspect-[16/11] sepia-10 object-cover'"
+            :altText="'constructed cardboard boxes with a roll of packing tape'"
+            ><h2>Pack & Ship</h2></ImgBlock
+        >
+        <ImgBlock
             to="/administrative-services-new-orleans"
             :img="'/img/admin-sm.webp'"
             :imgClass="'max-h-36 aspect-[16/11] sepia-10 object-cover'"
             :altText="'files room with lots of files on shelves'"
-            ><h2>Administrative Services</h2></ImgBlock
         >
-        <ImgBlock
+            <h2>Administrative Services</h2>
+        </ImgBlock>
+        <!-- <ImgBlock
             to="/tax-prep-new-orleans"
             :img="'/img/tax-sm.webp'"
             :imgClass="'max-h-36 aspect-[16/11] sepia-10 object-cover'"
             :altText="'desk with calculator, pens, papers, and binders'"
             ><h2>Tax Prep</h2></ImgBlock
-        >
+        > -->
         <ImgBlock
             to="/printing-copying-new-orleans"
             :img="'/img/print-sm.webp'"
@@ -37,13 +45,6 @@
             :imgClass="'max-h-36 aspect-[16/11] sepia-10 object-cover'"
             :altText="'several flat sheets of paper overlapped'"
             ><h2>Document Preparation Services</h2></ImgBlock
-        >
-        <ImgBlock
-            to="/packing-shipping-new-orleans"
-            :img="'/img/boxes-sm.webp'"
-            :imgClass="'max-h-36 aspect-[16/11] sepia-10 object-cover'"
-            :altText="'constructed cardboard boxes with a roll of packing tape'"
-            ><h2>Pack & Ship</h2></ImgBlock
         >
     </div>
 </template>

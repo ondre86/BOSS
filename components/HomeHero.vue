@@ -19,8 +19,8 @@
                 >
                 provides comprehensive business support services, including
                 professional printing and shipping, copy, fax, and scan
-                solutions, certified notary services, expert tax preparation,
-                and administrative assistance. <br /><br />
+                solutions, certified notary services, and administrative
+                assistance. <br /><br />
             </p>
             <div class="flex gap-4">
                 <UButton
