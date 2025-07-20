@@ -1,6 +1,6 @@
 <template>
     <main
-        class="flex flex-col w-full items-center mb-12 gap-12 mt-24 sm:mt-36 overflow-hidden"
+        class="flex flex-col w-full items-center mb-12 gap-12 mt-24 sm:mt-36 overflow-hidden relative"
     >
         <LogoIcon
             :svg-size="'900px'"
