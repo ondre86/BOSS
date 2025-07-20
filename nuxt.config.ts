@@ -6,7 +6,6 @@ export default defineNuxtConfig({
         "nuxt-security",
         "@nuxt/fonts",
         "@vueuse/nuxt",
-        "@nuxtjs/seo",
         "@hypernym/nuxt-gsap",
         "@nuxt/ui"
     ],
@@ -35,14 +34,6 @@ export default defineNuxtConfig({
                 lang: "en"
             }
         }
-    },
-    schemaOrg: {
-        defaults: false,
-        debug: true,
-        enabled: false
-    },
-    seo: {
-        enabled: false
     },
     gsap: {
         extraPlugins: {
