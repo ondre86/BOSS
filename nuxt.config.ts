@@ -37,7 +37,12 @@ export default defineNuxtConfig({
         }
     },
     schemaOrg: {
-        defaults: false
+        defaults: false,
+        debug: true,
+        enabled: false
+    },
+    seo: {
+        enabled: false
     },
     gsap: {
         extraPlugins: {
