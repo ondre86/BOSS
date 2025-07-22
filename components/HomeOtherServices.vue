@@ -3,7 +3,7 @@
         class="w-full flex flex-col px-8 relative justify-center lg:items-center py-16 mt-6 bg-gray-50 dark:bg-slate-800"
     >
         <div
-            class="flex flex-col gap-24 md:flex-row md:flex-wrap md:justify-center md:text-center xl:gap-6 xl:grid xl:grid-cols-3"
+            class="flex flex-col gap-24 md:flex-row md:flex-wrap md:justify-center md:text-center xl:gap-6 xl:grid xl:grid-cols-2"
         >
             <div class="flex flex-col gap-8 md:items-center">
                 <div class="flex flex-col gap-2">
