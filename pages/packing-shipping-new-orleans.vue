@@ -49,7 +49,7 @@
             <h2
                 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display text-sand-800 dark:text-sand-300"
             >
-                Verified Shpping Partners
+                Verified Shipping Partners
             </h2>
             <div class="flex flex-col gap-2 sm:flex-row">
                 <ImgBlock
@@ -63,25 +63,25 @@
                         >Authorized FedEx Shipper</span
                     >
                     <span
-                        >Read More
+                        >Read More at FedEx
                         <UIcon name="i-solar-arrow-right-up-linear"></UIcon
                     ></span>
                 </ImgBlock>
                 <ImgBlock
                     class="md:max-w-96 text-start md:text-center"
-                    img="/img/rsa.webp"
+                    img="/img/ups.webp"
                     imgClass="sm:min-h-64"
-                    :altText="'Retail Shipping Associates Logo'"
-                    link="https://www.rscentral.org/Programs/RS-Programs/PackageHub-Business-Centers"
+                    :altText="'UPS Authorized Shipper'"
+                    link="https://www.ups.com/us/en/home"
                     :newTab="true"
                 >
                     <span class="font-semibold text-xl"
-                        >Official RSA PackageHub Business Center</span
+                        >UPS Authorized Shipping Outlet</span
                     >
-                    <span
-                        >Read More
-                        <UIcon name="i-solar-arrow-right-up-linear"></UIcon
-                    ></span>
+                    <span>
+                        Visit UPS Website
+                        <UIcon name="i-solar-arrow-right-up-linear"></UIcon>
+                    </span>
                 </ImgBlock>
             </div>
         </section>
@@ -235,7 +235,7 @@ useHead({
                                 name: "What shipping carriers do you work with?",
                                 acceptedAnswer: {
                                     "@type": "Answer",
-                                    text: "We currently work with USPS and FedEx, as an authorized FedEx Shipper. We will also work with other logistics companies, such as UPS and DHL, in the future. If you need help selecting the right shipping option, our team is happy to assist."
+                                    text: "We currently work with USPS, UPS and FedEx, as an authorized shipping outlet. We will also work with other logistics companies, such as DHL, in the future. If you need help selecting the right shipping option, our team is happy to assist."
                                 }
                             },
                             {
@@ -297,7 +297,7 @@ const items = ref([
     {
         label: `What shipping carriers do you work with?`,
         icon: "i-solar-question-circle-outline",
-        content: `We currently work with USPS and FedEx, as an authorized FedEx Shipper. We will also work with other logistics companies, such as UPS and DHL, in the future. If you need help selecting the right shipping option, our team is happy to assist.`,
+        content: `We currently work with USPS, UPS and FedEx, as an authorized shipping outlet. We will also work with other logistics companies, such as DHL, in the future. If you need help selecting the right shipping option, our team is happy to assist.`,
         trailingIcon: "i-solar-alt-arrow-down-linear"
     },
     {

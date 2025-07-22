@@ -42,18 +42,17 @@
                 </ImgBlock>
                 <ImgBlock
                     class="md:max-w-96 text-start md:text-center"
-                    img="/img/rsa.webp"
+                    img="/img/ups.webp"
                     imgClass="sm:min-h-64"
-                    :altText="'FedEx logo on a textured purple background'"
-                    link="https://www.rscentral.org/Programs/RS-Programs/PackageHub-Business-Centers"
+                    :altText="'UPS Authorized Shipper'"
+                    link="https://www.ups.com/us/en/home"
                     :newTab="true"
                 >
                     <span class="font-semibold text-xl"
-                        >Official RSA PackageHub Business Center</span
+                        >UPS Authorized Shipping Outlet</span
                     >
-                    We are part of a verified national network of pack & ship
-                    business centers, giving us access to unparalleled logistics
-                    support.
+                    We are an authorized UPS shipper, able to access their vast
+                    supply chain to ensure safe travels for all your packages.
                 </ImgBlock>
             </div>
             <p class="max-w-3xl mt-6">
