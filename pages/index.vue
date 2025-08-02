@@ -1,8 +1,44 @@
 <template>
     <main class="flex flex-col w-full items-center mt-24 sm:mt-36">
         <HomeHero></HomeHero>
-        <HomeBusinessBuilder></HomeBusinessBuilder>
+        <Marquee
+            :title="'Want to build your own business?'"
+            :desc-text="`Building your own business can be empowering, but there
+                        are necessary you need to take to stay compliant and
+                        above board. Our “Small Business Package” takes care of
+                        all of those pesky administrative tasks so you can focus
+                        on the success of your new business.`"
+            :subtitle="`Our Small Business Package includes:`"
+            :list-elements="[
+                'Secretary of State filing ',
+                'BOIR filing',
+                'IRS EIN filing',
+                'City Occupational License',
+                'Gmail Workspace Setup',
+                'Total Administrative Organization',
+                'Credential Centralization'
+            ]"
+            :button-text="`Help Build My Business`"
+            :img-src="'/img/desk-md.webp'"
+            :alt-text="`desk with person typing on laptop, two notebooks, another laptop, a candle, and an eaten muffin`"
+        ></Marquee>
         <HomeDocuments></HomeDocuments>
+        <Marquee
+            :title="'Quality Packing Supplies Available'"
+            :desc-text="`We make packing and shipping simple, secure, and
+                    worry-free. Just bring your items.`"
+            :subtitle="`We keep supplies in store such as:`"
+            :list-elements="[
+                'Corrugated Cardboard Boxes',
+                'Bubble Wrap',
+                'Packing Tape',
+                'Packing Peanuts',
+                'Mailing Envelopes',
+                'Shipping Label Printer'
+            ]"
+            :img-src="'/img/packing-supplies-md.webp'"
+            :alt-text="`corrugated cardboard shipping boxes lined in rows to easily ship items from BOSS Business Center in New Orleans East`"
+        ></Marquee>
         <HomePackShip></HomePackShip>
         <HomeOtherServices></HomeOtherServices>
     </main>

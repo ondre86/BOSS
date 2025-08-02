@@ -47,7 +47,27 @@
                 </div>
             </div>
         </section>
-        <HomeBusinessBuilder></HomeBusinessBuilder>
+        <Marquee
+            :title="'Want to build your own business?'"
+            :desc-text="`Building your own business can be empowering, but there
+                        are necessary you need to take to stay compliant and
+                        above board. Our “Small Business Package” takes care of
+                        all of those pesky administrative tasks so you can focus
+                        on the success of your new business.`"
+            :subtitle="`Our Small Business Package includes:`"
+            :list-elements="[
+                'Secretary of State filing ',
+                'BOIR filing',
+                'IRS EIN filing',
+                'City Occupational License',
+                'Gmail Workspace Setup',
+                'Total Administrative Organization',
+                'Credential Centralization'
+            ]"
+            :button-text="`Help Build My Business`"
+            :img-src="'/img/desk-md.webp'"
+            :alt-text="`desk with person typing on laptop, two notebooks, another laptop, a candle, and an eaten muffin`"
+        ></Marquee>
         <section
             class="w-full px-8 flex flex-col justify-center mb-12 gap-6 max-w-6xl"
         >

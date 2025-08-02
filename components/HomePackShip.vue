@@ -4,26 +4,31 @@
     >
         <div class="flex flex-col gap-6 md:items-center">
             <div class="flex flex-col gap-4 md:items-center">
-                <h2 class="text-4xl font-bold">Packing & Shipping</h2>
+                <h2 class="text-4xl font-bold">
+                    A Trusted Authorized Shipping Center
+                </h2>
                 <span
-                    >We make packing and shipping simple, secure, and
-                    efficient.</span
-                >
+                    >We partner with the top shippers in the country, including
+                    USPS, to deliver you an excellent experience.
+                </span>
             </div>
             <div
                 class="flex gap-12 md:gap-4 flex-col lg:flex-row lg:justify-center"
             >
                 <ImgBlock
                     class="md:max-w-96 text-start md:text-center"
-                    img="/img/packing-supplies-md.webp"
-                    imgClass="sm:min-h-64"
-                    :altText="'rows of cardboard boxes with their tops open'"
-                    link="/packing-shipping-new-orleans"
+                    img="/img/dhl.webp"
+                    imgClass="sm:min-h-64 object-fill"
+                    :altText="'BOSS Business Center is a DHL Authorized Shippier in New Orleans East located at 5790 Crowder Blvd Suite E 70127 LA, NEW ORLEANS'"
+                    link="https://locator.dhl.com/results?servicePointID=MSY613&clientAppCode=gspl"
+                    :newTab="true"
                 >
-                    <span class="font-semibold text-xl">Packing Supplies</span>
-                    Our store is fully stocked with high-quality packing
-                    supplies, including boxes, bubble wrap, and tape, to ensure
-                    your items are protected during transit.
+                    <span class="font-semibold text-xl"
+                        >DHL Authorized Shipping Center</span
+                    >
+                    DHL specializes in international shipping, and as a DHL
+                    authorized shipping center, we can help you get your
+                    packages across the globe with ease.
                 </ImgBlock>
                 <ImgBlock
                     class="md:max-w-96 text-start md:text-center"

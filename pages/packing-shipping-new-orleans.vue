@@ -54,7 +54,24 @@
             <div class="flex flex-col gap-2 sm:flex-row">
                 <ImgBlock
                     class="md:max-w-96 text-start md:text-center"
+                    img="/img/dhl.webp"
+                    imgClass="sm:min-h-64 object-fill"
+                    :altText="'DHL Authorized Shipping Center'"
+                    link="https://locator.dhl.com/results?servicePointID=MSY613&clientAppCode=gspl"
+                    :newTab="true"
+                >
+                    <span class="font-semibold text-xl"
+                        >DHL Authorized Shipper</span
+                    >
+                    <span
+                        >View on DHL Map
+                        <UIcon name="i-solar-arrow-right-up-linear"></UIcon
+                    ></span>
+                </ImgBlock>
+                <ImgBlock
+                    class="md:max-w-96 text-start md:text-center"
                     img="/img/fedex-lg.webp"
+                    imgClass="sm:min-h-64"
                     :altText="'FedEx logo on a textured purple background'"
                     link="https://www.fedex.com/en-us/shipping/fedex-authorized-ship-center.html"
                     :newTab="true"
@@ -235,7 +252,7 @@ useHead({
                                 name: "What shipping carriers do you work with?",
                                 acceptedAnswer: {
                                     "@type": "Answer",
-                                    text: "We currently work with USPS, UPS and FedEx, as an authorized shipping outlet. We will also work with other logistics companies, such as DHL, in the future. If you need help selecting the right shipping option, our team is happy to assist."
+                                    text: "We currently work with USPS, UPS, DHL, and FedEx as an authorized shipping outlet. If you need help selecting the right shipping option, our team is happy to assist."
                                 }
                             },
                             {
@@ -297,7 +314,7 @@ const items = ref([
     {
         label: `What shipping carriers do you work with?`,
         icon: "i-solar-question-circle-outline",
-        content: `We currently work with USPS, UPS and FedEx, as an authorized shipping outlet. We will also work with other logistics companies, such as DHL, in the future. If you need help selecting the right shipping option, our team is happy to assist.`,
+        content: `We currently work with USPS, UPS, DHL, and FedEx as an authorized shipping outlet. If you need help selecting the right shipping option, our team is happy to assist.`,
         trailingIcon: "i-solar-alt-arrow-down-linear"
     },
     {

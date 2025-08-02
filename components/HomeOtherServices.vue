@@ -1,13 +1,16 @@
 <template>
     <section
-        class="w-full flex flex-col px-8 relative justify-center lg:items-center py-16 mt-6 bg-gray-50 dark:bg-slate-800"
+        class="w-full flex flex-col px-8 relative justify-center gap-16 lg:items-center py-16 mt-6 bg-gray-50 dark:bg-slate-800"
     >
+        <div class="flex flex-col gap-4 md:items-center">
+            <h2 class="text-4xl font-bold">Other Services</h2>
+        </div>
         <div
             class="flex flex-col gap-24 md:flex-row md:flex-wrap md:justify-center md:text-center xl:gap-6 xl:grid xl:grid-cols-2"
         >
             <div class="flex flex-col gap-8 md:items-center">
                 <div class="flex flex-col gap-2">
-                    <h2 class="text-4xl font-bold">Notary</h2>
+                    <h2 class="text-4xl font-bold">Notary Public</h2>
                     <span>
                         Get documents notarized with ease. <br />
                         $20 for the first page, and $10 for each thereafter.
