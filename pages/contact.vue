@@ -1,7 +1,5 @@
 <template>
-    <main
-        class="flex flex-col w-full items-center mb-12 gap-12 mt-24 sm:mt-36 overflow-hidden relative"
-    >
+    <main class="flex flex-col w-full items-center mb-12 gap-12 mt-40 sm:mt-48 overflow-hidden relative">
         <LogoIcon
             :svg-size="'900px'"
             class="absolute -z-10 opacity-5 top-24 right-1.5 invisible lg:visible"
@@ -9,11 +7,7 @@
         </LogoIcon>
         <section class="w-full max-w-6xl flex flex-col gap-6 px-8 relative">
             <div class="flex flex-col gap-1">
-                <h1
-                    class="text-6xl text-sand-800 dark:text-sand-300 lg:text-6xl"
-                >
-                    Contact
-                </h1>
+                <h1 class="text-6xl text-sand-800 dark:text-sand-300 lg:text-6xl">Contact</h1>
             </div>
             <div>
                 <UButton
@@ -33,9 +27,7 @@
             </div>
         </section>
         <section class="w-full max-w-6xl flex flex-col px-8 gap-2">
-            <h2 class="text-2xl text-sand-800 dark:text-sand-300">
-                Send Us an Email
-            </h2>
+            <h2 class="text-2xl text-sand-800 dark:text-sand-300">Send Us an Email</h2>
             <UForm
                 :state="state"
                 @submit="onSubmit"
@@ -114,16 +106,8 @@
                     block
                     loading-auto
                     loading-icon="i-solar-refresh-line-duotone"
-                    :color="
-                        formSuccess == true || formSuccess == null
-                            ? 'primary'
-                            : 'error'
-                    "
-                    :label="
-                        formSuccess == true || formSuccess == null
-                            ? 'Submit'
-                            : 'Error'
-                    "
+                    :color="formSuccess == true || formSuccess == null ? 'primary' : 'error'"
+                    :label="formSuccess == true || formSuccess == null ? 'Submit' : 'Error'"
                 >
                 </UButton>
             </UForm>
@@ -221,9 +205,7 @@ useHead({
                             latitude: 30.0281244,
                             longitude: -89.9941587
                         },
-                        sameAs: [
-                            "https://www.google.com/maps/place/5790+Crowder+Blvd+Ste+E,+New+Orleans,+LA+70127"
-                        ]
+                        sameAs: ["https://www.google.com/maps/place/5790+Crowder+Blvd+Ste+E,+New+Orleans,+LA+70127"]
                     }
                 ]
             })
@@ -256,12 +238,8 @@ const validate = () => {
     const errors = []
     if (!state.name) errors.push({ name: "name", message: "Required" })
     if (!state.email) errors.push({ name: "email", message: "Required" })
-    if (!validator.isEmail(state.email))
-        errors.push({ name: "email", message: "Invalid Email" })
-    if (
-        !validator.isMobilePhone(state.phone, ["en-US"]) &&
-        !validator.isEmpty(state.phone)
-    )
+    if (!validator.isEmail(state.email)) errors.push({ name: "email", message: "Invalid Email" })
+    if (!validator.isMobilePhone(state.phone, ["en-US"]) && !validator.isEmpty(state.phone))
         errors.push({ name: "phone", message: "Invalid Phone Number" })
     if (!state.message) errors.push({ name: "message", message: "Required" })
     return errors
@@ -277,20 +255,14 @@ async function onSubmit() {
     await $fetch("/api/form", {
         method: "POST",
         body: {
-            turnstile: document.querySelectorAll(
-                "input[name=cf-turnstile-response]"
-            )[0]
-                ? document.querySelectorAll(
-                      "input[name=cf-turnstile-response]"
-                  )[0].value
+            turnstile: document.querySelectorAll("input[name=cf-turnstile-response]")[0]
+                ? document.querySelectorAll("input[name=cf-turnstile-response]")[0].value
                 : null,
             jsonForm: {
                 name: state.name,
                 email: state.email,
                 phone: state.phone,
-                service: document.querySelectorAll("select")[0]
-                    ? document.querySelectorAll("select")[0].value
-                    : "Administrative Services",
+                service: document.querySelectorAll("select")[0] ? document.querySelectorAll("select")[0].value : "Administrative Services",
                 message: state.message
             }
         },

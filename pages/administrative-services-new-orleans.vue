@@ -1,40 +1,25 @@
 <template>
-    <main class="flex flex-col gap-12 w-full items-center mb-12 mt-24 sm:mt-36">
-        <section
-            class="w-full flex flex-col px-8 justify-between gap-12 my-3 sm:my-7 max-w-6xl"
-        >
+    <main class="flex flex-col gap-12 w-full items-center mb-12 mt-40 sm:mt-48">
+        <section class="w-full flex flex-col px-8 justify-between gap-12 my-3 sm:my-7 max-w-6xl">
             <div class="flex flex-col gap-4 sm:gap-8">
-                <h1
-                    class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-sand-800 dark:text-sand-300 -ml-1"
-                >
+                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-sand-800 dark:text-sand-300 -ml-1">
                     Business Administrative Services in New Orleans East
                 </h1>
             </div>
-            <div
-                class="flex flex-col-reverse gap-8 md:grid md:grid-cols-2 md:gap-16"
-            >
+            <div class="flex flex-col-reverse gap-8 md:grid md:grid-cols-2 md:gap-16">
                 <div class="flex flex-col gap-10 relative lg:mb-0">
                     <div class="flex flex-col gap-4">
-                        <h2
-                            class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display text-sand-800 dark:text-sand-300"
-                        >
+                        <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display text-sand-800 dark:text-sand-300">
                             Grow Your Business the Smart Way
                         </h2>
                         <p class="max-w-prose">
-                            Our team specializes in total administrative
-                            organization, helping you streamline processes,
-                            centralize credentials, and create efficient systems
-                            for managing your business documents. <br /><br />
-                            With proficiency in a wide range of administrative
-                            tasks, we’re your go-to partner for staying on top
-                            of the details that drive success. <br /><br />
-                            Our services are ideal for new business owners and
-                            existing enterprises looking to save time and
-                            improve efficiency. Whether you’re launching a
-                            startup, expanding your operations, or simply need
-                            help staying on top of administrative tasks, our
-                            expertise ensures that everything is done correctly
-                            and on time.
+                            Our team specializes in total administrative organization, helping you streamline processes, centralize
+                            credentials, and create efficient systems for managing your business documents. <br /><br />
+                            With proficiency in a wide range of administrative tasks, we’re your go-to partner for staying on top of the
+                            details that drive success. <br /><br />
+                            Our services are ideal for new business owners and existing enterprises looking to save time and improve
+                            efficiency. Whether you’re launching a startup, expanding your operations, or simply need help staying on top of
+                            administrative tasks, our expertise ensures that everything is done correctly and on time.
                         </p>
                     </div>
                 </div>
@@ -68,17 +53,12 @@
             :img-src="'/img/desk-md.webp'"
             :alt-text="`desk with person typing on laptop, two notebooks, another laptop, a candle, and an eaten muffin`"
         ></Marquee>
-        <section
-            class="w-full px-8 flex flex-col justify-center mb-12 gap-6 max-w-6xl"
-        >
-            <h2
-                class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display font-semibold text-sand-800 dark:text-sand-300"
-            >
+        <section class="w-full px-8 flex flex-col justify-center mb-12 gap-6 max-w-6xl">
+            <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display font-semibold text-sand-800 dark:text-sand-300">
                 Need A Website?
             </h2>
             <p>
-                We work with our partners to provide you with all of the
-                administrative services you need. <br />
+                We work with our partners to provide you with all of the administrative services you need. <br />
                 <NuxtLink
                     target="_blank"
                     to="https://ondre.org"
@@ -95,12 +75,8 @@
                 >Visit ondre.org</UButton
             >
         </section>
-        <section
-            class="w-full px-8 flex flex-col justify-center mb-12 gap-6 max-w-6xl"
-        >
-            <h2
-                class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display text-sand-800 dark:text-sand-300"
-            >
+        <section class="w-full px-8 flex flex-col justify-center mb-12 gap-6 max-w-6xl">
+            <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display text-sand-800 dark:text-sand-300">
                 Frequently Asked Questions
             </h2>
             <div class="flex flex-col gap-4 w-full max-w-prose">

@@ -1,5 +1,5 @@
 <template>
-    <main class="flex flex-col w-full items-center mt-24 sm:mt-36">
+    <main class="flex flex-col w-full items-center mt-40 sm:mt-48">
         <HomeHero></HomeHero>
         <Marquee
             :title="'Want to build your own business?'"
@@ -103,9 +103,7 @@ useHead({
                             latitude: 30.0281244,
                             longitude: -89.9941587
                         },
-                        sameAs: [
-                            "https://www.google.com/maps/place/5790+Crowder+Blvd+Ste+E,+New+Orleans,+LA+70127"
-                        ]
+                        sameAs: ["https://www.google.com/maps/place/5790+Crowder+Blvd+Ste+E,+New+Orleans,+LA+70127"]
                     },
                     {
                         "@type": "WebSite",

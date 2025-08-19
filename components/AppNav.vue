@@ -1,88 +1,88 @@
 <template>
-    <header
-        class="flex border-b py-4 px-8 justify-center w-full fixed top-0 left-0 z-50 bg-white dark:bg-slate-900"
-    >
-        <nav
-            class="flex w-full items-center justify-between max-w-7xl"
-            aria-label="Main Navigation"
-        >
-            <NuxtLink to="/">
-                <MainLogo :footer="false" />
-            </NuxtLink>
-            <ul class="gap-4 hidden md:flex">
-                <li>
-                    <UButton
-                        to="/about"
-                        color="primary"
-                        variant="outline"
-                        size="lg"
-                        >About</UButton
-                    >
-                </li>
-                <li>
-                    <UDropdownMenu :items="items">
+    <div class="flex flex-col items-center w-full fixed top-0 left-0 z-50 bg-white dark:bg-slate-900">
+        <header class="flex border-b py-4 px-8 w-full max-w-6xl justify-center">
+            <nav
+                class="flex w-full items-center justify-between"
+                aria-label="Main Navigation"
+            >
+                <NuxtLink to="/">
+                    <MainLogo :footer="false" />
+                </NuxtLink>
+                <ul class="gap-4 hidden md:flex">
+                    <li>
                         <UButton
+                            to="/about"
                             color="primary"
                             variant="outline"
                             size="lg"
-                            trailing-icon="i-solar-alt-arrow-down-linear"
-                            class="cursor-pointer"
-                            >Services</UButton
+                            >About</UButton
                         >
-                    </UDropdownMenu>
-                </li>
-                <li>
-                    <UButton
-                        to="/contact"
-                        size="lg"
-                        >Contact</UButton
-                    >
-                </li>
-            </ul>
-            <USlideover
-                title="Navigation"
-                :close="{
-                    label: 'Close',
-                    color: 'error'
-                }"
-                close-icon="i-solar-close-square-linear"
-                v-model:open="open"
-                :ui="{ title: 'text-xl' }"
-            >
-                <UButton
-                    class="md:hidden"
-                    icon="i-solar-hamburger-menu-linear"
-                    aria-label="Open Mobile Navigation"
-                ></UButton>
-
-                <template #body>
-                    <UNavigationMenu
-                        orientation="vertical"
-                        :items="mobileItems"
-                        class="text-xl"
-                        :ui="{ link: 'text-xl' }"
-                    />
-                </template>
-                <template #footer>
-                    <div class="flex flex-col gap-4 w-full">
+                    </li>
+                    <li>
+                        <UDropdownMenu :items="items">
+                            <UButton
+                                color="primary"
+                                variant="outline"
+                                size="lg"
+                                trailing-icon="i-solar-alt-arrow-down-linear"
+                                class="cursor-pointer"
+                                >Services</UButton
+                            >
+                        </UDropdownMenu>
+                    </li>
+                    <li>
                         <UButton
-                            block
                             to="/contact"
-                            @click="open = false"
-                            >Contact Us</UButton
+                            size="lg"
+                            >Contact</UButton
                         >
-                        <UButton
-                            block
-                            variant="outline"
-                            target="_blank"
-                            to="https://www.google.com/maps/place/5790+Crowder+Blvd+Ste+E,+New+Orleans,+LA+70127/@30.0281244,-89.9967336,17z/data=!3m1!4b1!4m6!3m5!1s0x889e027bb876935b:0x97ca628b597ff069!8m2!3d30.0281244!4d-89.9941587!16s%2Fg%2F11scv0fd7b?entry=ttu&g_ep=EgoyMDI1MDEwMi4wIKXMDSoASAFQAw%3D%3D"
-                            >Get Directions</UButton
-                        >
-                    </div>
-                </template>
-            </USlideover>
-        </nav>
-    </header>
+                    </li>
+                </ul>
+                <USlideover
+                    title="Navigation"
+                    :close="{
+                        label: 'Close',
+                        color: 'error'
+                    }"
+                    close-icon="i-solar-close-square-linear"
+                    v-model:open="open"
+                    :ui="{ title: 'text-xl' }"
+                >
+                    <UButton
+                        class="md:hidden"
+                        icon="i-solar-hamburger-menu-linear"
+                        aria-label="Open Mobile Navigation"
+                    ></UButton>
+                    <template #body>
+                        <UNavigationMenu
+                            orientation="vertical"
+                            :items="mobileItems"
+                            class="text-xl"
+                            :ui="{ link: 'text-xl' }"
+                        />
+                    </template>
+                    <template #footer>
+                        <div class="flex flex-col gap-4 w-full">
+                            <UButton
+                                block
+                                to="/contact"
+                                @click="open = false"
+                                >Contact Us</UButton
+                            >
+                            <UButton
+                                block
+                                variant="outline"
+                                target="_blank"
+                                to="https://www.google.com/maps/place/5790+Crowder+Blvd+Ste+E,+New+Orleans,+LA+70127/@30.0281244,-89.9967336,17z/data=!3m1!4b1!4m6!3m5!1s0x889e027bb876935b:0x97ca628b597ff069!8m2!3d30.0281244!4d-89.9941587!16s%2Fg%2F11scv0fd7b?entry=ttu&g_ep=EgoyMDI1MDEwMi4wIKXMDSoASAFQAw%3D%3D"
+                                >Get Directions</UButton
+                            >
+                        </div>
+                    </template>
+                </USlideover>
+            </nav>
+        </header>
+        <Banner />
+    </div>
 </template>
 
 <script setup lang="ts">

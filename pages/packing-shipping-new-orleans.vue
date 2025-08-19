@@ -1,36 +1,25 @@
 <template>
-    <main class="flex flex-col gap-12 w-full items-center mb-12 mt-24 sm:mt-36">
-        <section
-            class="w-full flex flex-col px-8 justify-between gap-12 my-3 sm:my-7 max-w-6xl"
-        >
+    <main class="flex flex-col gap-12 w-full items-center mb-12 mt-40 sm:mt-48">
+        <section class="w-full flex flex-col px-8 justify-between gap-12 my-3 sm:my-7 max-w-6xl">
             <div class="flex flex-col gap-4 sm:gap-8">
-                <h1
-                    class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-sand-800 dark:text-sand-300 -ml-1"
-                >
+                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-sand-800 dark:text-sand-300 -ml-1">
                     Packing and Shipping Center in New Orleans East
                 </h1>
             </div>
-            <div
-                class="flex flex-col-reverse gap-8 md:grid md:grid-cols-2 md:gap-16"
-            >
+            <div class="flex flex-col-reverse gap-8 md:grid md:grid-cols-2 md:gap-16">
                 <div class="flex flex-col gap-10 mb-8 relative lg:mb-0">
                     <div class="flex flex-col gap-4">
-                        <h2
-                            class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display text-sand-800 dark:text-sand-300"
-                        >
+                        <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display text-sand-800 dark:text-sand-300">
                             Professional Packing and Shipping Made Easy
                         </h2>
                         <p class="max-w-prose">
-                            We provide convenient and reliable packing and
-                            shipping services to meet all your needs.
+                            We provide convenient and reliable packing and shipping services to meet all your needs.
                             <br /><br />
-                            Our store is fully stocked with a wide range of
-                            packing supplies, including boxes, bubble wrap, and
-                            tape, so your items are securely packed for transit.
+                            Our store is fully stocked with a wide range of packing supplies, including boxes, bubble wrap, and tape, so
+                            your items are securely packed for transit.
                             <br /><br />
-                            If you’re shipping documents, gifts, fragile items,
-                            or anything in-between, we make the process
-                            stress-free and efficient. <br /><br />
+                            If you’re shipping documents, gifts, fragile items, or anything in-between, we make the process stress-free and
+                            efficient. <br /><br />
                         </p>
                     </div>
                 </div>
@@ -43,12 +32,8 @@
                 </div>
             </div>
         </section>
-        <section
-            class="w-full px-8 flex flex-col justify-center mb-12 gap-6 max-w-6xl"
-        >
-            <h2
-                class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display text-sand-800 dark:text-sand-300"
-            >
+        <section class="w-full px-8 flex flex-col justify-center mb-12 gap-6 max-w-6xl">
+            <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display text-sand-800 dark:text-sand-300">
                 Verified Shipping Partners
             </h2>
             <div class="flex flex-col gap-2 sm:flex-row">
@@ -60,13 +45,8 @@
                     link="https://locator.dhl.com/results?servicePointID=MSY613&clientAppCode=gspl"
                     :newTab="true"
                 >
-                    <span class="font-semibold text-xl"
-                        >DHL Authorized Shipper</span
-                    >
-                    <span
-                        >View on DHL Map
-                        <UIcon name="i-solar-arrow-right-up-linear"></UIcon
-                    ></span>
+                    <span class="font-semibold text-xl">DHL Authorized Shipper</span>
+                    <span>View on DHL Map <UIcon name="i-solar-arrow-right-up-linear"></UIcon></span>
                 </ImgBlock>
                 <ImgBlock
                     class="md:max-w-96 text-start md:text-center"
@@ -76,13 +56,8 @@
                     link="https://www.fedex.com/en-us/shipping/fedex-authorized-ship-center.html"
                     :newTab="true"
                 >
-                    <span class="font-semibold text-xl"
-                        >Authorized FedEx Shipper</span
-                    >
-                    <span
-                        >Read More at FedEx
-                        <UIcon name="i-solar-arrow-right-up-linear"></UIcon
-                    ></span>
+                    <span class="font-semibold text-xl">Authorized FedEx Shipper</span>
+                    <span>Read More at FedEx <UIcon name="i-solar-arrow-right-up-linear"></UIcon></span>
                 </ImgBlock>
                 <ImgBlock
                     class="md:max-w-96 text-start md:text-center"
@@ -92,9 +67,7 @@
                     link="https://www.ups.com/us/en/home"
                     :newTab="true"
                 >
-                    <span class="font-semibold text-xl"
-                        >UPS Authorized Shipping Outlet</span
-                    >
+                    <span class="font-semibold text-xl">UPS Authorized Shipping Outlet</span>
                     <span>
                         Visit UPS Website
                         <UIcon name="i-solar-arrow-right-up-linear"></UIcon>
@@ -102,12 +75,8 @@
                 </ImgBlock>
             </div>
         </section>
-        <section
-            class="w-full px-8 flex flex-col justify-center mb-12 gap-6 max-w-6xl"
-        >
-            <h2
-                class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display text-sand-800 dark:text-sand-300"
-            >
+        <section class="w-full px-8 flex flex-col justify-center mb-12 gap-6 max-w-6xl">
+            <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display text-sand-800 dark:text-sand-300">
                 Frequently Asked Questions
             </h2>
             <div class="flex flex-col gap-4 w-full max-w-prose">
